@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>It's Sorcery! - Example</name>
+	<author>Zomuro</author>
+	<supportedVersions><li>1.4</li></supportedVersions>
+	<modDependencies>
+	</modDependencies>
+	<packageId>Zomuro.ItsSorceryFramework.Example</packageId>
+	<description>An example mod showing how to use the It's Sorcery framework.</description>
+	<modDependencies>
+		<li>
+			<packageId>Zomuro.ItsSorceryFramework</packageId>
+			<displayName>It's Sorcery</displayName>
+		</li>
+	</modDependencies>
+
+</ModMetaData>
