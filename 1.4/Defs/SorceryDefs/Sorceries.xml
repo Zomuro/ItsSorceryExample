@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<AbilityCategoryDef>
-		<defName>Sorcery</defName>
-		<displayOrder>3</displayOrder>
-	</AbilityCategoryDef>
-
 	
-	<ItsSorceryFramework.SorceryDef Name="SorceryBase">
-		<abilityClass>ItsSorceryFramework.Sorcery</abilityClass>
-		<gizmoClass>ItsSorceryFramework.Command_Sorcery</gizmoClass>
-		<category>Sorcery</category>
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
 		<sorcerySchema>SorcerySchema_Base</sorcerySchema>
 		<defName>testsorcery</defName>
 		<label>test</label>
 		<description>its testing time</description>
 		<level>1</level>
-		<iconPath>UI/Sorceries/hea</iconPath>
-		<!--<hotKey>Misc1</hotKey>-->
+		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
 		
 		<statBases>
 			<Sorcery_EnergyCost>25</Sorcery_EnergyCost>
@@ -51,14 +41,13 @@
 		</comps>
 	</ItsSorceryFramework.SorceryDef>
 	
-	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+	<!--<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
 		<defName>testsorcery2</defName>
 		<label>test2</label>
 		<description>its testing time</description>
 		<level>1</level>
 		<iconPath>UI/Sorceries/wou</iconPath>
-		<!--<hotKey>Misc1</hotKey>-->
-		
+				
 		<statBases>
 			<Sorcery_EnergyCost>-25</Sorcery_EnergyCost>
 			<Ability_Duration>120</Ability_Duration>
@@ -71,7 +60,6 @@
 		<description>its testing time</description>
 		<level>1</level>
 		<iconPath>UI/Sorceries/res</iconPath>
-		<!--<hotKey>Misc1</hotKey>-->
 	</ItsSorceryFramework.SorceryDef>
 	
 	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
@@ -150,6 +138,6 @@
 				<fleckDef>PsycastPsychicEffect</fleckDef>
 			</li>
 		</comps>
-	</ItsSorceryFramework.SorceryDef>
+	</ItsSorceryFramework.SorceryDef>-->
   
 </Defs>

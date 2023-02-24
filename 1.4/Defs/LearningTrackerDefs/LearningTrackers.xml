@@ -1,7 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Demostration + Testing LearningTracker def -->
-	<ItsSorceryFramework.LearningTrackerDef Name = "LearningTrackerBase">
+	
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>LearningTrackerTree_Test</defName>
+		<label>First Studies</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>LearningTrackerTree_Test</learningTrackerDef>
+		<defName>node1</defName>
+		<label>Birds and bees</label>
+		<description>The literal basics.</description>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
+		<defName>LearningTrackerProgress_Test</defName>
+		<label>learning progress</label>
+		<bgPath>UI/LearningTrackers/LogicaBG</bgPath>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+
+	<!-- <ItsSorceryFramework.LearningTrackerDef Name = "LearningTrackerBase">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker</learningTrackerClass>
 		<defName>LearningTracker_Base</defName>
 		<label>learning tracker test</label>
@@ -201,6 +225,6 @@
 		<description>who thought this was a good idea</description>
 		<coordX>1</coordX>
 		<coordY>1</coordY>
-	</ItsSorceryFramework.LearningTreeNodeDef>
+	</ItsSorceryFramework.LearningTreeNodeDef>-->
 	
 </Defs>

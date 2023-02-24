@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Demostration + Testing EnergyTracker def -->
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPG">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPG</energyTrackerClass>
+		<defName>EnergyTrackerRPG_Test</defName>
+		<label>brainpower</label>
+		
+		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
+		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
+		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
+		
+		<energyLabelKey>ISFE_EnergyTrackerRPGUnit</energyLabelKey>
+	</ItsSorceryFramework.EnergyTrackerDef>
+	
+	<!-- Demostration + Testing EnergyTracker def 
 	<ItsSorceryFramework.EnergyTrackerDef Name = "EnergyTrackerBase">
 		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
 		<defName>EnergyTracker_Base</defName>
@@ -97,7 +109,7 @@
 		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 		<refreshTicks>180</refreshTicks>
-	</ItsSorceryFramework.EnergyTrackerDef>
+	</ItsSorceryFramework.EnergyTrackerDef>-->
 
 
 </Defs>
