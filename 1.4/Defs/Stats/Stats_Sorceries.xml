@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StatDef>
+		<defName>ISFE_Brainpower</defName>
+		<label>brainpower</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of brain energy a technique requires to cast.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Mindpower</defName>
+		<label>mindpower</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of mind energy a technique requires to cast.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+
+</Defs>

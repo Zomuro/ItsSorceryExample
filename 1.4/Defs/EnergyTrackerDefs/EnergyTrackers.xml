@@ -3,13 +3,28 @@
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPG">
 		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPG</energyTrackerClass>
 		<defName>EnergyTrackerRPG_Test</defName>
-		<label>brainpower</label>
+		<label>Cortexo's brainpower</label>
 		
+		<energyUnitStatDef>Sorcery_EnergyCost</energyUnitStatDef>
 		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
 		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 		
 		<energyLabelKey>ISFE_EnergyTrackerRPGUnit</energyLabelKey>
+	</ItsSorceryFramework.EnergyTrackerDef>
+	
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPGTurnBased">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPGTurnBased</energyTrackerClass>
+		<defName>EnergyTrackerRPGTurnBased</defName>
+		<label>Sele's mindpower</label>
+		
+		<energyUnitStatDef>Sorcery_EnergyCost</energyUnitStatDef>
+		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
+		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
+		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
+		
+		<turnTicks>180</turnTicks>
+		<energyLabelKey>ISFE_EnergyTrackerRPGTurnBasedUnit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<!-- Demostration + Testing EnergyTracker def 

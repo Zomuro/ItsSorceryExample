@@ -11,6 +11,8 @@
 		
 		<statBases>
 			<Sorcery_EnergyCost>25</Sorcery_EnergyCost>
+			<ISFE_Brainpower>25</ISFE_Brainpower>
+			<ISFE_Mindpower>25</ISFE_Mindpower>
 			<Ability_Duration>120</Ability_Duration>
 			<Sorcery_MaxCasts>5</Sorcery_MaxCasts>
 		</statBases>

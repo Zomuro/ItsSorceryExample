@@ -6,7 +6,11 @@
 		<label>Logos Experimentia</label>
 		<description>A magic system meant to do magic things magically or something- no wait, logically.</description>
 	
-		<energyTrackerDef>EnergyTrackerRPG_Test</energyTrackerDef>
+		<energyTrackerDefs>
+			<li>EnergyTrackerRPG_Test</li>
+			<li>EnergyTrackerRPGTurnBased</li>
+		</energyTrackerDefs>
+		<!--<energyTrackerDef>EnergyTrackerRPG_Test</energyTrackerDef>-->
 		<learningTrackerDefs>
 			<li>LearningTrackerProgress_Test</li>
 			<li>LearningTrackerTree_Test</li>
