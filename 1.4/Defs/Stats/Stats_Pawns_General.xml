@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<StatDef>
+		<defName>ISFE_EnergyRecoveryConsumableTest</defName>
+		<label>stamina drain</label>
+		<description>The rate at which a pawn loses stamina.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>-0.1</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3496</displayPriorityInCategory>
+		<scenarioRandomizable>true</scenarioRandomizable>
+	</StatDef>
+
+</Defs>

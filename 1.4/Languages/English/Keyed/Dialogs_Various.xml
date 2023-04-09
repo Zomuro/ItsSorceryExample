@@ -4,5 +4,6 @@
 	<!-- SorcerySchemaDef Info window - Energy Trackers -->
 	<ISFE_EnergyTrackerRPGUnit>brainpower</ISFE_EnergyTrackerRPGUnit>
 	<ISFE_EnergyTrackerRPGTurnBasedUnit>mindpower</ISFE_EnergyTrackerRPGTurnBasedUnit>
+	<ISFE_EnergyTrackerConsumableUnit>concentration</ISFE_EnergyTrackerConsumableUnit>
 	
 </LanguageData>

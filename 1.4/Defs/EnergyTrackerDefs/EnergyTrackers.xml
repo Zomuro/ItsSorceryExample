@@ -3,9 +3,9 @@
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPG">
 		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPG</energyTrackerClass>
 		<defName>EnergyTrackerRPG_Test</defName>
-		<label>Cortexo's brainpower</label>
+		<label>brainpower</label>
 		
-		<energyUnitStatDef>Sorcery_EnergyCost</energyUnitStatDef>
+		<energyUnitStatDef>ISFE_Brainpower</energyUnitStatDef>
 		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
 		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
@@ -16,15 +16,37 @@
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPGTurnBased">
 		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPGTurnBased</energyTrackerClass>
 		<defName>EnergyTrackerRPGTurnBased</defName>
-		<label>Sele's mindpower</label>
+		<label>mindpower</label>
 		
-		<energyUnitStatDef>Sorcery_EnergyCost</energyUnitStatDef>
+		<energyUnitStatDef>ISFE_Mindpower</energyUnitStatDef>
 		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
 		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 		
 		<turnTicks>180</turnTicks>
 		<energyLabelKey>ISFE_EnergyTrackerRPGTurnBasedUnit</energyLabelKey>
+	</ItsSorceryFramework.EnergyTrackerDef>
+	
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseConsumable">
+		<defName>EnergyTrackerConsumableBased</defName>
+		<label>concentration</label>
+		
+		<energyUnitStatDef>ISFE_Concentration</energyUnitStatDef>
+		<energyRecoveryStatDef>ISFE_EnergyRecoveryConsumableTest</energyRecoveryStatDef>
+		<refreshTicks>0</refreshTicks>
+		
+		<consumables>
+			<li>
+				<thingDef>Milk</thingDef>
+				<exp>5.0</exp>
+			</li>
+			<li>
+				<thingDef>Chocolate</thingDef>
+				<exp>10.0</exp>
+			</li>
+		</consumables>
+
+		<energyLabelKey>ISFE_EnergyTrackerConsumableUnit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<!-- Demostration + Testing EnergyTracker def 

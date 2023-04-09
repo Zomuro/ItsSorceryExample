@@ -21,5 +21,15 @@
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
 	
+	<StatDef>
+		<defName>ISFE_Concentration</defName>
+		<label>concentration</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of concentration a technique requires to cast.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
 
 </Defs>

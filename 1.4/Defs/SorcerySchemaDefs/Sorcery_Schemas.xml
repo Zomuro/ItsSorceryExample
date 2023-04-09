@@ -9,6 +9,7 @@
 		<energyTrackerDefs>
 			<li>EnergyTrackerRPG_Test</li>
 			<li>EnergyTrackerRPGTurnBased</li>
+			<li>EnergyTrackerConsumableBased</li>
 		</energyTrackerDefs>
 		<!--<energyTrackerDef>EnergyTrackerRPG_Test</energyTrackerDef>-->
 		<learningTrackerDefs>
