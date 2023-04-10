@@ -14,8 +14,9 @@
 			<ISFE_Brainpower>25</ISFE_Brainpower>
 			<ISFE_Mindpower>25</ISFE_Mindpower>
 			<ISFE_Concentration>10</ISFE_Concentration>
+			<ISFE_Charges>1</ISFE_Charges>
+			<ISFE_MaxCharges>10</ISFE_MaxCharges>
 			<Ability_Duration>120</Ability_Duration>
-			<Sorcery_MaxCasts>5</Sorcery_MaxCasts>
 		</statBases>
 		<verbProperties>		
 			<verbClass>Verb_CastAbility</verbClass>

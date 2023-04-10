@@ -31,5 +31,25 @@
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
 	
+	<StatDef>
+		<defName>ISFE_Charges</defName>
+		<label>charges</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of charges a technique requires to cast.</description>
+		<defaultBaseValue>1</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_MaxCharges</defName>
+		<label>max charges</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of concentration a technique requires to cast.</description>
+		<defaultBaseValue>5</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
 
 </Defs>

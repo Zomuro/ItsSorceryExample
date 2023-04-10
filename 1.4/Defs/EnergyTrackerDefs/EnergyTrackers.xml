@@ -15,7 +15,7 @@
 	
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPGTurnBased">
 		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPGTurnBased</energyTrackerClass>
-		<defName>EnergyTrackerRPGTurnBased</defName>
+		<defName>EnergyTrackerRPGTurnBasedTest</defName>
 		<label>mindpower</label>
 		
 		<energyUnitStatDef>ISFE_Mindpower</energyUnitStatDef>
@@ -27,8 +27,19 @@
 		<energyLabelKey>ISFE_EnergyTrackerRPGTurnBasedUnit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseVancian">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_Vancian</energyTrackerClass>
+		<defName>EnergyTrackerVancianTest</defName>
+		<label>charges</label>
+		<energyUnitStatDef>ISFE_Charges</energyUnitStatDef>
+		<energyMaxCastStatDef>ISFE_MaxCharges</energyMaxCastStatDef>
+		
+		<refreshTicks>1500</refreshTicks>
+		<energyLabelKey>ISFE_EnergyTrackerVancianUnit</energyLabelKey>
+	</ItsSorceryFramework.EnergyTrackerDef>
+	
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseConsumable">
-		<defName>EnergyTrackerConsumableBased</defName>
+		<defName>EnergyTrackerConsumableTest</defName>
 		<label>concentration</label>
 		
 		<energyUnitStatDef>ISFE_Concentration</energyUnitStatDef>
