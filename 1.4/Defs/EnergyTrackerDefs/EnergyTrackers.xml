@@ -34,6 +34,10 @@
 		<energyUnitStatDef>ISFE_Charges</energyUnitStatDef>
 		<energyMaxCastStatDef>ISFE_MaxCharges</energyMaxCastStatDef>
 		
+		<refreshNotifKey>ISFE_VancianRefresh</refreshNotifKey>
+		<refreshInfoKey>ISFE_RechargeVancianInfo</refreshInfoKey>
+		<refreshInfoDescKey>ISFE_RechargeVancianInfoDesc</refreshInfoDescKey>
+		
 		<refreshTicks>1500</refreshTicks>
 		<energyLabelKey>ISFE_EnergyTrackerVancianUnit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>

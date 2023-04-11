@@ -7,4 +7,8 @@
 	<ISFE_EnergyTrackerConsumableUnit>concentration</ISFE_EnergyTrackerConsumableUnit>
 	<ISFE_EnergyTrackerVancianUnit>charges</ISFE_EnergyTrackerVancianUnit>
 	
+	<ISFE_RechargeVancianInfo>Recharge time (secs)</ISFE_RechargeVancianInfo>
+	<ISFE_RechargeVancianInfoDesc>The amount of time it takes to regain charges for sorceries in seconds.</ISFE_RechargeVancianInfoDesc>
+
+	
 </LanguageData>
