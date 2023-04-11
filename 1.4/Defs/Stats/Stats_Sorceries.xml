@@ -45,7 +45,7 @@
 		<defName>ISFE_MaxCharges</defName>
 		<label>max charges</label>
 		<category>Sorcery_ISF</category>
-		<description>The amount of concentration a technique requires to cast.</description>
+		<description>The max number of charges a technique requires has.</description>
 		<defaultBaseValue>5</defaultBaseValue>
 		<showIfUndefined>false</showIfUndefined>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
