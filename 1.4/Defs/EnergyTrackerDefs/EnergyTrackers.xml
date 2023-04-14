@@ -55,11 +55,11 @@
 		<consumables>
 			<li>
 				<thingDef>Milk</thingDef>
-				<exp>5.0</exp>
+				<energy>5.0</energy>
 			</li>
 			<li>
 				<thingDef>Chocolate</thingDef>
-				<exp>10.0</exp>
+				<energy>10.0</energy>
 			</li>
 		</consumables>
 	</ItsSorceryFramework.EnergyTrackerDef>

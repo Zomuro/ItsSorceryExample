@@ -14,7 +14,6 @@
 		<alwaysHide>false</alwaysHide>
 		<minValue>0</minValue>
 		<displayPriorityInCategory>3495</displayPriorityInCategory>
-		<!--<scenarioRandomizable>true</scenarioRandomizable>-->
 	</StatDef>
 	
 	<StatDef>
@@ -27,7 +26,6 @@
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>true</alwaysHide>
 		<displayPriorityInCategory>3496</displayPriorityInCategory>
-		<!--<scenarioRandomizable>true</scenarioRandomizable>-->
 	</StatDef>
 	
 	<StatDef>
@@ -41,7 +39,6 @@
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>true</alwaysHide>
 		<displayPriorityInCategory>3499</displayPriorityInCategory>
-		<!--<scenarioRandomizable>true</scenarioRandomizable>-->
 		<statFactors>
 			<li>ISFE_Coomsumerism_CoomVirility</li>
 		</statFactors>
@@ -58,13 +55,11 @@
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>true</alwaysHide>
 		<displayPriorityInCategory>3498</displayPriorityInCategory>
-		<!--<scenarioRandomizable>true</scenarioRandomizable>-->
 		<statFactors>
 			<li>ISFE_Coomsumerism_CoomVirility</li>
 		</statFactors>
 	</StatDef>
 
-	
 	<StatDef>
 		<defName>ISFE_Coomsumerism_MaxEcstasy</defName>
 		<label>maximum ecstasy</label>
@@ -76,7 +71,6 @@
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>true</alwaysHide>
 		<displayPriorityInCategory>3499</displayPriorityInCategory>
-		<!--<scenarioRandomizable>true</scenarioRandomizable>-->
 		<statFactors>
 			<li>ISFE_Coomsumerism_CoomVirility</li>
 		</statFactors>
@@ -93,7 +87,6 @@
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>true</alwaysHide>
 		<displayPriorityInCategory>3497</displayPriorityInCategory>
-		<!--<scenarioRandomizable>true</scenarioRandomizable>-->
 		<statFactors>
 			<li>ISFE_Coomsumerism_CoomVirility</li>
 		</statFactors>
@@ -109,7 +102,6 @@
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>true</alwaysHide>
 		<displayPriorityInCategory>3496</displayPriorityInCategory>
-		<!--<scenarioRandomizable>true</scenarioRandomizable>-->
 		<statFactors>
 			<li>ISFE_Coomsumerism_CoomVirility</li>
 		</statFactors>
