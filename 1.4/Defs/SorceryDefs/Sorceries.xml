@@ -2,18 +2,17 @@
 <Defs>
 	
 	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
-		<sorcerySchema>SorcerySchema_Base</sorcerySchema>
-		<defName>testsorcery</defName>
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>ISFE_TestSorcery</defName>
 		<label>test</label>
 		<description>its testing time</description>
 		<level>1</level>
 		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+		<warmupSound>PsycastCastLoop</warmupSound>
 		
 		<statBases>
-			<!--<Sorcery_EnergyCost>25</Sorcery_EnergyCost>-->
 			<ISFE_Brainpower>25</ISFE_Brainpower>
 			<ISFE_Mindpower>25</ISFE_Mindpower>
-			<ISFE_Concentration>10</ISFE_Concentration>
 			<ISFE_Charges>1</ISFE_Charges>
 			<ISFE_MaxCharges>10</ISFE_MaxCharges>
 			<Ability_Duration>120</Ability_Duration>
@@ -37,6 +36,47 @@
 				<hediffDef>PsychicAnesthesia</hediffDef>
 				<durationMultiplier>PsychicSensitivity</durationMultiplier>
 				<psychic>True</psychic>
+				<applicableToMechs>False</applicableToMechs>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_Coomsumerism</sorcerySchema>
+		<defName>ISFE_Coomsumerism_Pleasure</defName>
+		<label>Pleasure</label>
+		<description>The first technique of a coomsumer, the ability to pleasure others and (mostly) oneself.</description>
+		<level>1</level>
+		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+		<warmupSound>PsycastCastLoop</warmupSound>
+		
+		<statBases>
+			<ISFE_SorceryStat_Coomsumerism_Stamina>10</ISFE_SorceryStat_Coomsumerism_Stamina>
+			<ISFE_SorceryStat_Coomsumerism_Ecstasy>25</ISFE_SorceryStat_Coomsumerism_Ecstasy>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetBuildings>False</canTargetBuildings>
+				<canTargetAnimals>False</canTargetAnimals>
+				<thingCategory>Item</thingCategory>
+				<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class = "CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>PsychicAnesthesia</hediffDef>
+				<durationMultiplier>ISFE_Coomsumerism_CoomVirility</durationMultiplier>
+				<psychic>false</psychic>
 				<applicableToMechs>False</applicableToMechs>
 			</li>
 			<li Class="CompProperties_AbilityFleckOnTarget">

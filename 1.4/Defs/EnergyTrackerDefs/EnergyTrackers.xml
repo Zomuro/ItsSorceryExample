@@ -43,13 +43,15 @@
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseConsumable">
-		<defName>EnergyTrackerConsumableTest</defName>
-		<label>concentration</label>
+		<defName>ISFE_Consumable_Coomsumerism</defName>
+		<label>coomsumption stamina</label>
+		<energyLabelKey>ISFE_Consumable_Coomsumerism_Unit</energyLabelKey>
+		<energyDescKey>ISFE_Consumable_Coomsumerism_UnitDesc</energyDescKey>
+		<disableReasonKey>ISFE_DisableReason_CoomsumerismConsumable</disableReasonKey>
 		
-		<energyUnitStatDef>ISFE_Concentration</energyUnitStatDef>
-		<energyRecoveryStatDef>ISFE_EnergyRecoveryConsumableTest</energyRecoveryStatDef>
-		<refreshTicks>0</refreshTicks>
-		
+		<energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Stamina</energyUnitStatDef>
+		<energyRecoveryStatDef>ISFE_Coomsumerism_StaminaRecovery</energyRecoveryStatDef>
+		<energyMaxStatDef>ISFE_Coomsumerism_MaxEndurance</energyMaxStatDef>
 		<consumables>
 			<li>
 				<thingDef>Milk</thingDef>
@@ -60,8 +62,22 @@
 				<exp>10.0</exp>
 			</li>
 		</consumables>
-
-		<energyLabelKey>ISFE_EnergyTrackerConsumableUnit</energyLabelKey>
+	</ItsSorceryFramework.EnergyTrackerDef>
+	
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseInverted">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_Inverted</energyTrackerClass>
+		<defName>ISFE_Inverted_Coomsumerism</defName>
+		<label>coomsumption ecstasy</label>
+		<energyLabelKey>ISFE_Inverted_Coomsumerism_Unit</energyLabelKey>
+		<energyDescKey>ISFE_Inverted_Coomsumerism_UnitDesc</energyDescKey>
+		<disableReasonKey>ISFE_DisableReason_CoomsumerismInverted</disableReasonKey>
+		
+		<energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Ecstasy</energyUnitStatDef>
+		<energyOverMaxStatDef>ISFE_Coomsumerism_OverMaxEcstasy</energyOverMaxStatDef>
+		<energyMaxStatDef>ISFE_Coomsumerism_MaxEcstasy</energyMaxStatDef>
+		<energyMinStatDef>ISFE_Coomsumerism_MinEcstasy</energyMinStatDef>
+		<energyRecoveryStatDef>ISFE_Coomsumerism_EcstasyRecovery</energyRecoveryStatDef>
+		<sideEffect>ISFE_Coomsumerism_CoomerPleasure</sideEffect>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<!-- Demostration + Testing EnergyTracker def 

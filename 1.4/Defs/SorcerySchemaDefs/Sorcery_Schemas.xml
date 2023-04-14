@@ -2,17 +2,31 @@
 <Defs>
 
 	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
-		<defName>SorcerySchema_Base</defName>
+		<defName>ISFE_LogosExperimentia</defName>
 		<label>Logos Experimentia</label>
 		<description>A magic system meant to do magic things magically or something- no wait, logically.</description>
 	
 		<energyTrackerDefs>
 			<li>EnergyTrackerRPG_Test</li>
 			<li>EnergyTrackerRPGTurnBasedTest</li>
-			<li>EnergyTrackerConsumableTest</li>
 			<li>EnergyTrackerVancianTest</li>
 		</energyTrackerDefs>
-		<!--<energyTrackerDef>EnergyTrackerRPG_Test</energyTrackerDef>-->
+		<learningTrackerDefs>
+			<li>LearningTrackerProgress_Test</li>
+			<li>LearningTrackerTree_Test</li>
+		</learningTrackerDefs>
+		<progressTrackerDef>ProgressTrackerRPG_Test</progressTrackerDef>
+	</ItsSorceryFramework.SorcerySchemaDef>
+	
+	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
+		<defName>ISFE_Coomsumerism</defName>
+		<label>Coomsumerism</label>
+		<description>We were born by the coom, molded by the coom. And now, you shall consume the coom, and flood the world with milk.</description>
+	
+		<energyTrackerDefs>
+			<li>ISFE_Consumable_Coomsumerism</li>
+			<li>ISFE_Inverted_Coomsumerism</li>
+		</energyTrackerDefs>
 		<learningTrackerDefs>
 			<li>LearningTrackerProgress_Test</li>
 			<li>LearningTrackerTree_Test</li>

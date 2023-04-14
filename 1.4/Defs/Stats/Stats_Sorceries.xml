@@ -22,16 +22,6 @@
 	</StatDef>
 	
 	<StatDef>
-		<defName>ISFE_Concentration</defName>
-		<label>concentration</label>
-		<category>Sorcery_ISF</category>
-		<description>The amount of concentration a technique requires to cast.</description>
-		<defaultBaseValue>10</defaultBaseValue>
-		<showIfUndefined>false</showIfUndefined>
-		<displayPriorityInCategory>1</displayPriorityInCategory>
-	</StatDef>
-	
-	<StatDef>
 		<defName>ISFE_Charges</defName>
 		<label>charges</label>
 		<category>Sorcery_ISF</category>
@@ -51,5 +41,24 @@
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
 	
+	<StatDef>
+		<defName>ISFE_SorceryStat_Coomsumerism_Stamina</defName>
+		<label>stamina</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of vigor it takes to perform one of the forbidden techniques of Coomsumerism.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_SorceryStat_Coomsumerism_Ecstasy</defName>
+		<label>ecstasy</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of pleasure gained from using one of the forbidden techniques of Coomsumerism.</description>
+		<defaultBaseValue>25</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
 
 </Defs>

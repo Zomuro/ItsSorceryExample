@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="SchemaItemBase">
-		<defName>ISF_TestSchemaItem</defName>
+		<defName>ISFE_TestSchemaItem</defName>
 		<label>Logic Structurer</label>
 		<description>A item mean to create a system in your mind to organize arcane knowledge.</description>
 		<comps>
@@ -10,11 +10,32 @@
 				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
 				<useJob>UseItem</useJob>
 				<useLabel>Learn {0}</useLabel>
-				<schemaDef>SorcerySchema_Base</schemaDef>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
 			</li>
 			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
 				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
-				<schemaDef>SorcerySchema_Base</schemaDef>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="SchemaItemBase">
+		<defName>ISFE_SchemaItem_Coomsumerism</defName>
+		<label>The Initiate's Guide to Coomsumerism</label>
+		<description>A catalog detailing the ravishing techniques of the Coomsumers.</description>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
+				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>"Coomsume" the foundations of {0}</useLabel>
+				<schemaDef>ISFE_Coomsumerism</schemaDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
+				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
+				<schemaDef>ISFE_Coomsumerism</schemaDef>
 			</li>
 			<li Class="CompProperties_UseEffectArtifact">
 				<sound>PsychicAnimalPulserCast</sound>

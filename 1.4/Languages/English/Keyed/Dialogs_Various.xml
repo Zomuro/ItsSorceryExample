@@ -2,13 +2,20 @@
 <LanguageData>
 	
 	<!-- SorcerySchemaDef Info window - Energy Trackers -->
+	
+	<!-- Sorcery Schema example #1: Logos Experimentia -->
 	<ISFE_EnergyTrackerRPGUnit>brainpower</ISFE_EnergyTrackerRPGUnit>
 	<ISFE_EnergyTrackerRPGTurnBasedUnit>mindpower</ISFE_EnergyTrackerRPGTurnBasedUnit>
-	<ISFE_EnergyTrackerConsumableUnit>concentration</ISFE_EnergyTrackerConsumableUnit>
 	<ISFE_EnergyTrackerVancianUnit>charges</ISFE_EnergyTrackerVancianUnit>
-	
 	<ISFE_RechargeVancianInfo>Recharge time (secs)</ISFE_RechargeVancianInfo>
 	<ISFE_RechargeVancianInfoDesc>The amount of time it takes to regain charges for sorceries in seconds.</ISFE_RechargeVancianInfoDesc>
+	
+	<!-- Sorcery Schema example #2: Coomsumerism -->
+	<ISFE_Consumable_Coomsumerism_Unit>stamina</ISFE_Consumable_Coomsumerism_Unit>
+	<ISFE_Consumable_Coomsumerism_UnitDesc>The amount of vigor it takes to perform one of the forbidden techniques of Coomsumerism.</ISFE_Consumable_Coomsumerism_UnitDesc>
+	<ISFE_Inverted_Coomsumerism_Unit>ecstasy</ISFE_Inverted_Coomsumerism_Unit>
+	<ISFE_Inverted_Coomsumerism_UnitDesc>The amount of pleasure gained from using one of the forbidden techniques of Coomsumerism.</ISFE_Inverted_Coomsumerism_UnitDesc>
+	
 
 	
 </LanguageData>
