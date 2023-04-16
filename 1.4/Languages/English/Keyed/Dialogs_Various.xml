@@ -16,6 +16,13 @@
 	<ISFE_Inverted_Coomsumerism_Unit>ecstasy</ISFE_Inverted_Coomsumerism_Unit>
 	<ISFE_Inverted_Coomsumerism_UnitDesc>The amount of pleasure gained from using one of the forbidden techniques of Coomsumerism.</ISFE_Inverted_Coomsumerism_UnitDesc>
 	
-
+	<!-- Sorcery Schema example #2: Coomsumerism -->
+	<ISFE_InvertedTurnBased_SinExorcism_Unit>sin</ISFE_InvertedTurnBased_SinExorcism_Unit>
+	<ISFE_InvertedTurnBased_SinExorcism_UnitDesc>The amount of sin a pawn incurrs when using a technique.</ISFE_InvertedTurnBased_SinExorcism_UnitDesc>
+	<ISFE_VancianLifetime_SinExorcism_Unit>charms</ISFE_VancianLifetime_SinExorcism_Unit>
+	<ISFE_VancianLifetime_SinExorcism_UnitDesc>The number of charms a pawn needs to use a technique.</ISFE_VancianLifetime_SinExorcism_UnitDesc>
+	
+	<ISFE_VancianLifetime_SinExorcism_RefreshInfo>Recharge time (secs)</ISFE_VancianLifetime_SinExorcism_RefreshInfo>
+	<ISFE_VancianLifetime_SinExorcism_RefreshInfoDesc>The amount of time it takes to regain charms in seconds.</ISFE_VancianLifetime_SinExorcism_RefreshInfoDesc>
 	
 </LanguageData>

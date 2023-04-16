@@ -18,7 +18,7 @@
 	
 	<StatDef>
 		<defName>ISFE_Coomsumerism_StaminaRecovery</defName>
-		<label>coom generation</label>
+		<label>stamina rate</label>
 		<description>The rate at which a pawn gains/loses the energy needed to do the deed in bed.</description>
 		<category>BasicsPawn</category>
 		<defaultBaseValue>-0.1</defaultBaseValue>
@@ -46,7 +46,7 @@
 	
 	<StatDef>
 		<defName>ISFE_Coomsumerism_MinEcstasy</defName>
-		<label>minimum energy</label>
+		<label>minimum ecstasy</label>
 		<description>The minimum horniness a pawn can possibly reach.</description>
 		<category>BasicsPawn</category>
 		<minValue>0</minValue>
@@ -107,7 +107,104 @@
 		</statFactors>
 	</StatDef>
 
+	<!-- Sin Exorcism -->
+	<StatDef>
+		<defName>ISFE_SinExorcism_SinTolerance</defName>
+		<label>sin tolerance</label>
+		<description>A general multiplier from the tolerance a pawn has to sin.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>false</alwaysHide>
+		<minValue>0</minValue>
+		<displayPriorityInCategory>3495</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_SinExorcism_MinSin</defName>
+		<label>minimum sin</label>
+		<description>The minimum sin a pawn can possibly reach.</description>
+		<category>BasicsPawn</category>
+		<minValue>0</minValue>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3498</displayPriorityInCategory>
+	</StatDef>
 
-
+	<StatDef>
+		<defName>ISFE_SinExorcism_MaxSin</defName>
+		<label>maximum sin</label>
+		<description>The maximum sin a pawn can handle before they start feeling corrupted.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>100</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3499</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_SinExorcism_SinTolerance</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_SinExorcism_OverMaxSin</defName>
+		<label>overmax sin</label>
+		<description>The absolute maximum sin a pawn can handle before they have to stop.</description>
+		<category>BasicsPawn</category>
+		<minValue>0</minValue>
+		<defaultBaseValue>100</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3497</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_SinExorcism_SinTolerance</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_SinExorcism_SinRecovery</defName>
+		<label>sin recovery rate</label>
+		<description>The rate at which a pawn purifies themselves from sin.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3496</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_SinExorcism_SinTolerance</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_SinExorcism_MaxCharms</defName>
+		<label>maximum charms</label>
+		<description>The maximum charms a pawn can hold.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>40</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3499</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_SinExorcism_CharmRecovery</defName>
+		<label>charm recovery rate</label>
+		<description>The rate at which a pawn regains their charms per period.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>2</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3496</displayPriorityInCategory>
+	</StatDef>
 
 </Defs>

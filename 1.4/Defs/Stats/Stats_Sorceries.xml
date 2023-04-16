@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Example 1: Logos Experimentia -->
 	<StatDef>
 		<defName>ISFE_Brainpower</defName>
 		<label>brainpower</label>
@@ -41,6 +42,8 @@
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
 	
+	
+	<!-- Example 2: Coomsumerism -->
 	<StatDef>
 		<defName>ISFE_SorceryStat_Coomsumerism_Stamina</defName>
 		<label>stamina</label>
@@ -60,5 +63,28 @@
 		<showIfUndefined>false</showIfUndefined>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
+	
+	<!-- Example 3: Sin Excorcism -->
+	<StatDef>
+		<defName>ISFE_SorceryStat_SinExcorcism_Sin</defName>
+		<label>sin</label>
+		<category>Sorcery_ISF</category>
+		<description>The amount of sin a pawn incurrs when using a technique.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_SorceryStat_SinExcorcism_Charms</defName>
+		<label>charms</label>
+		<category>Sorcery_ISF</category>
+		<description>The number of charms a pawn needs to use a technique.</description>
+		<defaultBaseValue>1</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	
 
 </Defs>

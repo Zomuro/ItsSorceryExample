@@ -5,5 +5,9 @@
 	<ISFE_DisableReason_CoomsumerismConsumable>{0} does not have enough stamina to use this technique.</ISFE_DisableReason_CoomsumerismConsumable>
 	<ISFE_DisableReason_CoomsumerismInverted>{0} will be at risk of nutting.</ISFE_DisableReason_CoomsumerismInverted>
 	
+	<!-- Sin Exorcism -->
+	<ISFE_DisableReason_SinExorcismInvertedTurnBased>{0} will be contaminated with sin.</ISFE_DisableReason_SinExorcismInvertedTurnBased>
+	
+	<ISFE_DisableReason_SinExorcismVancianLifetime>{0} is out of charms.</ISFE_DisableReason_SinExorcismVancianLifetime>
 	
 </LanguageData>

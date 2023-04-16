@@ -43,6 +43,27 @@
 		</comps>
 	</ThingDef>
 	
+	<ThingDef ParentName="SchemaItemBase">
+		<defName>ISFE_SchemaItem_SinExorcism</defName>
+		<label>Old sealing charms</label>
+		<description>These well-worn charms speak the whispers of a skilled onmyoji.</description>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
+				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Embrace the filth of {0}</useLabel>
+				<schemaDef>ISFE_SinExorcism</schemaDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
+				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
+				<schemaDef>ISFE_SinExorcism</schemaDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
 	<!--<ThingDef ParentName="SchemaItemBaseTest">
 		<defName>ISF_TestSchemaItemTwo</defName>
 		<label>test schema item 2</label>
