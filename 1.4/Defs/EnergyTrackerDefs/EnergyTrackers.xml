@@ -12,7 +12,7 @@
 		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 		
-		<energyLabelKey>ISFE_EnergyTrackerRPGUnit</energyLabelKey>
+		<energyLabelKey>ISFE_RPG_Logos_Unit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPGTurnBased">
@@ -25,8 +25,11 @@
 		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 		
+		<turnInfoKey>ISFE_RPGTurnBased_Logos_TurnInfo</turnInfoKey>
+		<turnInfoDescKey>ISFE_RPGTurnBased_Logos_TurnInfoDesc</turnInfoDescKey>
+		
 		<turnTicks>180</turnTicks>
-		<energyLabelKey>ISFE_EnergyTrackerRPGTurnBasedUnit</energyLabelKey>
+		<energyLabelKey>ISFE_RPGTurnBased_Logos_Unit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseVancian">
@@ -36,12 +39,12 @@
 		<energyUnitStatDef>ISFE_Charges</energyUnitStatDef>
 		<energyMaxCastStatDef>ISFE_MaxCharges</energyMaxCastStatDef>
 		
-		<refreshNotifKey>ISFE_VancianRefresh</refreshNotifKey>
-		<refreshInfoKey>ISFE_RechargeVancianInfo</refreshInfoKey>
-		<refreshInfoDescKey>ISFE_RechargeVancianInfoDesc</refreshInfoDescKey>
+		<refreshNotifKey>ISFE_Vancian_Logos_RefreshNotif</refreshNotifKey>
+		<refreshInfoKey>ISFE_Vancian_Logos_Info</refreshInfoKey>
+		<refreshInfoDescKey>ISFE_Vancian_Logos_InfoDesc</refreshInfoDescKey>
 		
 		<refreshTicks>1500</refreshTicks>
-		<energyLabelKey>ISFE_EnergyTrackerVancianUnit</energyLabelKey>
+		<energyLabelKey>ISFE_Vancian_Logos_Unit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<!-- Example EnergyTrackers - Coomsumerism -->
@@ -92,6 +95,9 @@
 		<energyDescKey>ISFE_InvertedTurnBased_SinExorcism_UnitDesc</energyDescKey>
 		<disableReasonKey>ISFE_DisableReason_SinExorcismInvertedTurnBased</disableReasonKey>
 		
+		<turnInfoKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfo</turnInfoKey>
+		<turnInfoDescKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfoDesc</turnInfoDescKey>
+		
 		<energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Sin</energyUnitStatDef>
 		<energyOverMaxStatDef>ISFE_SinExorcism_OverMaxSin</energyOverMaxStatDef>
 		<energyMaxStatDef>ISFE_SinExorcism_MaxSin</energyMaxStatDef>
@@ -116,8 +122,21 @@
 		<energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Charms</energyUnitStatDef>
 		<energyMaxStatDef>ISFE_SinExorcism_MaxCharms</energyMaxStatDef>
 		<energyRecoveryStatDef>ISFE_SinExorcism_CharmRecovery</energyRecoveryStatDef>
-		<turnTicks>600</turnTicks>
+		<turnTicks>600</turnTicks> <!--unused -->
+		<refreshTicks>60000</refreshTicks>
 	</ItsSorceryFramework.EnergyTrackerDef>
+	
+	<!--<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseCooldown">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_Cooldown</energyTrackerClass>
+		<defName>ISFE_Cooldown_SinExorcism</defName>
+		<label>spirit focus</label>
+		<energyLabelKey>ISFE_InvertedTurnBased_SinExorcism_Unit</energyLabelKey>
+		<energyDescKey>ISFE_InvertedTurnBased_SinExorcism_UnitDesc</energyDescKey>
+		<disableReasonKey>ISFE_DisableReason_SinExorcismCooldown</disableReasonKey>
+		<energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Sin</energyUnitStatDef>
+		
+		<refreshTicks>180</refreshTicks>
+	</ItsSorceryFramework.EnergyTrackerDef>-->
 	
 	<!-- Demostration + Testing EnergyTracker def 
 	<ItsSorceryFramework.EnergyTrackerDef Name = "EnergyTrackerBase">

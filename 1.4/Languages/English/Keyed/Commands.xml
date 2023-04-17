@@ -7,7 +7,7 @@
 	
 	<!-- Sin Exorcism -->
 	<ISFE_DisableReason_SinExorcismInvertedTurnBased>{0} will be contaminated with sin.</ISFE_DisableReason_SinExorcismInvertedTurnBased>
-	
 	<ISFE_DisableReason_SinExorcismVancianLifetime>{0} is out of charms.</ISFE_DisableReason_SinExorcismVancianLifetime>
+	<ISFE_DisableReason_SinExorcismCooldown>{0} must wait longer to cleanse sin.</ISFE_DisableReason_SinExorcismCooldown>
 	
 </LanguageData>
