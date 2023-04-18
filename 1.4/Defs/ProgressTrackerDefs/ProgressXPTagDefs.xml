@@ -3,15 +3,15 @@
 <Defs>
 
 	<!-- Example 1 - Logos Experimentia --> 
-	<ItsSorceryFramework.ProgressEXPTagDef>
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_CastEnergyCost">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
-		<defName>EXPTag_CastEnergyCost</defName>
-		<expFactor>1</expFactor>
+		<defName>ISFE_Logos_EXPTag_CastEnergyCost</defName>
+		<expFactor>0.5</expFactor>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
-	<ItsSorceryFramework.ProgressEXPTagDef>
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamage">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
-		<defName>EXPTag_OnDamage</defName>
+		<defName>ISFE_Logos_EXPTag_OnDamage</defName>
 		<expFactor>0.25</expFactor>
 		<damageDefs>
 			<li>Cut</li>
@@ -20,15 +20,15 @@
 		</damageDefs>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
-	<ItsSorceryFramework.ProgressEXPTagDef>
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamaged">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
-		<defName>EXPTag_OnDamaged</defName>
+		<defName>ISFE_Logos_EXPTag_OnDamaged</defName>
 		<expFactor>1</expFactor>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
-	<ItsSorceryFramework.ProgressEXPTagDef>
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnSkillEXP">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnSkillEXP</workerClass>
-		<defName>EXPTag_OnSkillEXP</defName>
+		<defName>ISFE_Logos_EXPTag_OnSkillEXP</defName>
 		<expFactor>0.1</expFactor>
 		<skillDefs>
 			<li>Melee</li>
@@ -36,6 +36,45 @@
 		</skillDefs>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
+	<!-- Example 2 - Coomsumerism -->
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamage">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
+		<defName>ISFE_Coomsumerism_EXPTag_OnDamage</defName>
+		<expFactor>1</expFactor>
+		<damageDefs>
+			<li>Blunt</li>
+		</damageDefs>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamaged">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
+		<defName>ISFE_Coomsumerism_EXPTag_OnDamaged</defName>
+		<expFactor>1</expFactor>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_Passive">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_Passive</workerClass>
+		<defName>ISFE_Coomsumerism_EXPTag_Passive</defName>
+		<fixedEXP>1</fixedEXP>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
+		<defName>ISFE_Coomsumerism_EXPTag_UseItem</defName>
+		<expFactor>1</expFactor>
+		<expItems>
+			<li>
+				<thingDef>Milk</thingDef>
+				<exp>50</exp>
+				<expFactorStat>MoveSpeed</expFactorStat>
+			</li>
+		</expItems>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<!-- Example 3 - Sin Exorcism -->
+	
+	<!--
 	<ItsSorceryFramework.ProgressEXPTagDef>
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_Passive</workerClass>
 		<defName>EXPTag_Passive</defName>
@@ -79,28 +118,6 @@
 				<expFactorStat>MoveSpeed</expFactorStat>
 			</li>
 		</expItems>
-	</ItsSorceryFramework.ProgressEXPTagDef>
-	
-	<!-- Example 2 - Coomsumerism -->
-	<ItsSorceryFramework.ProgressEXPTagDef>
-		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
-		<defName>ISFE_EXPTag_Coomsumerism_CastEnergyCost</defName>
-		<expFactor>0.5</expFactor>
-	</ItsSorceryFramework.ProgressEXPTagDef>
-	
-	<ItsSorceryFramework.ProgressEXPTagDef>
-		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
-		<defName>ISFE_EXPTag_Coomsumerism_OnDamage</defName>
-		<expFactor>0.20</expFactor>
-		<damageDefs>
-			<li>Blunt</li>
-		</damageDefs>
-	</ItsSorceryFramework.ProgressEXPTagDef>
-	
-	<ItsSorceryFramework.ProgressEXPTagDef>
-		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
-		<defName>ISFE_EXPTag_Coomsumerism_OnDamaged</defName>
-		<expFactor>1</expFactor>
-	</ItsSorceryFramework.ProgressEXPTagDef>
+	</ItsSorceryFramework.ProgressEXPTagDef>-->
 
 </Defs>

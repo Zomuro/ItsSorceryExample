@@ -136,6 +136,66 @@
 		</capMods>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_OiledMuscles</defName>
+		<label>Oiled muscles</label>
+		<description>Training meant to provide increase strength and resilience. Nothing says beauty like a glistening body in the sun on a nice beach.</description>
+		
+		<coordX>3</coordX>
+		<coordY>2</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		<exclusiveNodes>
+			<li>ISFE_Node_Coomsumerism_PartyCondition</li>
+		</exclusiveNodes>
+		
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.30</offset>
+			</li>
+		</capMods>
+		<statFactors>
+			<IncomingDamageFactor>0.85</IncomingDamageFactor>
+		</statFactors>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_ExpandedDesires</defName>
+		<label>Desire expanded</label>
+		<description>Training meant to aid a practitioner with reflecting and refining their desires, while making him or her more desirable in turn. The greatest beauty only comes when a goal is aligned with a will.</description>
+		
+		<coordX>3</coordX>
+		<coordY>3</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		<prereqsResearch>
+			<li>PsychiteRefining</li>
+		</prereqsResearch>
+		<exclusiveNodes> <!-- you only need one of the two exclusive nodes to include this -->
+			<li>ISFE_Node_Coomsumerism_PartyCondition</li>
+			<li>ISFE_Node_Coomsumerism_OiledMuscles</li>
+		</exclusiveNodes>
+		
+		<capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<offset>0.1</offset>
+			</li>
+		</capMods>
+		<statOffsets>
+			<PawnBeauty>1</PawnBeauty>
+		</statOffsets>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
 	
 	<!-- Example 3: Sin Exorcism -->
 	

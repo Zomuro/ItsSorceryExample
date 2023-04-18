@@ -46,10 +46,10 @@
 			<li><level>5</level><label>start 3</label></li>
 		</levelLabels>
 		<expTags>
-			<li>EXPTag_CastEnergyCost</li>
-			<li>EXPTag_OnDamage</li>
-			<li>EXPTag_OnDamaged</li>
-			<li>EXPTag_OnSkillEXP</li>
+			<li>ISFE_Logos_EXPTag_CastEnergyCost</li>
+			<li>ISFE_Logos_EXPTag_OnDamage</li>
+			<li>ISFE_Logos_EXPTag_OnDamaged</li>
+			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerDef>
 	
@@ -72,7 +72,7 @@
 	<HediffDef ParentName="ProgressTrackerHediffBase"> 
 		<defName>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</defName>
 		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
-		<label>Coomer's Jizz-Heart</label>
+		<label>Coomer's Heart</label>
 		<defaultLabelColor>(1,1,1)</defaultLabelColor> <!-- white color -->
 		<description>The source of a coomsumer's powers of pleasure and consumption- a sloshing heart of milk that demands tribute.</description>
 		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
@@ -130,9 +130,10 @@
 			<li><level>10</level><label>Coomer master</label></li>
 		</levelLabels>
 		<expTags>
-			<li>ISFE_EXPTag_Coomsumerism_CastEnergyCost</li>
-			<li>ISFE_EXPTag_Coomsumerism_OnDamage</li>
-			<li>ISFE_EXPTag_Coomsumerism_OnDamaged</li>
+			<li>ISFE_Coomsumerism_EXPTag_OnDamage</li>
+			<li>ISFE_Coomsumerism_EXPTag_OnDamaged</li>
+			<li>ISFE_Coomsumerism_EXPTag_Passive</li>
+			<li>ISFE_Coomsumerism_EXPTag_UseItem</li>
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerDef>
 
