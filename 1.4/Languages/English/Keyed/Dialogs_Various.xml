@@ -20,6 +20,8 @@
 	<ISFE_Inverted_Coomsumerism_Unit>ecstasy</ISFE_Inverted_Coomsumerism_Unit>
 	<ISFE_Inverted_Coomsumerism_UnitDesc>The amount of pleasure gained from using one of the forbidden techniques of Coomsumerism.</ISFE_Inverted_Coomsumerism_UnitDesc>
 	
+	<ISFE_ProgressTrackerRPG_Coomsumerism_PointLabel>Essence</ISFE_ProgressTrackerRPG_Coomsumerism_PointLabel>
+	
 	<!-- Sorcery Schema example #3: Sin Exorcism -->
 	<ISFE_InvertedTurnBased_SinExorcism_Unit>sin</ISFE_InvertedTurnBased_SinExorcism_Unit>
 	<ISFE_InvertedTurnBased_SinExorcism_UnitDesc>The amount of sin a pawn incurrs when using a technique.</ISFE_InvertedTurnBased_SinExorcism_UnitDesc>

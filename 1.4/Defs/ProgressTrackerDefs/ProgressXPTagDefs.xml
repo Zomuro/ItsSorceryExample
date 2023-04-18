@@ -2,6 +2,7 @@
 
 <Defs>
 
+	<!-- Example 1 - Logos Experimentia --> 
 	<ItsSorceryFramework.ProgressEXPTagDef>
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
 		<defName>EXPTag_CastEnergyCost</defName>
@@ -78,6 +79,28 @@
 				<expFactorStat>MoveSpeed</expFactorStat>
 			</li>
 		</expItems>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<!-- Example 2 - Coomsumerism -->
+	<ItsSorceryFramework.ProgressEXPTagDef>
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
+		<defName>ISFE_EXPTag_Coomsumerism_CastEnergyCost</defName>
+		<expFactor>0.5</expFactor>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef>
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
+		<defName>ISFE_EXPTag_Coomsumerism_OnDamage</defName>
+		<expFactor>0.20</expFactor>
+		<damageDefs>
+			<li>Blunt</li>
+		</damageDefs>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef>
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
+		<defName>ISFE_EXPTag_Coomsumerism_OnDamaged</defName>
+		<expFactor>1</expFactor>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 
 </Defs>

@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Example 1: Logos Experimentia -->
+	
 	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
 		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
 		<defName>ProgressTrackerRPG_Test</defName>
@@ -64,6 +66,75 @@
 		<stages>	
 		</stages>
 	</HediffDef>
+	
+	<!-- Example 2: Coomsumerism -->
+	
+	<HediffDef ParentName="ProgressTrackerHediffBase"> 
+		<defName>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</defName>
+		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
+		<label>Coomer's Jizz-Heart</label>
+		<defaultLabelColor>(1,1,1)</defaultLabelColor> <!-- white color -->
+		<description>The source of a coomsumer's powers of pleasure and consumption- a sloshing heart of milk that demands tribute.</description>
+		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+		<minSeverity>0</minSeverity>
+		<maxSeverity>10</maxSeverity>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<stages>	
+		</stages>
+	</HediffDef>
+	
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
+		<defName>ISFE_ProgressTrackerRPG_Coomsumerism</defName>
+		<label>Coomer's Jizz-Heart</label>
+		<progressLevelUpKey>ISFE_Coomsumerism_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>ISFE_Coomsumerism_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>ISFE_ProgressTrackerRPG_Coomsumerism_PointLabel</skillPointLabelKey>
+		
+		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</progressHediff>
+		<levelFactors>
+			<li>
+				<level>1</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<level>3</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</levelFactors>
+		<levelSpecifics>
+			<li>
+				<level>5</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
+			</li>
+		</levelSpecifics>
+		<levelLabels>
+			<li><level>1</level><label>Coomer novice</label></li>
+			<li><level>3</level><label>Coomer apprentice</label></li>		
+			<li><level>5</level><label>Coomer adept</label></li>
+			<li><level>10</level><label>Coomer master</label></li>
+		</levelLabels>
+		<expTags>
+			<li>ISFE_EXPTag_Coomsumerism_CastEnergyCost</li>
+			<li>ISFE_EXPTag_Coomsumerism_OnDamage</li>
+			<li>ISFE_EXPTag_Coomsumerism_OnDamaged</li>
+		</expTags>
+	</ItsSorceryFramework.ProgressTrackerDef>
 
 	
 </Defs>

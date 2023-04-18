@@ -28,10 +28,10 @@
 			<li>ISFE_Inverted_Coomsumerism</li>
 		</energyTrackerDefs>
 		<learningTrackerDefs>
-			<li>LearningTrackerProgress_Test</li>
-			<li>LearningTrackerTree_Test</li>
+			<li>ISFE_LearningTrackerProgress_Coomsumerism</li>
+			<li>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</li>
 		</learningTrackerDefs>
-		<progressTrackerDef>ProgressTrackerRPG_Test</progressTrackerDef>
+		<progressTrackerDef>ISFE_ProgressTrackerRPG_Coomsumerism</progressTrackerDef>
 	</ItsSorceryFramework.SorcerySchemaDef>
 	
 	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">

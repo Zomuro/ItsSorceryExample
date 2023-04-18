@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
+	<!-- Example 1: Logos Experimentia -->
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
 		<defName>LearningTrackerTree_Test</defName>
@@ -23,6 +24,120 @@
 		<label>learning progress</label>
 		<bgPath>UI/LearningTrackers/LogicaBG</bgPath>
 	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<!-- Example 2: Coomsumerism -->
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
+		<defName>ISFE_LearningTrackerProgress_Coomsumerism</defName>
+		<label>Coomer Stats</label>
+		<bgPath>UI/LearningTracker/CoomerMeme</bgPath>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</defName>
+		<label>Coomer Basics</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedFound</defName>
+		<label>Seed foundation</label>
+		<description>A crash course on the miracle of life, and how you can bring it about.</description>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedPlanting</defName>
+		<label>Seeding techniques</label>
+		<description>A study on how to plant seeds deep into fertile soil, providing the best methods for fertilization for only $19.99 per month (additional conditions may apply).</description>
+		
+		<coordX>1</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedFound</li>
+		</prereqs>
+		
+		<abilityGain>
+			<li>ISFE_Coomsumerism_Pleasure</li>
+		</abilityGain>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedGerm</defName>
+		<label>Seed germination</label>
+		<description>A course on the tools of the trade needed to nurture the best possible seedling possible, including a catalog where you can learn to find a good bargain for sowing seeds.</description>
+		
+		<coordX>2</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedPlanting</li>
+		</prereqs>
+		
+		<statOffsets>
+			<NegotiationAbility>0.05</NegotiationAbility>
+		</statOffsets>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedPurchase</defName>
+		<label>Seed-o-coomics</label>
+		<description>The advanced course on learning how the seeding market works, allowing you to retire early to a life of pleasure.</description>
+		
+		<coordX>3</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		
+		<statOffsets>
+			<NegotiationAbility>0.1</NegotiationAbility>
+		</statOffsets>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_PartyCondition</defName>
+		<label>Party conditioning</label>
+		<description>Training meant to provide the endurance required to work long and hard, through exccessive consumption. This includes learning how to waste conditioner on yourself, for a soft touch from even the hardest body parts.</description>
+		
+		<coordX>3</coordX>
+		<coordY>1</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		<prereqsResearch>
+			<li>Brewing</li>
+		</prereqsResearch>
+		
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.25</offset>
+			</li>
+			<li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.25</offset>
+			</li>
+		</capMods>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	
+	<!-- Example 3: Sin Exorcism -->
 	
 
 	<!-- <ItsSorceryFramework.LearningTrackerDef Name = "LearningTrackerBase">
