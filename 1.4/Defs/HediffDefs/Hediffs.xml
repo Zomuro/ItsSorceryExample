@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    
+    <!-- Logos Experimentia -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>ISFE_EnhancedIntel</defName>
+		<label>intellegence enhancement</label>
+		<description>Additional cognition capability.</description>
+		<isBad>false</isBad>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>10</maxSeverity>
+		<stages>
+		    <li>
+				<label>minor</label>			
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+		    </li>
+		    <li>
+				<minSeverity>4</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+		    </li>
+			<li>
+				<minSeverity>7</minSeverity>
+				<label>great</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.45</offset>
+					</li>
+				</capMods>
+		    </li>
+			<li>
+				<minSeverity>10</minSeverity>
+				<label>full</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.6</offset>
+					</li>
+				</capMods>
+		    </li>
+		</stages>
+	</HediffDef>
+	
+	<!-- Coomsumerism -->
 	<HediffDef ParentName="DiseaseBase">
 		<defName>ISFE_Coomsumerism_CoomerPleasure</defName>
 		<label>cooming pleasure</label>

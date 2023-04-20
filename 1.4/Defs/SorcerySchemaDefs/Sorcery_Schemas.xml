@@ -12,10 +12,11 @@
 			<li>ISFE_Vancian_Logos</li>
 		</energyTrackerDefs>
 		<learningTrackerDefs>
-			<li>LearningTrackerProgress_Test</li>
-			<li>LearningTrackerTree_Test</li>
+			<li>ISFE_LearningTrackerProgress_Logos</li>
+			<li>ISFE_LearningTrackerTree_Logos</li>
+			<li>ISFE_LearningTrackerTree_Logos_Two</li>
 		</learningTrackerDefs>
-		<progressTrackerDef>ProgressTrackerRPG_Test</progressTrackerDef>
+		<progressTrackerDef>ISFE_ProgressTrackerRPG_Logos</progressTrackerDef>
 	</ItsSorceryFramework.SorcerySchemaDef>
 	
 	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
@@ -44,10 +45,10 @@
 			<li>ISFE_VancianLifetime_SinExorcism</li>
 		</energyTrackerDefs>
 		<learningTrackerDefs>
-			<li>LearningTrackerProgress_Test</li>
-			<li>LearningTrackerTree_Test</li>
+			<li>ISFE_LearningTrackerProgress_Sin</li>
+			<li>ISFE_LearningTrackerTree_Sin</li>
 		</learningTrackerDefs>
-		<progressTrackerDef>ProgressTrackerRPG_Test</progressTrackerDef>
+		<progressTrackerDef>ISFE_ProgressTrackerRPG_Sin</progressTrackerDef>
 	</ItsSorceryFramework.SorcerySchemaDef>
 	
 	<!--<ItsSorceryFramework.SorcerySchemaDef>

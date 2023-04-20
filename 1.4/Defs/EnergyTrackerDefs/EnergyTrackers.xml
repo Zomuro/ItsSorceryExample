@@ -115,7 +115,7 @@
 		<energyDescKey>ISFE_VancianLifetime_SinExorcism_UnitDesc</energyDescKey>
 		<disableReasonKey>ISFE_DisableReason_SinExorcismVancianLifetime</disableReasonKey>
 		
-		<refreshNotifKey>ISFE_VancianRefresh</refreshNotifKey>
+		<refreshNotifKey>ISFE_VancianLifetime_Sin_RefreshNotif</refreshNotifKey>
 		<refreshInfoKey>ISFE_VancianLifetime_SinExorcism_RefreshInfo</refreshInfoKey>
 		<refreshInfoDescKey>ISFE_VancianLifetime_SinExorcism_RefreshInfoDesc</refreshInfoDescKey>
 		

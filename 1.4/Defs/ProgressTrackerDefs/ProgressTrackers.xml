@@ -5,45 +5,68 @@
 	
 	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
 		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
-		<defName>ProgressTrackerRPG_Test</defName>
+		<defName>ISFE_ProgressTrackerRPG_Logos</defName>
 		<label>Logic System</label>
 		
-		<progressHediff>ProgressTrackerRPG_HediffDef</progressHediff>
+		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Logos</progressHediff>
 		<levelFactors>
 			<li>
 				<level>1</level>
-				<statOffsets>
-					<MoveSpeed>0.25</MoveSpeed>
-				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
 			</li>
 			<li>
 				<level>3</level>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<level>5</level>
 				<statOffsets>
 					<MoveSpeed>0.5</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.5</offset>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
 					</li>
 				</capMods>
 			</li>
 		</levelFactors>
 		<levelSpecifics>
 			<li>
-				<level>5</level>
+				<level>10</level>
 				<capMods>
 					<li>
-						<capacity>Manipulation</capacity>
+						<capacity>Consciousness</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<level>20</level>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
 						<offset>1</offset>
 					</li>
 				</capMods>
 			</li>
 		</levelSpecifics>
 		<levelLabels>
-			<li><level>1</level><label>start 1</label></li>
-			<li><level>3</level><label>start 2</label></li>		
-			<li><level>5</level><label>start 3</label></li>
+			<li><level>1</level><label>initiate</label></li>
+			<li><level>5</level><label>seeker</label></li>		
+			<li><level>10</level><label>adjunct</label></li>
+			<li><level>15</level><label>professor</label></li>
+			<li><level>20</level><label>emeritus</label></li>
 		</levelLabels>
 		<expTags>
 			<li>ISFE_Logos_EXPTag_CastEnergyCost</li>
@@ -54,14 +77,14 @@
 	</ItsSorceryFramework.ProgressTrackerDef>
 	
 	<HediffDef ParentName="ProgressTrackerHediffBase"> 
-		<defName>ProgressTrackerRPG_HediffDef</defName>
+		<defName>ISFE_ProgressTrackerRPG_Hediff_Logos</defName>
 		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
 		<label>Logic Gate</label>
-		<defaultLabelColor>(0.8314,0.6863,0.2157)</defaultLabelColor> <!-- golden color -->
-		<description>Test.</description>
+		<defaultLabelColor>(0.8,0.8,0.8)</defaultLabelColor> <!-- gray color -->
+		<description>The gate to a user's knowledge, where all that can and must be known passes through. Abandon your irrationality here, for only pure truth may pass... and only truth may be transmuted into power.</description>
 		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
 		<minSeverity>0</minSeverity>
-		<maxSeverity>100</maxSeverity>
+		<maxSeverity>20</maxSeverity>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<stages>	
 		</stages>
@@ -86,7 +109,7 @@
 	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
 		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
 		<defName>ISFE_ProgressTrackerRPG_Coomsumerism</defName>
-		<label>Coomer's Jizz-Heart</label>
+		<label>Coomer's Heart</label>
 		<progressLevelUpKey>ISFE_Coomsumerism_LevelUp</progressLevelUpKey>
 		<progressLevelUpDescKey>ISFE_Coomsumerism_LevelUpMessage</progressLevelUpDescKey>
 		<skillPointLabelKey>ISFE_ProgressTrackerRPG_Coomsumerism_PointLabel</skillPointLabelKey>
@@ -137,5 +160,54 @@
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerDef>
 
+	<!-- Example 3: Sin Exorcism -->
+	<HediffDef ParentName="ProgressTrackerHediffBase"> 
+		<defName>ISFE_ProgressTrackerRPG_Hediff_Sin</defName>
+		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
+		<label>Purification Circle</label>
+		<defaultLabelColor>(0.8314,0.6863,0.2157)</defaultLabelColor> <!-- golden color -->
+		<description>A formation designed to internally cleanse sin. Without it, the seeds of evil will blossom into a demon.</description>
+		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+		<minSeverity>0</minSeverity>
+		<maxSeverity>30</maxSeverity>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<stages/>
+	</HediffDef>
+	
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
+		<defName>ISFE_ProgressTrackerRPG_Sin</defName>
+		<label>Purification Gate</label>
+		<progressLevelUpKey>ISFE_Sin_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>ISFE_Sin_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>ISFE_ProgressTrackerRPG_SinExorcism_PointLabel</skillPointLabelKey>
+		
+		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Sin</progressHediff>
+		<levelFactors>
+			<li>
+				<level>5</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>1</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</levelFactors>
+		<levelLabels>
+			<li><level>1</level><label>exorcist</label></li>
+			<li><level>10</level><label>high exorcist</label></li>		
+			<li><level>20</level><label>great exorcist</label></li>
+			<li><level>30</level><label>grand exorcist</label></li>
+		</levelLabels>
+		<expTags>
+			<li>ISFE_Sin_EXPTag_DuringJob</li>
+			<li>ISFE_Sin_EXPTag_OnKill</li>
+			<li>ISFE_Sin_EXPTag_UseItem</li>
+		</expTags>
+	</ItsSorceryFramework.ProgressTrackerDef>
 	
 </Defs>

@@ -4,4 +4,7 @@
 	<!-- Example 1: Logos Experimentia -->
 	<ISFE_Vancian_Logos_RefreshNotif>Recharge in: {0}</ISFE_Vancian_Logos_RefreshNotif>
 	
+	<!-- Example 3: Sin Exorcism -->
+	<ISFE_VancianLifetime_Sin_RefreshNotif>Regain charms in: {0}</ISFE_VancianLifetime_Sin_RefreshNotif>
+	
 </LanguageData>

@@ -33,4 +33,6 @@
 	<ISFE_InvertedTurnBased_SinExorcism_TurnInfo>Sin purification time (secs)</ISFE_InvertedTurnBased_SinExorcism_TurnInfo>
 	<ISFE_InvertedTurnBased_SinExorcism_TurnInfoDesc>The amount of time it takes for sin to be reduced incrementally in seconds.</ISFE_InvertedTurnBased_SinExorcism_TurnInfoDesc>
 	
+	<ISFE_ProgressTrackerRPG_SinExorcism_PointLabel>Sanctity</ISFE_ProgressTrackerRPG_SinExorcism_PointLabel>
+	
 </LanguageData>
