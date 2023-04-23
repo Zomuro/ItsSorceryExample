@@ -163,7 +163,7 @@
 		<pointReq>2</pointReq>
 				
 		<prereqs>
-			<li>ISFE_Node_Logos_Design</li>
+			<li>ISFE_Node_Logos_Collection</li>
 		</prereqs>
 		
 		<hediffAdjust>

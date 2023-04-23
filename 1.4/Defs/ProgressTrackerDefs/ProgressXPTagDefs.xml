@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
 	<!-- Example 1 - Logos Experimentia --> 
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_CastEnergyCost">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
@@ -110,5 +109,4 @@
 			</li>
 		</expItems>
 	</ItsSorceryFramework.ProgressEXPTagDef>
-
 </Defs>
