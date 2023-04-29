@@ -60,6 +60,10 @@
 		<abilityGain>
 			<li>ISFE_Sorcery_Logos_Testing</li>
 		</abilityGain>
+		
+		<hediffAdd>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>1</severity></li>
+		</hediffAdd>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
@@ -75,10 +79,6 @@
 		<prereqs>
 			<li>ISFE_Node_Logos_Tools</li>
 		</prereqs>
-		
-		<hediffAdd>
-			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>1</severity></li>
-		</hediffAdd>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
@@ -93,7 +93,10 @@
 				
 		<prereqs>
 			<li>ISFE_Node_Logos_Design</li>
+			<li>ISFE_Node_Logos_Tools</li>
 		</prereqs>
+		<prereqMode>Min</prereqMode>
+		<prereqModeMin>1</prereqModeMin>
 		
 		<capMods>
 			<li>
