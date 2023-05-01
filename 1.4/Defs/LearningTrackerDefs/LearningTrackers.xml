@@ -41,6 +41,14 @@
 		<prereqs>
 			<li>ISFE_Node_Logos_BirdBees</li>
 		</prereqs>
+		<prereqsStats>
+			<li>
+				<mode>LesserEqual</mode>
+				<statReqs>
+					<PsychicSensitivity>1.1</PsychicSensitivity>
+				</statReqs>
+			</li>
+		</prereqsStats>
 		
 		<coordX>1</coordX>
 		<coordY>0</coordY>
@@ -272,6 +280,14 @@
 		<prereqsResearch>
 			<li>Brewing</li>
 		</prereqsResearch>
+		<prereqsStats>
+			<li>
+				<mode>Greater</mode>
+				<statReqs>
+					<MoveSpeed>3</MoveSpeed>
+				</statReqs>
+			</li>
+		</prereqsStats>
 		
 		<capMods>
 			<li>
