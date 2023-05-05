@@ -27,6 +27,30 @@
 						<offset>0.2</offset>
 					</li>
 				</capMods>
+				<optionChoices>2</optionChoices>
+				<options>
+					<li>
+						<label>Speed</label>
+						<description>The quicker your legs, the quicker the mind.</description>
+						<statOffsets>
+							<MoveSpeed>0.25</MoveSpeed>
+						</statOffsets>
+					</li>
+					<li>
+						<label>Wit</label>
+						<description>Clever men and women do much more with the same amount of knowledge.</description>
+						<statOffsets>
+							<GlobalLearningFactor>0.1</GlobalLearningFactor>
+						</statOffsets>
+					</li>
+					<li>
+						<label>Focus</label>
+						<description>Steady towards the goal- that's how progress is really made.</description>
+						<statOffsets>
+							<PainShockThreshold>-0.05</PainShockThreshold>
+						</statOffsets>
+					</li>
+				</options>
 			</li>
 			<li>
 				<level>5</level>
