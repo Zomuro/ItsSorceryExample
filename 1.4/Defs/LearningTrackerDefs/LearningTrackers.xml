@@ -6,7 +6,6 @@
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
 		<defName>ISFE_LearningTrackerProgress_Logos</defName>
 		<label>learning progress</label>
-		<bgPath>UI/LearningTracker/Logos</bgPath>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
@@ -187,7 +186,6 @@
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
 		<defName>ISFE_LearningTrackerProgress_Coomsumerism</defName>
 		<label>Coomer Stats</label>
-		<bgPath>UI/LearningTracker/CoomerMeme</bgPath>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
@@ -367,7 +365,6 @@
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
 		<defName>ISFE_LearningTrackerProgress_Sin</defName>
 		<label>sin summary</label>
-		<bgPath>UI/LearningTracker/SinExorcism</bgPath>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
