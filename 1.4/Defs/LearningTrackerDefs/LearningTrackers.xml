@@ -64,6 +64,10 @@
 		<coordY>0</coordY>
 		<pointReq>1</pointReq>
 		
+		<prereqs>
+			<li>ISFE_Node_Logos_BirdBees</li>
+		</prereqs>
+		
 		<abilityGain>
 			<li>ISFE_Sorcery_Logos_Testing</li>
 		</abilityGain>
