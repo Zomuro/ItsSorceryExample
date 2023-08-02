@@ -3,10 +3,11 @@
 
 	<!-- Example 1: Logos Experimentia -->
 	
-	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
-		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
 		<defName>ISFE_ProgressTrackerRPG_Logos</defName>
 		<label>Logic System</label>
+		<bgPath>UI/ProgressTracker/Logos</bgPath>
 		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Logos</progressHediff>
 		<levelFactors>
@@ -130,13 +131,14 @@
 		</stages>
 	</HediffDef>
 	
-	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
-		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
 		<defName>ISFE_ProgressTrackerRPG_Coomsumerism</defName>
 		<label>Coomer's Heart</label>
 		<progressLevelUpKey>ISFE_Coomsumerism_LevelUp</progressLevelUpKey>
 		<progressLevelUpDescKey>ISFE_Coomsumerism_LevelUpMessage</progressLevelUpDescKey>
 		<skillPointLabelKey>ISFE_ProgressTrackerRPG_Coomsumerism_PointLabel</skillPointLabelKey>
+		<bgPath>UI/ProgressTracker/CoomerMeme</bgPath>
 		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</progressHediff>
 		<levelFactors>
@@ -198,13 +200,14 @@
 		<stages/>
 	</HediffDef>
 	
-	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerBase">
-		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_RPG</progressTrackerClass>
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
 		<defName>ISFE_ProgressTrackerRPG_Sin</defName>
 		<label>Purification Gate</label>
 		<progressLevelUpKey>ISFE_Sin_LevelUp</progressLevelUpKey>
 		<progressLevelUpDescKey>ISFE_Sin_LevelUpMessage</progressLevelUpDescKey>
 		<skillPointLabelKey>ISFE_ProgressTrackerRPG_SinExorcism_PointLabel</skillPointLabelKey>
+		<bgPath>UI/ProgressTracker/SinExorcism</bgPath>
 		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Sin</progressHediff>
 		<levelFactors>

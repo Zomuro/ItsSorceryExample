@@ -6,7 +6,6 @@
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
 		<defName>ISFE_LearningTrackerProgress_Logos</defName>
 		<label>learning progress</label>
-		<bgPath>UI/LearningTracker/Logos</bgPath>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
@@ -26,6 +25,15 @@
 		<defName>ISFE_Node_Logos_BirdBees</defName>
 		<label>Birds and bees</label>
 		<description>The literal basics on being smart.</description>
+		
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>3</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
 		
 		<coordX>0</coordX>
 		<coordY>0</coordY>
@@ -49,6 +57,14 @@
 				</statReqs>
 			</li>
 		</prereqsStats>
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>4</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
 		
 		<coordX>1</coordX>
 		<coordY>0</coordY>
@@ -64,6 +80,10 @@
 		<coordX>0</coordX>
 		<coordY>0</coordY>
 		<pointReq>1</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_BirdBees</li>
+		</prereqs>
 		
 		<abilityGain>
 			<li>ISFE_Sorcery_Logos_Testing</li>
@@ -187,7 +207,6 @@
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
 		<defName>ISFE_LearningTrackerProgress_Coomsumerism</defName>
 		<label>Coomer Stats</label>
-		<bgPath>UI/LearningTracker/CoomerMeme</bgPath>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
@@ -367,7 +386,6 @@
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
 		<defName>ISFE_LearningTrackerProgress_Sin</defName>
 		<label>sin summary</label>
-		<bgPath>UI/LearningTracker/SinExorcism</bgPath>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
