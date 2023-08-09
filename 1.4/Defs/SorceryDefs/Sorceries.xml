@@ -8,7 +8,7 @@
 		<description>The basics of experimentation is the willingness to test your hypothesis.</description>
 		<level>1</level>
 		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
-		<warmupSound>PsycastCastLoop</warmupSound>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
 		
 		<statBases>
 			<ISFE_Brainpower>25</ISFE_Brainpower>
@@ -33,9 +33,9 @@
 		<comps>
 			<li Class = "CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>PsychicAnesthesia</hediffDef>
-				<durationMultiplier>PsychicSensitivity</durationMultiplier>
-				<psychic>True</psychic>
+				<hediffDef>GutWorms</hediffDef>
+				<durationMultiplier>ResearchSpeed</durationMultiplier>
+				<psychic>false</psychic>
 				<applicableToMechs>False</applicableToMechs>
 			</li>
 			<li Class="CompProperties_AbilityFleckOnTarget">
@@ -51,7 +51,7 @@
 		<description>The first technique of a coomsumer, the ability to pleasure others and (mostly) oneself.</description>
 		<level>1</level>
 		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
-		<warmupSound>PsycastCastLoop</warmupSound>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
 		
 		<statBases>
 			<ISFE_SorceryStat_Coomsumerism_Stamina>10</ISFE_SorceryStat_Coomsumerism_Stamina>
@@ -74,7 +74,7 @@
 		<comps>
 			<li Class = "CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>PsychicAnesthesia</hediffDef>
+				<hediffDef>AmbrosiaHigh</hediffDef>
 				<durationMultiplier>ISFE_Coomsumerism_CoomVirility</durationMultiplier>
 				<psychic>false</psychic>
 				<applicableToMechs>False</applicableToMechs>
@@ -92,7 +92,7 @@
 		<description>A method to take sin away from a target.</description>
 		<level>1</level>
 		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
-		<warmupSound>PsycastCastLoop</warmupSound>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
 		
 		<statBases>
 			<ISFE_SorceryStat_SinExcorcism_Sin>10</ISFE_SorceryStat_SinExcorcism_Sin>
@@ -115,7 +115,7 @@
 		<comps>
 			<li Class = "CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>PsychicAnesthesia</hediffDef>
+				<hediffDef>PsychiteTeaHigh</hediffDef>
 				<durationMultiplier>ISFE_SinExorcism_SinTolerance</durationMultiplier>
 				<psychic>false</psychic>
 				<applicableToMechs>False</applicableToMechs>
