@@ -2,8 +2,8 @@
 <Defs>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>ISFE_Colonist</defName>
-		<label>colonist</label>
+		<defName>ISFE_Colonist_PawnGen</defName>
+		<label>colonist (schema pawngen example)</label>
 		
 		<modExtensions>
 			<li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
@@ -58,6 +58,68 @@
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<initialResistanceRange>13~21</initialResistanceRange>
+		
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ISFE_Colonist_SchemaTraitTest</defName>
+		<label>colonist (schema trait example)</label>
+		
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		
+		<forcedTraits>
+			<ISFE_MindBlessed>0</ISFE_MindBlessed>
+		</forcedTraits>
+		
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire = "Ludeon.RimWorld.Biotech" ParentName="BasePlayerPawnKind">
+		<defName>ISFE_Colonist_SchemaGeneTest</defName>
+		<label>colonist (schema gene example)</label>
+		
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<ISFE_CoomerXenotype>1</ISFE_CoomerXenotype>
+			</xenotypeChances>
+		</xenotypeSet>
 		
 		<apparelTags>
 			<li>IndustrialBasic</li>
