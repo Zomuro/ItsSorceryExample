@@ -29,10 +29,10 @@
 								<forceLevel>True</forceLevel>
 								<level>5</level>
 								<requiredNodes>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef><forceLevel>True</forceLevel></li>
 								</requiredNodes>
 							</li>
 							<li>
@@ -43,9 +43,9 @@
 								<forcePoints>True</forcePoints>
 								<points>5</points>
 								<requiredNodes>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
 								</requiredNodes>
 							</li>
 						</schemaMappings>
