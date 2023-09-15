@@ -31,8 +31,8 @@
 								<requiredNodes>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef></li>
 								</requiredNodes>
 							</li>
 							<li>
