@@ -258,6 +258,7 @@
 		<prereqs>
 			<li>ISFE_Node_Coomsumerism_SeedPlanting</li>
 		</prereqs>
+		<prereqLevel>4</prereqLevel>
 		
 		<statOffsets>
 			<NegotiationAbility>0.05</NegotiationAbility>
