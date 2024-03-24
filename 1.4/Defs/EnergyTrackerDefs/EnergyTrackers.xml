@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<!-- Example EnergyTrackers - Logos Experimentia -->
-	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPG">
-		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPG</energyTrackerClass>
+	<!-- Test EnergyTrackers -->
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBase">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
 		<defName>ISFE_RPG_Logos</defName>
 		<label>brainpower</label>
 		
@@ -15,114 +15,128 @@
 		<energyLabelKey>ISFE_RPG_Logos_Unit</energyLabelKey>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
-	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPGTurnBased">
-		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPGTurnBased</energyTrackerClass>
-		<defName>ISFE_RPGTurnBased_Logos</defName>
-		<label>mindpower</label>
+	<!-- Example EnergyTrackers - Logos Experimentia -->
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPG"> -->
+		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPG</energyTrackerClass> -->
+		<!-- <defName>ISFE_RPG_Logos</defName> -->
+		<!-- <label>brainpower</label> -->
 		
-		<energyUnitStatDef>ISFE_Mindpower</energyUnitStatDef>
-		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
-		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
-		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
+		<!-- <energyUnitStatDef>ISFE_Brainpower</energyUnitStatDef> -->
+		<!-- <energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef> -->
+		<!-- <energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef> -->
+		<!-- <energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef> -->
 		
-		<turnInfoKey>ISFE_RPGTurnBased_Logos_TurnInfo</turnInfoKey>
-		<turnInfoDescKey>ISFE_RPGTurnBased_Logos_TurnInfoDesc</turnInfoDescKey>
-		
-		<turnTicks>180</turnTicks>
-		<energyLabelKey>ISFE_RPGTurnBased_Logos_Unit</energyLabelKey>
-	</ItsSorceryFramework.EnergyTrackerDef>
+		<!-- <energyLabelKey>ISFE_RPG_Logos_Unit</energyLabelKey> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
 	
-	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseVancian">
-		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_Vancian</energyTrackerClass>
-		<defName>ISFE_Vancian_Logos</defName>
-		<label>charges</label>
-		<energyUnitStatDef>ISFE_Charges</energyUnitStatDef>
-		<energyMaxCastStatDef>ISFE_MaxCharges</energyMaxCastStatDef>
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseRPGTurnBased"> -->
+		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_RPGTurnBased</energyTrackerClass> -->
+		<!-- <defName>ISFE_RPGTurnBased_Logos</defName> -->
+		<!-- <label>mindpower</label> -->
 		
-		<refreshNotifKey>ISFE_Vancian_Logos_RefreshNotif</refreshNotifKey>
-		<refreshInfoKey>ISFE_Vancian_Logos_Info</refreshInfoKey>
-		<refreshInfoDescKey>ISFE_Vancian_Logos_InfoDesc</refreshInfoDescKey>
+		<!-- <energyUnitStatDef>ISFE_Mindpower</energyUnitStatDef> -->
+		<!-- <energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef> -->
+		<!-- <energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef> -->
+		<!-- <energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef> -->
 		
-		<refreshTicks>1500</refreshTicks>
-		<energyLabelKey>ISFE_Vancian_Logos_Unit</energyLabelKey>
-	</ItsSorceryFramework.EnergyTrackerDef>
+		<!-- <turnInfoKey>ISFE_RPGTurnBased_Logos_TurnInfo</turnInfoKey> -->
+		<!-- <turnInfoDescKey>ISFE_RPGTurnBased_Logos_TurnInfoDesc</turnInfoDescKey> -->
+		
+		<!-- <turnTicks>180</turnTicks> -->
+		<!-- <energyLabelKey>ISFE_RPGTurnBased_Logos_Unit</energyLabelKey> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
+	
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseVancian"> -->
+		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_Vancian</energyTrackerClass> -->
+		<!-- <defName>ISFE_Vancian_Logos</defName> -->
+		<!-- <label>charges</label> -->
+		<!-- <energyUnitStatDef>ISFE_Charges</energyUnitStatDef> -->
+		<!-- <energyMaxCastStatDef>ISFE_MaxCharges</energyMaxCastStatDef> -->
+		
+		<!-- <refreshNotifKey>ISFE_Vancian_Logos_RefreshNotif</refreshNotifKey> -->
+		<!-- <refreshInfoKey>ISFE_Vancian_Logos_Info</refreshInfoKey> -->
+		<!-- <refreshInfoDescKey>ISFE_Vancian_Logos_InfoDesc</refreshInfoDescKey> -->
+		
+		<!-- <refreshTicks>1500</refreshTicks> -->
+		<!-- <energyLabelKey>ISFE_Vancian_Logos_Unit</energyLabelKey> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
 	
 	<!-- Example EnergyTrackers - Coomsumerism -->
-	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseConsumable">
-		<defName>ISFE_Consumable_Coomsumerism</defName>
-		<label>coomsumption stamina</label>
-		<energyLabelKey>ISFE_Consumable_Coomsumerism_Unit</energyLabelKey>
-		<energyDescKey>ISFE_Consumable_Coomsumerism_UnitDesc</energyDescKey>
-		<disableReasonKey>ISFE_DisableReason_CoomsumerismConsumable</disableReasonKey>
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseConsumable"> -->
+		<!-- <defName>ISFE_Consumable_Coomsumerism</defName> -->
+		<!-- <label>coomsumption stamina</label> -->
+		<!-- <energyLabelKey>ISFE_Consumable_Coomsumerism_Unit</energyLabelKey> -->
+		<!-- <energyDescKey>ISFE_Consumable_Coomsumerism_UnitDesc</energyDescKey> -->
+		<!-- <disableReasonKey>ISFE_DisableReason_CoomsumerismConsumable</disableReasonKey> -->
 		
-		<energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Stamina</energyUnitStatDef>
-		<energyRecoveryStatDef>ISFE_Coomsumerism_StaminaRecovery</energyRecoveryStatDef>
-		<energyMaxStatDef>ISFE_Coomsumerism_MaxEndurance</energyMaxStatDef>
-		<consumables>
-			<li>
-				<thingDef>Milk</thingDef>
-				<energy>5.0</energy>
-			</li>
-			<li>
-				<thingDef>Chocolate</thingDef>
-				<energy>10.0</energy>
-			</li>
-		</consumables>
-	</ItsSorceryFramework.EnergyTrackerDef>
+		<!-- <energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Stamina</energyUnitStatDef> -->
+		<!-- <energyRecoveryStatDef>ISFE_Coomsumerism_StaminaRecovery</energyRecoveryStatDef> -->
+		<!-- <energyMaxStatDef>ISFE_Coomsumerism_MaxEndurance</energyMaxStatDef> -->
+		<!-- <consumables> -->
+			<!-- <li> -->
+				<!-- <thingDef>Milk</thingDef> -->
+				<!-- <energy>5.0</energy> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <thingDef>Chocolate</thingDef> -->
+				<!-- <energy>10.0</energy> -->
+			<!-- </li> -->
+		<!-- </consumables> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
 	
-	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseInverted">
-		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_Inverted</energyTrackerClass>
-		<defName>ISFE_Inverted_Coomsumerism</defName>
-		<label>coomsumption ecstasy</label>
-		<energyLabelKey>ISFE_Inverted_Coomsumerism_Unit</energyLabelKey>
-		<energyDescKey>ISFE_Inverted_Coomsumerism_UnitDesc</energyDescKey>
-		<disableReasonKey>ISFE_DisableReason_CoomsumerismInverted</disableReasonKey>
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseInverted"> -->
+		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_Inverted</energyTrackerClass> -->
+		<!-- <defName>ISFE_Inverted_Coomsumerism</defName> -->
+		<!-- <label>coomsumption ecstasy</label> -->
+		<!-- <energyLabelKey>ISFE_Inverted_Coomsumerism_Unit</energyLabelKey> -->
+		<!-- <energyDescKey>ISFE_Inverted_Coomsumerism_UnitDesc</energyDescKey> -->
+		<!-- <disableReasonKey>ISFE_DisableReason_CoomsumerismInverted</disableReasonKey> -->
 		
-		<energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Ecstasy</energyUnitStatDef>
-		<energyOverMaxStatDef>ISFE_Coomsumerism_OverMaxEcstasy</energyOverMaxStatDef>
-		<energyMaxStatDef>ISFE_Coomsumerism_MaxEcstasy</energyMaxStatDef>
-		<energyMinStatDef>ISFE_Coomsumerism_MinEcstasy</energyMinStatDef>
-		<energyRecoveryStatDef>ISFE_Coomsumerism_EcstasyRecovery</energyRecoveryStatDef>
-		<sideEffect>ISFE_Coomsumerism_CoomerPleasure</sideEffect>
-	</ItsSorceryFramework.EnergyTrackerDef>
+		<!-- <energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Ecstasy</energyUnitStatDef> -->
+		<!-- <energyOverMaxStatDef>ISFE_Coomsumerism_OverMaxEcstasy</energyOverMaxStatDef> -->
+		<!-- <energyMaxStatDef>ISFE_Coomsumerism_MaxEcstasy</energyMaxStatDef> -->
+		<!-- <energyMinStatDef>ISFE_Coomsumerism_MinEcstasy</energyMinStatDef> -->
+		<!-- <energyRecoveryStatDef>ISFE_Coomsumerism_EcstasyRecovery</energyRecoveryStatDef> -->
+		<!-- <sideEffect>ISFE_Coomsumerism_CoomerPleasure</sideEffect> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
 	
 	<!-- Example EnergyTrackers - Sin Exorcism -->
-	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTracker_InvertedTurnBased">
-		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_InvertedTurnBased</energyTrackerClass>
-		<defName>ISFE_InvertedTurnBased_SinExorcism</defName>
-		<label>sin accumulation</label>
-		<energyLabelKey>ISFE_InvertedTurnBased_SinExorcism_Unit</energyLabelKey>
-		<energyDescKey>ISFE_InvertedTurnBased_SinExorcism_UnitDesc</energyDescKey>
-		<disableReasonKey>ISFE_DisableReason_SinExorcismInvertedTurnBased</disableReasonKey>
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTracker_InvertedTurnBased"> -->
+		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_InvertedTurnBased</energyTrackerClass> -->
+		<!-- <defName>ISFE_InvertedTurnBased_SinExorcism</defName> -->
+		<!-- <label>sin accumulation</label> -->
+		<!-- <energyLabelKey>ISFE_InvertedTurnBased_SinExorcism_Unit</energyLabelKey> -->
+		<!-- <energyDescKey>ISFE_InvertedTurnBased_SinExorcism_UnitDesc</energyDescKey> -->
+		<!-- <disableReasonKey>ISFE_DisableReason_SinExorcismInvertedTurnBased</disableReasonKey> -->
 		
-		<turnInfoKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfo</turnInfoKey>
-		<turnInfoDescKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfoDesc</turnInfoDescKey>
+		<!-- <turnInfoKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfo</turnInfoKey> -->
+		<!-- <turnInfoDescKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfoDesc</turnInfoDescKey> -->
 		
-		<energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Sin</energyUnitStatDef>
-		<energyOverMaxStatDef>ISFE_SinExorcism_OverMaxSin</energyOverMaxStatDef>
-		<energyMaxStatDef>ISFE_SinExorcism_MaxSin</energyMaxStatDef>
-		<energyMinStatDef>ISFE_SinExorcism_MinSin</energyMinStatDef>
-		<energyRecoveryStatDef>ISFE_SinExorcism_SinRecovery</energyRecoveryStatDef>
-		<overBarRecoveryFactor>0.5</overBarRecoveryFactor>
-		<turnTicks>600</turnTicks>
-	</ItsSorceryFramework.EnergyTrackerDef>
+		<!-- <energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Sin</energyUnitStatDef> -->
+		<!-- <energyOverMaxStatDef>ISFE_SinExorcism_OverMaxSin</energyOverMaxStatDef> -->
+		<!-- <energyMaxStatDef>ISFE_SinExorcism_MaxSin</energyMaxStatDef> -->
+		<!-- <energyMinStatDef>ISFE_SinExorcism_MinSin</energyMinStatDef> -->
+		<!-- <energyRecoveryStatDef>ISFE_SinExorcism_SinRecovery</energyRecoveryStatDef> -->
+		<!-- <overBarRecoveryFactor>0.5</overBarRecoveryFactor> -->
+		<!-- <turnTicks>600</turnTicks> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
 	
-	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseVancianLifetime">
-		<energyTrackerClass>ItsSorceryFramework.EnergyTracker_VancianLifetime</energyTrackerClass>
-		<defName>ISFE_VancianLifetime_SinExorcism</defName>
-		<label>charms</label>
-		<energyLabelKey>ISFE_VancianLifetime_SinExorcism_Unit</energyLabelKey>
-		<energyDescKey>ISFE_VancianLifetime_SinExorcism_UnitDesc</energyDescKey>
-		<disableReasonKey>ISFE_DisableReason_SinExorcismVancianLifetime</disableReasonKey>
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseVancianLifetime"> -->
+		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_VancianLifetime</energyTrackerClass> -->
+		<!-- <defName>ISFE_VancianLifetime_SinExorcism</defName> -->
+		<!-- <label>charms</label> -->
+		<!-- <energyLabelKey>ISFE_VancianLifetime_SinExorcism_Unit</energyLabelKey> -->
+		<!-- <energyDescKey>ISFE_VancianLifetime_SinExorcism_UnitDesc</energyDescKey> -->
+		<!-- <disableReasonKey>ISFE_DisableReason_SinExorcismVancianLifetime</disableReasonKey> -->
 		
-		<refreshNotifKey>ISFE_VancianLifetime_Sin_RefreshNotif</refreshNotifKey>
-		<refreshInfoKey>ISFE_VancianLifetime_SinExorcism_RefreshInfo</refreshInfoKey>
-		<refreshInfoDescKey>ISFE_VancianLifetime_SinExorcism_RefreshInfoDesc</refreshInfoDescKey>
+		<!-- <refreshNotifKey>ISFE_VancianLifetime_Sin_RefreshNotif</refreshNotifKey> -->
+		<!-- <refreshInfoKey>ISFE_VancianLifetime_SinExorcism_RefreshInfo</refreshInfoKey> -->
+		<!-- <refreshInfoDescKey>ISFE_VancianLifetime_SinExorcism_RefreshInfoDesc</refreshInfoDescKey> -->
 		
-		<energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Charms</energyUnitStatDef>
-		<energyMaxStatDef>ISFE_SinExorcism_MaxCharms</energyMaxStatDef>
-		<energyRecoveryStatDef>ISFE_SinExorcism_CharmRecovery</energyRecoveryStatDef>
-		<refreshTicks>60000</refreshTicks>
-	</ItsSorceryFramework.EnergyTrackerDef>
+		<!-- <energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Charms</energyUnitStatDef> -->
+		<!-- <energyMaxStatDef>ISFE_SinExorcism_MaxCharms</energyMaxStatDef> -->
+		<!-- <energyRecoveryStatDef>ISFE_SinExorcism_CharmRecovery</energyRecoveryStatDef> -->
+		<!-- <refreshTicks>60000</refreshTicks> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
 
 </Defs>

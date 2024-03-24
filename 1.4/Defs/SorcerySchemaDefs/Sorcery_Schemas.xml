@@ -8,8 +8,8 @@
 	
 		<energyTrackerDefs>
 			<li>ISFE_RPG_Logos</li>
-			<li>ISFE_RPGTurnBased_Logos</li>
-			<li>ISFE_Vancian_Logos</li>
+			<!-- <li>ISFE_RPGTurnBased_Logos</li> -->
+			<!-- <li>ISFE_Vancian_Logos</li> -->
 		</energyTrackerDefs>
 		<learningTrackerDefs>
 			<li>ISFE_LearningTrackerProgress_Logos</li>
@@ -19,35 +19,35 @@
 		<progressTrackerDef>ISFE_ProgressTrackerRPG_Logos</progressTrackerDef>
 	</ItsSorceryFramework.SorcerySchemaDef>
 	
-	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
-		<defName>ISFE_Coomsumerism</defName>
-		<label>Coomsumerism</label>
-		<description>We were born by the coom, molded by the coom. And now, you shall consume the coom, and flood the world with milk.</description>
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_Coomsumerism</defName> -->
+		<!-- <label>Coomsumerism</label> -->
+		<!-- <description>We were born by the coom, molded by the coom. And now, you shall consume the coom, and flood the world with milk.</description> -->
 	
-		<energyTrackerDefs>
-			<li>ISFE_Consumable_Coomsumerism</li>
-			<li>ISFE_Inverted_Coomsumerism</li>
-		</energyTrackerDefs>
-		<learningTrackerDefs>
-			<li>ISFE_LearningTrackerProgress_Coomsumerism</li>
-			<li>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</li>
-		</learningTrackerDefs>
-		<progressTrackerDef>ISFE_ProgressTrackerRPG_Coomsumerism</progressTrackerDef>
-	</ItsSorceryFramework.SorcerySchemaDef>
+		<!-- <energyTrackerDefs> -->
+			<!-- <li>ISFE_Consumable_Coomsumerism</li> -->
+			<!-- <li>ISFE_Inverted_Coomsumerism</li> -->
+		<!-- </energyTrackerDefs> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_LearningTrackerProgress_Coomsumerism</li> -->
+			<!-- <li>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTrackerRPG_Coomsumerism</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
 	
-	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
-		<defName>ISFE_SinExorcism</defName>
-		<label>Sin Exorcism</label>
-		<description>Take in the world filth, then purge it internally. By doing so, you cleanse the world.</description>
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_SinExorcism</defName> -->
+		<!-- <label>Sin Exorcism</label> -->
+		<!-- <description>Take in the world filth, then purge it internally. By doing so, you cleanse the world.</description> -->
 	
-		<energyTrackerDefs>
-			<li>ISFE_InvertedTurnBased_SinExorcism</li>
-			<li>ISFE_VancianLifetime_SinExorcism</li>
-		</energyTrackerDefs>
-		<learningTrackerDefs>
-			<li>ISFE_LearningTrackerProgress_Sin</li>
-			<li>ISFE_LearningTrackerTree_Sin</li>
-		</learningTrackerDefs>
-		<progressTrackerDef>ISFE_ProgressTrackerRPG_Sin</progressTrackerDef>
-	</ItsSorceryFramework.SorcerySchemaDef>
+		<!-- <energyTrackerDefs> -->
+			<!-- <li>ISFE_InvertedTurnBased_SinExorcism</li> -->
+			<!-- <li>ISFE_VancianLifetime_SinExorcism</li> -->
+		<!-- </energyTrackerDefs> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_LearningTrackerProgress_Sin</li> -->
+			<!-- <li>ISFE_LearningTrackerTree_Sin</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTrackerRPG_Sin</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
 </Defs>
