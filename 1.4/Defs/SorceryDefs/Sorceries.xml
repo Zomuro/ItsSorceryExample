@@ -10,13 +10,52 @@
 		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
 		<warmupSound>ISFE_TomeFlip</warmupSound>
 		<aiCanUse>true</aiCanUse>
-		<cooldownTicksRange>300</cooldownTicksRange>
+		<cooldownTicksRange>60</cooldownTicksRange>
 		
 		<statBases>
 			<ISFE_Brainpower>25</ISFE_Brainpower>
-			<ISFE_Mindpower>25</ISFE_Mindpower>
-			<ISFE_Charges>1</ISFE_Charges>
-			<ISFE_MaxCharges>10</ISFE_MaxCharges>
+			<!-- <ISFE_Mindpower>25</ISFE_Mindpower> -->
+			<!-- <ISFE_Charges>1</ISFE_Charges> -->
+			<!-- <ISFE_MaxCharges>10</ISFE_MaxCharges> -->
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>ISFE_Sorcery_Logos_Testing2</defName>
+		<label>Testing v2</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis... again.</description>
+		<level>1</level>
+		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		
+		<statBases>
+			<ISFE_Brainpower>-25</ISFE_Brainpower>
+			<!-- <ISFE_Mindpower>25</ISFE_Mindpower> -->
+			<!-- <ISFE_Charges>1</ISFE_Charges> -->
+			<!-- <ISFE_MaxCharges>10</ISFE_MaxCharges> -->
 			<Ability_Duration>120</Ability_Duration>
 		</statBases>
 		<verbProperties>		

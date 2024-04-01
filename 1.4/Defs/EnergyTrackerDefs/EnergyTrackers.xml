@@ -13,6 +13,51 @@
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 		
 		<energyLabelKey>ISFE_RPG_Logos_Unit</energyLabelKey>
+		
+		<comps>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
+				<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
+				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
+				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
+				<overchargeLabelKey>ISF_EnergyTrackerOverchargeLabel</overchargeLabelKey>
+				<overchargeDescKey>ISF_EnergyTrackerOverchargeDesc</overchargeDescKey>
+				<deficitLabelKey>ISF_EnergyTrackerDeficitLabel</deficitLabelKey>
+				<deficitDescKey>ISF_EnergyTrackerDeficitDesc</deficitDescKey>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume">
+				<consumables>
+					<li><thingDef>Chocolate</thingDef><energy>10</energy></li>
+				</consumables>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_DamageBase">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnDamage</compClass>
+				<scalingStatDef>Scaling_ItsSorcery</scalingStatDef>
+				<damageDefs>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</damageDefs>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_DamageBase">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnDamaged</compClass>
+				<scalingStatDef>Scaling_ItsSorcery</scalingStatDef>
+				<damageDefs>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</damageDefs>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnKill">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnKill</compClass>
+				<scalingStatDef>Scaling_ItsSorcery</scalingStatDef>
+				<baseEnergy>20</baseEnergy>
+				<damageDefs>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</damageDefs>
+			</li>
+		</comps>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
 	<!-- Example EnergyTrackers - Logos Experimentia -->
