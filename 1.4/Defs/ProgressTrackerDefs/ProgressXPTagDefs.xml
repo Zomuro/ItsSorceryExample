@@ -35,6 +35,19 @@
 		</skillDefs>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
+		<defName>ISFE_Logos_EXPTag_UseItem</defName>
+		<expFactor>1</expFactor>
+		<expItems>
+			<li>
+				<thingDef>Milk</thingDef>
+				<exp>50</exp>
+				<expFactorStat>GlobalLearningFactor</expFactorStat>
+			</li>
+		</expItems>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
 	<!-- Example 2 - Coomsumerism -->
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamage">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
