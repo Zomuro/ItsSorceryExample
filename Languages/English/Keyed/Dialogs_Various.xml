@@ -5,6 +5,8 @@
 	
 	<!-- Sorcery Schema example #1: Logos Experimentia -->
 	<ISFE_RPG_Logos_Unit>brainpower</ISFE_RPG_Logos_Unit>
+	<ISFE_Logos_Brainpower_Unit>brainpower</ISFE_Logos_Brainpower_Unit>
+	<ISFE_Logos_Theory_Unit>theory</ISFE_Logos_Theory_Unit>
 	<ISFE_RPGTurnBased_Logos_Unit>mindpower</ISFE_RPGTurnBased_Logos_Unit>
 	
 	<ISFE_RPGTurnBased_Logos_TurnInfo>mindpower refocus time (secs)</ISFE_RPGTurnBased_Logos_TurnInfo>

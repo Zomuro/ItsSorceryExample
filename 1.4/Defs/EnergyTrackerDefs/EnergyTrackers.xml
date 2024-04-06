@@ -2,9 +2,60 @@
 <Defs>
 	
 	<!-- Test EnergyTrackers -->
+	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBase"> -->
+		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass> -->
+		<!-- <defName>ISFE_RPG_Logos</defName> -->
+		<!-- <label>brainpower</label> -->
+		
+		<!-- <energyUnitStatDef>ISFE_Brainpower</energyUnitStatDef> -->
+		<!-- <energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef> -->
+		<!-- <energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef> -->
+		<!-- <energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef> -->
+		
+		<!-- <energyLabelKey>ISFE_RPG_Logos_Unit</energyLabelKey> -->
+		
+		<!-- <comps> -->
+			<!-- <li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick"> -->
+				<!-- <energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef> -->
+				<!-- <overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor> -->
+				<!-- <deficitRecoveryFactor>0.5</deficitRecoveryFactor> -->
+			<!-- </li> -->
+			<!-- <li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume"> -->
+				<!-- <consumables> -->
+					<!-- <li><thingDef>Chocolate</thingDef><energy>10</energy></li> -->
+				<!-- </consumables> -->
+			<!-- </li> -->
+			<!-- <li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_DamageBase"> -->
+				<!-- <compClass>ItsSorceryFramework.EnergyTrackerComp_OnDamage</compClass> -->
+				<!-- <scalingStatDef>Scaling_ItsSorcery</scalingStatDef> -->
+				<!-- <damageDefs> -->
+					<!-- <li>Bullet</li> -->
+					<!-- <li>Arrow</li> -->
+				<!-- </damageDefs> -->
+			<!-- </li> -->
+			<!-- <li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_DamageBase"> -->
+				<!-- <compClass>ItsSorceryFramework.EnergyTrackerComp_OnDamaged</compClass> -->
+				<!-- <scalingStatDef>Scaling_ItsSorcery</scalingStatDef> -->
+				<!-- <damageDefs> -->
+					<!-- <li>Bullet</li> -->
+					<!-- <li>Arrow</li> -->
+				<!-- </damageDefs> -->
+			<!-- </li> -->
+			<!-- <li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnKill"> -->
+				<!-- <compClass>ItsSorceryFramework.EnergyTrackerComp_OnKill</compClass> -->
+				<!-- <scalingStatDef>Scaling_ItsSorcery</scalingStatDef> -->
+				<!-- <baseEnergy>20</baseEnergy> -->
+				<!-- <damageDefs> -->
+					<!-- <li>Bullet</li> -->
+					<!-- <li>Arrow</li> -->
+				<!-- </damageDefs> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
+	
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBase">
 		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
-		<defName>ISFE_RPG_Logos</defName>
+		<defName>ISFE_Logos_Brainpower</defName>
 		<label>brainpower</label>
 		
 		<energyUnitStatDef>ISFE_Brainpower</energyUnitStatDef>
@@ -12,17 +63,13 @@
 		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
 		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 		
-		<energyLabelKey>ISFE_RPG_Logos_Unit</energyLabelKey>
+		<energyLabelKey>ISFE_Logos_Brainpower_Unit</energyLabelKey>
 		
 		<comps>
 			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
 				<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
 				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
 				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
-				<overchargeLabelKey>ISF_EnergyTrackerOverchargeLabel</overchargeLabelKey>
-				<overchargeDescKey>ISF_EnergyTrackerOverchargeDesc</overchargeDescKey>
-				<deficitLabelKey>ISF_EnergyTrackerDeficitLabel</deficitLabelKey>
-				<deficitDescKey>ISF_EnergyTrackerDeficitDesc</deficitDescKey>
 			</li>
 			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume">
 				<consumables>
@@ -35,7 +82,6 @@
 				<damageDefs>
 					<li>Bullet</li>
 					<li>Arrow</li>
-					<li>ArrowHighVelocity</li>
 				</damageDefs>
 			</li>
 			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_DamageBase">
@@ -44,7 +90,6 @@
 				<damageDefs>
 					<li>Bullet</li>
 					<li>Arrow</li>
-					<li>ArrowHighVelocity</li>
 				</damageDefs>
 			</li>
 			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnKill">
@@ -54,7 +99,57 @@
 				<damageDefs>
 					<li>Bullet</li>
 					<li>Arrow</li>
-					<li>ArrowHighVelocity</li>
+				</damageDefs>
+			</li>
+		</comps>
+	</ItsSorceryFramework.EnergyTrackerDef>
+	
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBase">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
+		<defName>ISFE_Logos_Theory</defName>
+		<label>theory</label>
+		
+		<energyUnitStatDef>ISFE_Theory</energyUnitStatDef>
+		<energyMaxStatDef>MaxEnergy_ItsSorcery</energyMaxStatDef>
+		<energyMinStatDef>MinEnergy_ItsSorcery</energyMinStatDef>
+		<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
+		<inverse>True</inverse>
+		<energyLabelKey>ISFE_Logos_Theory_Unit</energyLabelKey>
+		
+		<comps>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
+				<energyRecoveryStatDef>EnergyRecovery_ItsSorcery</energyRecoveryStatDef>
+				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
+				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume">
+				<consumables>
+					<li><thingDef>Chocolate</thingDef><energy>10</energy></li>
+				</consumables>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_DamageBase">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnDamage</compClass>
+				<scalingStatDef>Scaling_ItsSorcery</scalingStatDef>
+				<damageDefs>
+					<li>Bullet</li>
+					<li>Arrow</li>
+				</damageDefs>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_DamageBase">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnDamaged</compClass>
+				<scalingStatDef>Scaling_ItsSorcery</scalingStatDef>
+				<damageDefs>
+					<li>Bullet</li>
+					<li>Arrow</li>
+				</damageDefs>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnKill">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnKill</compClass>
+				<scalingStatDef>Scaling_ItsSorcery</scalingStatDef>
+				<baseEnergy>20</baseEnergy>
+				<damageDefs>
+					<li>Bullet</li>
+					<li>Arrow</li>
 				</damageDefs>
 			</li>
 		</comps>
