@@ -7,7 +7,7 @@
 		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
 		<defName>ISFE_ProgressTrackerRPG_Logos</defName>
 		<label>Logic System</label>
-		<bgPath>UI/ProgressTracker/Logos</bgPath>
+		<bgPath>UI/ProgressTracker/ISFE_Logos_Banner</bgPath>
 		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Logos</progressHediff>
 		<levelFactors>
