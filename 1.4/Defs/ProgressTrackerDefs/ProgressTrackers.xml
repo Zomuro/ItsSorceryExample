@@ -186,6 +186,7 @@
 			<li>ISFE_Coomsumerism_EXPTag_OnDamaged</li>
 			<li>ISFE_Coomsumerism_EXPTag_Passive</li>
 			<li>ISFE_Coomsumerism_EXPTag_UseItem</li>
+			<li>ISFE_Coomsumerism_EXPTag_DuringJob</li>
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerDef>
 	

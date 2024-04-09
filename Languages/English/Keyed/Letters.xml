@@ -2,14 +2,10 @@
 <LanguageData>
 	<!-- Coomsumerism -->
 	<ISFE_Logos_LevelUp>Knowledge increased: {0}</ISFE_Logos_LevelUp>
-	<ISFE_Logos_LevelUpMessage>This pawn has risen from {0} to {1} through the scientific method.</ISFE_Logos_LevelUpMessage>
+	<ISFE_Logos_LevelUpMessage>This pawn has risen from level {0} to level {1} through the scientific method.</ISFE_Logos_LevelUpMessage>
 	
 	<!-- Coomsumerism -->
 	<ISFE_Coomsumerism_LevelUp>Arousal up: {0}</ISFE_Coomsumerism_LevelUp>
-	<ISFE_Coomsumerism_LevelUpMessage>By the grace of the many purchases made and their excitement, this pawn has risen from {0} to {1}.</ISFE_Coomsumerism_LevelUpMessage>
-	
-	<!-- Sin Exorcism -->
-	<!-- <ISFE_Sin_LevelUp>Piety up: {0}</ISFE_Sin_LevelUp> -->
-	<!-- <ISFE_Sin_LevelUpMessage>As a result of their purification efforts, this pawn has risen in status as per the will of the gods ({0} to {1}).</ISFE_Sin_LevelUpMessage> -->
+	<ISFE_Coomsumerism_LevelUpMessage>By the grace of the many purchases made and their excitement, this pawn has risen from level {0} to level {1}.</ISFE_Coomsumerism_LevelUpMessage>
 	
 </LanguageData>

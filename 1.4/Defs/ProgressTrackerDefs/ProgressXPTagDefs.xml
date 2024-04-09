@@ -83,10 +83,9 @@
 		</expItems>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
-	<!-- Example 3 - Sin Exorcism -->
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_DuringJob">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_DuringJob</workerClass>
-		<defName>ISFE_Sin_EXPTag_DuringJob</defName>
+		<defName>ISFE_Coomsumerism_EXPTag_DuringJob</defName>
 		<fixedEXP>5</fixedEXP>
 		<jobSets>
 			<li>
@@ -97,29 +96,5 @@
 				</jobDefs>
 			</li>
 		</jobSets>
-	</ItsSorceryFramework.ProgressEXPTagDef>
-	
-	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnKill">
-		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnKill</workerClass>
-		<defName>ISFE_Sin_EXPTag_OnKill</defName>
-		<fixedEXP>100</fixedEXP>
-		<damageDefs>
-			<li>Cut</li>
-			<li>Blunt</li>
-			<li>ArrowHighVelocity</li>
-		</damageDefs>
-	</ItsSorceryFramework.ProgressEXPTagDef>
-	
-	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
-		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
-		<defName>ISFE_Sin_EXPTag_UseItem</defName>
-		<expFactor>1</expFactor>
-		<expItems>
-			<li>
-				<thingDef>Gold</thingDef>
-				<exp>10</exp>
-				<expFactorStat/>
-			</li>
-		</expItems>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 </Defs>

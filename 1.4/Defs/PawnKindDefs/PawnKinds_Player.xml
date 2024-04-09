@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- <PawnKindDef ParentName="BasePlayerPawnKind"> -->
-		<!-- <defName>ISFE_Colonist_PawnGen</defName> -->
-		<!-- <label>colonist (schema pawngen example)</label> -->
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ISFE_Colonist_PawnGen</defName>
+		<label>colonist (schema pawngen example)</label>
 		
-		<!-- <modExtensions> -->
-			<!-- <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet"> -->
-				<!-- <schemaSets> -->
-					<!-- <li> -->
-						<!-- <schemaMappings> -->
-							<!-- <li> -->
-								<!-- <schema>ISFE_LogosExperimentia</schema> -->
-								<!-- <requiredNodes> -->
-									<!-- <li><nodeDef>ISFE_Node_Logos_BirdBees</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Logos_Mediocrity</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li> -->
-								<!-- </requiredNodes> -->
-							<!-- </li> -->
-						<!-- </schemaMappings> -->
-					<!-- </li> -->
-					<!-- <li> -->
-						<!-- <schemaMappings> -->
-							<!-- <li> -->
-								<!-- <schema>ISFE_Coomsumerism</schema> -->
-								<!-- <weight>1</weight> -->
-								<!-- <forceLevel>True</forceLevel> -->
-								<!-- <level>5</level> -->
-								<!-- <requiredNodes> -->
-									<!-- <li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef></li> -->
-								<!-- </requiredNodes> -->
-							<!-- </li> -->
-							<!-- <li> -->
-								<!-- <schema>ISFE_Coomsumerism</schema> -->
-								<!-- <weight>1</weight> -->
-								<!-- <forceLevel>True</forceLevel> -->
-								<!-- <level>3</level> -->
-								<!-- <forcePoints>True</forcePoints> -->
-								<!-- <points>5</points> -->
-								<!-- <requiredNodes> -->
-									<!-- <li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li> -->
-									<!-- <li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li> -->
-								<!-- </requiredNodes> -->
-							<!-- </li> -->
-						<!-- </schemaMappings> -->
-					<!-- </li> -->
-				<!-- </schemaSets> -->
-			<!-- </li> -->
-		<!-- </modExtensions> -->
+		<modExtensions>
+			<li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+					<li>
+						<schemaMappings>
+							<li>
+								<schema>ISFE_LogosExperimentia</schema>
+								<requiredNodes>
+									<li><nodeDef>ISFE_Node_Logos_BirdBees</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
+									<li><nodeDef>ISFE_Node_Logos_Mediocrity</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
+									<li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+									<li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+								</requiredNodes>
+							</li>
+						</schemaMappings>
+					</li>
+					<li>
+						<schemaMappings>
+							<li>
+								<schema>ISFE_Coomsumerism</schema>
+								<weight>1</weight>
+								<forceLevel>True</forceLevel>
+								<level>5</level>
+								<requiredNodes>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef></li>
+								</requiredNodes>
+							</li>
+							<li>
+								<schema>ISFE_Coomsumerism</schema>
+								<weight>1</weight>
+								<forceLevel>True</forceLevel>
+								<level>3</level>
+								<forcePoints>True</forcePoints>
+								<points>5</points>
+								<requiredNodes>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
+									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
+								</requiredNodes>
+							</li>
+						</schemaMappings>
+					</li>
+				</schemaSets>
+			</li>
+		</modExtensions>
 		
-		<!-- <defaultFactionType>PlayerColony</defaultFactionType> -->
-		<!-- <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality> -->
-		<!-- <chemicalAddictionChance>0.06</chemicalAddictionChance> -->
-		<!-- <initialResistanceRange>13~21</initialResistanceRange> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
 		
-		<!-- <apparelTags> -->
-			<!-- <li>IndustrialBasic</li> -->
-		<!-- </apparelTags> -->
-		<!-- <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance> -->
-		<!-- <apparelMoney>350~600</apparelMoney> -->
-		<!-- <techHediffsChance>0.03</techHediffsChance> -->
-		<!-- <techHediffsMoney>50~800</techHediffsMoney> -->
-		<!-- <techHediffsTags> -->
-			<!-- <li>Poor</li> -->
-			<!-- <li>Simple</li> -->
-			<!-- <li>ImplantEmpireCommon</li> -->
-		<!-- </techHediffsTags> -->
-		<!-- <techHediffsDisallowTags> -->
-			<!-- <li>PainCauser</li> -->
-		<!-- </techHediffsDisallowTags> -->
-	<!-- </PawnKindDef> -->
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+	</PawnKindDef>
 	
-	<!-- <PawnKindDef ParentName="BasePlayerPawnKind"> -->
-		<!-- <defName>ISFE_Colonist_SchemaTraitTest</defName> -->
-		<!-- <label>colonist (schema trait example)</label> -->
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ISFE_Colonist_SchemaTraitTest</defName>
+		<label>colonist (schema trait example)</label>
 		
-		<!-- <defaultFactionType>PlayerColony</defaultFactionType> -->
-		<!-- <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality> -->
-		<!-- <chemicalAddictionChance>0.06</chemicalAddictionChance> -->
-		<!-- <initialResistanceRange>13~21</initialResistanceRange> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
 		
-		<!-- <forcedTraits> -->
-			<!-- <ISFE_MindBlessed>0</ISFE_MindBlessed> -->
-		<!-- </forcedTraits> -->
+		<forcedTraits>
+			<ISFE_MindBlessed>0</ISFE_MindBlessed>
+		</forcedTraits>
 		
-		<!-- <apparelTags> -->
-			<!-- <li>IndustrialBasic</li> -->
-		<!-- </apparelTags> -->
-		<!-- <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance> -->
-		<!-- <apparelMoney>350~600</apparelMoney> -->
-		<!-- <techHediffsChance>0.03</techHediffsChance> -->
-		<!-- <techHediffsMoney>50~800</techHediffsMoney> -->
-		<!-- <techHediffsTags> -->
-			<!-- <li>Poor</li> -->
-			<!-- <li>Simple</li> -->
-			<!-- <li>ImplantEmpireCommon</li> -->
-		<!-- </techHediffsTags> -->
-		<!-- <techHediffsDisallowTags> -->
-			<!-- <li>PainCauser</li> -->
-		<!-- </techHediffsDisallowTags> -->
-	<!-- </PawnKindDef> -->
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+	</PawnKindDef>
 	
-	<!-- <PawnKindDef MayRequire = "Ludeon.RimWorld.Biotech" ParentName="BasePlayerPawnKind"> -->
-		<!-- <defName>ISFE_Colonist_SchemaGeneTest</defName> -->
-		<!-- <label>colonist (schema gene example)</label> -->
+	<PawnKindDef MayRequire = "Ludeon.RimWorld.Biotech" ParentName="BasePlayerPawnKind">
+		<defName>ISFE_Colonist_SchemaGeneTest</defName>
+		<label>colonist (schema gene example)</label>
 		
-		<!-- <defaultFactionType>PlayerColony</defaultFactionType> -->
-		<!-- <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality> -->
-		<!-- <chemicalAddictionChance>0.06</chemicalAddictionChance> -->
-		<!-- <initialResistanceRange>13~21</initialResistanceRange> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
 		
-		<!-- <xenotypeSet> -->
-			<!-- <xenotypeChances> -->
-				<!-- <ISFE_CoomerXenotype>1</ISFE_CoomerXenotype> -->
-			<!-- </xenotypeChances> -->
-		<!-- </xenotypeSet> -->
+		<xenotypeSet>
+			<xenotypeChances>
+				<ISFE_CoomerXenotype>1</ISFE_CoomerXenotype>
+			</xenotypeChances>
+		</xenotypeSet>
 		
-		<!-- <apparelTags> -->
-			<!-- <li>IndustrialBasic</li> -->
-		<!-- </apparelTags> -->
-		<!-- <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance> -->
-		<!-- <apparelMoney>350~600</apparelMoney> -->
-		<!-- <techHediffsChance>0.03</techHediffsChance> -->
-		<!-- <techHediffsMoney>50~800</techHediffsMoney> -->
-		<!-- <techHediffsTags> -->
-			<!-- <li>Poor</li> -->
-			<!-- <li>Simple</li> -->
-			<!-- <li>ImplantEmpireCommon</li> -->
-		<!-- </techHediffsTags> -->
-		<!-- <techHediffsDisallowTags> -->
-			<!-- <li>PainCauser</li> -->
-		<!-- </techHediffsDisallowTags> -->
-	<!-- </PawnKindDef> -->
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+	</PawnKindDef>
 
 </Defs>
