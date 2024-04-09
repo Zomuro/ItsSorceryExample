@@ -22,40 +22,40 @@
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
 	
-	<StatDef>
-		<defName>ISFE_Mindpower</defName>
-		<label>mindpower</label>
-		<category>Sorcery_ISF</category>
-		<description>The amount of mind energy a technique requires to cast.</description>
-		<defaultBaseValue>10</defaultBaseValue>
-		<showIfUndefined>false</showIfUndefined>
-		<displayPriorityInCategory>1</displayPriorityInCategory>
-	</StatDef>
+	<!-- <StatDef> -->
+		<!-- <defName>ISFE_Mindpower</defName> -->
+		<!-- <label>mindpower</label> -->
+		<!-- <category>Sorcery_ISF</category> -->
+		<!-- <description>The amount of mind energy a technique requires to cast.</description> -->
+		<!-- <defaultBaseValue>10</defaultBaseValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
 	
-	<StatDef>
-		<defName>ISFE_Charges</defName>
-		<label>charges</label>
-		<category>Sorcery_ISF</category>
-		<description>The amount of charges a technique requires to cast.</description>
-		<defaultBaseValue>1</defaultBaseValue>
-		<showIfUndefined>false</showIfUndefined>
-		<displayPriorityInCategory>1</displayPriorityInCategory>
-	</StatDef>
+	<!-- <StatDef> -->
+		<!-- <defName>ISFE_Charges</defName> -->
+		<!-- <label>charges</label> -->
+		<!-- <category>Sorcery_ISF</category> -->
+		<!-- <description>The amount of charges a technique requires to cast.</description> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
 	
-	<StatDef>
-		<defName>ISFE_MaxCharges</defName>
-		<label>max charges</label>
-		<category>Sorcery_ISF</category>
-		<description>The max number of charges a technique requires has.</description>
-		<defaultBaseValue>5</defaultBaseValue>
-		<showIfUndefined>false</showIfUndefined>
-		<displayPriorityInCategory>1</displayPriorityInCategory>
-	</StatDef>
+	<!-- <StatDef> -->
+		<!-- <defName>ISFE_MaxCharges</defName> -->
+		<!-- <label>max charges</label> -->
+		<!-- <category>Sorcery_ISF</category> -->
+		<!-- <description>The max number of charges a technique requires has.</description> -->
+		<!-- <defaultBaseValue>5</defaultBaseValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
 	
 	
 	<!-- Example 2: Coomsumerism -->
 	<StatDef>
-		<defName>ISFE_SorceryStat_Coomsumerism_Stamina</defName>
+		<defName>ISFE_Coomsumerism_Stamina</defName>
 		<label>stamina</label>
 		<category>Sorcery_ISF</category>
 		<description>The amount of vigor it takes to perform one of the forbidden techniques of Coomsumerism.</description>
@@ -65,7 +65,7 @@
 	</StatDef>
 	
 	<StatDef>
-		<defName>ISFE_SorceryStat_Coomsumerism_Ecstasy</defName>
+		<defName>ISFE_Coomsumerism_Ecstasy</defName>
 		<label>ecstasy</label>
 		<category>Sorcery_ISF</category>
 		<description>The amount of pleasure gained from using one of the forbidden techniques of Coomsumerism.</description>

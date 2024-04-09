@@ -9,14 +9,11 @@
 		<energyTrackerDefs>
 			<li>ISFE_Logos_Brainpower</li>
 			<li>ISFE_Logos_Theory</li>
-			<!-- <li>ISFE_RPG_Logos</li> -->
-			<!-- <li>ISFE_RPGTurnBased_Logos</li> -->
-			<!-- <li>ISFE_Vancian_Logos</li> -->
 		</energyTrackerDefs>
 		<learningTrackerDefs>
-			<li>ISFE_LearningTrackerProgress_Logos</li>
-			<li>ISFE_LearningTrackerTree_Logos</li>
-			<li>ISFE_LearningTrackerTree_Logos_Two</li>
+			<li>ISFE_Logos_LearningTrackerProgress</li>
+			<li>ISFE_Logos_LearningTrackerTree</li>
+			<li>ISFE_Logos_LearningTrackerTree_Two</li>
 		</learningTrackerDefs>
 		<progressTrackerDef>ISFE_ProgressTrackerRPG_Logos</progressTrackerDef>
 	</ItsSorceryFramework.SorcerySchemaDef>

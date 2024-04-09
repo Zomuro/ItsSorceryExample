@@ -4,24 +4,24 @@
 	<!-- Example 1: Logos Experimentia -->
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
-		<defName>ISFE_LearningTrackerProgress_Logos</defName>
-		<label>learning progress</label>
+		<defName>ISFE_Logos_LearningTrackerProgress</defName>
+		<label>Summary</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>ISFE_LearningTrackerTree_Logos</defName>
+		<defName>ISFE_Logos_LearningTrackerTree</defName>
 		<label>First Studies</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>ISFE_LearningTrackerTree_Logos_Two</defName>
+		<defName>ISFE_Logos_LearningTrackerTree_Two</defName>
 		<label>Experimentation</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree</learningTrackerDef>
 		<defName>ISFE_Node_Logos_BirdBees</defName>
 		<label>Birds and bees</label>
 		<description>The literal basics on being smart.</description>
@@ -41,7 +41,7 @@
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree</learningTrackerDef>
 		<defName>ISFE_Node_Logos_Mediocrity</defName>
 		<label>Mediocrity</label>
 		<description>Becoming average is incredibly difficult, you know? You need to be better than 50% of all the people in the world, straddling the 100 IQ line.</description>
@@ -72,7 +72,7 @@
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos_Two</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
 		<defName>ISFE_Node_Logos_Tools</defName>
 		<label>Experimental tools</label>
 		<description>You need the capability to test things, and that requires you to figure out what tools you need.</description>
@@ -86,7 +86,7 @@
 		</prereqs>
 		
 		<abilityGain>
-			<li>ISFE_Sorcery_Logos_Testing</li>
+			<li>ISFE_Sorcery_Logos_Experiment</li>
 		</abilityGain>
 		
 		<hediffAdd>
@@ -95,7 +95,7 @@
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos_Two</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
 		<defName>ISFE_Node_Logos_Design</defName>
 		<label>Experimental design</label>
 		<description>Having a good experimental design allows you to determine the true effect of different factors.</description>
@@ -107,10 +107,14 @@
 		<prereqs>
 			<li>ISFE_Node_Logos_Tools</li>
 		</prereqs>
+		
+		<abilityGain>
+			<li>ISFE_Sorcery_Logos_Reasoning</li>
+		</abilityGain>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos_Two</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
 		<defName>ISFE_Node_Logos_Surrender</defName>
 		<label>Give up</label>
 		<description>It's too hard. I give up.</description>
@@ -143,7 +147,7 @@
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos_Two</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
 		<defName>ISFE_Node_Logos_Refinement</defName>
 		<label>Experimental refinement</label>
 		<description>Make sure to develop proper controls.</description>
@@ -165,7 +169,7 @@
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos_Two</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
 		<defName>ISFE_Node_Logos_Collection</defName>
 		<label>Data collection</label>
 		<description>Good data collection now saves a lot of heartache later.</description>
@@ -184,7 +188,7 @@
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
-		<learningTrackerDef>ISFE_LearningTrackerTree_Logos_Two</learningTrackerDef>
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
 		<defName>ISFE_Node_Logos_Conclusion</defName>
 		<label>Research conclusion</label>
 		<description>A through analysis allows the next bit of research to reach new heights.</description>
@@ -203,28 +207,28 @@
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<!-- Example 2: Coomsumerism -->
-	<!-- <ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress"> -->
-		<!-- <learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass> -->
-		<!-- <defName>ISFE_LearningTrackerProgress_Coomsumerism</defName> -->
-		<!-- <label>Coomer Stats</label> -->
-	<!-- </ItsSorceryFramework.LearningTrackerDef> -->
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
+		<defName>ISFE_Coomsumerism_LearningTrackerProgress</defName>
+		<label>Coomer Stats</label>
+	</ItsSorceryFramework.LearningTrackerDef>
 	
-	<!-- <ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree"> -->
-		<!-- <learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass> -->
-		<!-- <defName>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</defName> -->
-		<!-- <label>Coomer Basics</label> -->
-	<!-- </ItsSorceryFramework.LearningTrackerDef> -->
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>ISFE_Coomsumerism_CoomerBasics</defName>
+		<label>Coomer Basics</label>
+	</ItsSorceryFramework.LearningTrackerDef>
 	
-	<!-- <ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase"> -->
-		<!-- <learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef> -->
-		<!-- <defName>ISFE_Node_Coomsumerism_SeedFound</defName> -->
-		<!-- <label>Seed foundation</label> -->
-		<!-- <description>A crash course on the miracle of life, and how you can bring it about.</description> -->
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedFound</defName>
+		<label>Seed foundation</label>
+		<description>A crash course on the miracle of life, and how you can bring it about.</description>
 		
-		<!-- <coordX>0</coordX> -->
-		<!-- <coordY>0</coordY> -->
-		<!-- <pointReq>1</pointReq> -->
-	<!-- </ItsSorceryFramework.LearningTreeNodeDef> -->
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<!-- <ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase"> -->
 		<!-- <learningTrackerDef>ISFE_LearningTrackerTree_Coomsumerism_CoomerBasics</learningTrackerDef> -->

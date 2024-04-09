@@ -9,6 +9,9 @@
 		<label>Logic System</label>
 		<bgPath>UI/ProgressTracker/ISFE_Logos_Banner</bgPath>
 		
+		<progressLevelUpKey>ISFE_Logos_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>ISFE_Logos_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>ISFE_Logos_SkillPointLabel</skillPointLabelKey>
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Logos</progressHediff>
 		<levelFactors>
 			<li>

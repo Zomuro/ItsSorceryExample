@@ -3,20 +3,18 @@
 	
 	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
 		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
-		<defName>ISFE_Sorcery_Logos_Testing</defName>
-		<label>Testing</label>
-		<description>The basics of experimentation is the willingness to test your hypothesis.</description>
+		<defName>ISFE_Sorcery_Logos_Experiment</defName>
+		<label>Experiment</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
 		<level>1</level>
-		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+		<iconPath>UI/Sorceries/ISFE_Logos_Experiment</iconPath>
 		<warmupSound>ISFE_TomeFlip</warmupSound>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>60</cooldownTicksRange>
 		
 		<statBases>
-			<ISFE_Brainpower>25</ISFE_Brainpower>
-			<!-- <ISFE_Mindpower>25</ISFE_Mindpower> -->
-			<!-- <ISFE_Charges>1</ISFE_Charges> -->
-			<!-- <ISFE_MaxCharges>10</ISFE_MaxCharges> -->
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
 			<Ability_Duration>120</Ability_Duration>
 		</statBases>
 		<verbProperties>		
@@ -42,37 +40,33 @@
 	
 	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
 		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
-		<defName>ISFE_Sorcery_Logos_Testing2</defName>
-		<label>Testing v2</label>
-		<description>The basics of experimentation is the willingness to test your hypothesis... again.</description>
+		<defName>ISFE_Sorcery_Logos_Reasoning</defName>
+		<label>Reasoning</label>
+		<description>Through deep thought, you can properly set things in order within your mind.</description>
 		<level>1</level>
-		<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+		<iconPath>UI/Sorceries/ISFE_Logos_Reasoning</iconPath>
 		<warmupSound>ISFE_TomeFlip</warmupSound>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>60</cooldownTicksRange>
 		
 		<statBases>
-			<ISFE_Brainpower>-25</ISFE_Brainpower>
-			<!-- <ISFE_Mindpower>25</ISFE_Mindpower> -->
-			<!-- <ISFE_Charges>1</ISFE_Charges> -->
-			<!-- <ISFE_MaxCharges>10</ISFE_MaxCharges> -->
+			<ISFE_Brainpower>-30</ISFE_Brainpower>
+			<ISFE_Theory>-25</ISFE_Theory>
 			<Ability_Duration>120</Ability_Duration>
 		</statBases>
 		<verbProperties>		
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>24.9</range>
+			<range>0.1</range>
 			<requireLineOfSight>True</requireLineOfSight>
 			<warmupTime>0.5</warmupTime>
 			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
 			</targetParams>
 		</verbProperties>
 		
 		<comps>
-			<li Class="CompProperties_AbilityFireSpew">
-				<range>7.9</range>
-				<lineWidthEnd>3</lineWidthEnd>
-			</li>
 			<li Class="CompProperties_AbilityFleckOnTarget">
 				<fleckDef>PsycastPsychicEffect</fleckDef>
 			</li>

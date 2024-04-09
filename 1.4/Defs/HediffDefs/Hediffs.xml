@@ -51,6 +51,105 @@
 		</stages>
 	</HediffDef>
 	
+	<HediffDef ParentName="DiseaseBase">
+		<defName>ISFE_Logos_MentalStrain</defName>
+		<label>mental strain</label>
+		<description>Thinking takes up an awful lot of mental power. Overthinking things will completely exhaust you.</description>
+		<isBad>true</isBad>
+		<initialSeverity>0</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+		    <li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.20</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+		    </li>
+		    <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+		    <li>
+				<label>tired</label>		
+				<statOffsets>
+					<RestFallRateFactor>0.5</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+				</capMods>
+		    </li>
+		    <li>
+				<minSeverity>0.25</minSeverity>
+				<label>exhausted</label>		
+				<statOffsets>
+					<RestFallRateFactor>1</RestFallRateFactor>
+				</statOffsets>				
+				<capMods>
+				    <li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.8</setMax>
+				    </li>
+				</capMods>
+		    </li>
+		    <li>
+				<minSeverity>0.5</minSeverity>
+				<label>ragged</label>	
+				<statOffsets>
+					<RestFallRateFactor>1.5</RestFallRateFactor>
+				</statOffsets>					
+				<capMods>
+				    <li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.7</setMax>
+				    </li>		
+				</capMods>
+		    </li>		
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>burnt out</label>	
+				<statOffsets>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statOffsets>					
+				<capMods>
+				    <li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+				    </li>
+				</capMods>
+		    </li>	
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>ISFE_Logos_MentalStrain_Thought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>ISFE_Logos_MentalStrain</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>mentally rough</label>
+				<description>I think I should take a break.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>mentally weary</label>
+				<description>I should really get some rest.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>mentally exhausted</label>
+				<description>Please, let me sleep!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>mentally burnt out</label>
+				<description>Can't think. Think hard. No.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
 	<!-- Coomsumerism -->
 	<HediffDef ParentName="DiseaseBase">
 		<defName>ISFE_Coomsumerism_CoomerPleasure</defName>

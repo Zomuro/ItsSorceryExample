@@ -12,7 +12,7 @@
 		<degreeDatas>
 			<li>
 				<label>mind blessed</label>
-				<description>{PAWN_nameDef} has an certain type of intellect. {PAWN_pronoun} is innately predisposed to curiosity and scientific endeavors.</description>
+				<description>{PAWN_nameDef} has an certain type of intellect. {PAWN_pronoun} is innately predisposed to pursue scientific endeavors.</description>
 				<degree>0</degree>
 			</li>
 		</degreeDatas>

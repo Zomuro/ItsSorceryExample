@@ -4,17 +4,21 @@
 	<!-- SorcerySchemaDef Info window - Energy Trackers -->
 	
 	<!-- Sorcery Schema example #1: Logos Experimentia -->
-	<ISFE_RPG_Logos_Unit>brainpower</ISFE_RPG_Logos_Unit>
-	<ISFE_Logos_Brainpower_Unit>brainpower</ISFE_Logos_Brainpower_Unit>
-	<ISFE_Logos_Theory_Unit>theory</ISFE_Logos_Theory_Unit>
-	<ISFE_RPGTurnBased_Logos_Unit>mindpower</ISFE_RPGTurnBased_Logos_Unit>
+	<!-- <ISFE_RPG_Logos_Unit>brainpower</ISFE_RPG_Logos_Unit> -->
 	
-	<ISFE_RPGTurnBased_Logos_TurnInfo>mindpower refocus time (secs)</ISFE_RPGTurnBased_Logos_TurnInfo>
-	<ISFE_RPGTurnBased_Logos_TurnInfoDesc>The amount of time it takes for the mind to regain its focus in seconds.</ISFE_RPGTurnBased_Logos_TurnInfoDesc>
+	<!-- <ISFE_Logos_Brainpower_Unit>brainpower</ISFE_Logos_Brainpower_Unit> -->
+	<!-- <ISFE_Logos_Brainpower_UnitDesc>The mental processing power required to perform a Logos Experimentia technique.</ISFE_Logos_Brainpower_UnitDesc> -->
+	<!-- <ISFE_Logos_Theory_Unit>theory</ISFE_Logos_Theory_Unit> -->
+	<!-- <ISFE_Logos_Theory_UnitDesc>The abstractness brought on by casting a Logos Experimentia technique. Too much of it is a bad thing.</ISFE_Logos_Theory_UnitDesc> -->
 	
-	<ISFE_Vancian_Logos_Unit>charges</ISFE_Vancian_Logos_Unit>
-	<ISFE_Vancian_Logos_Info>Recharge time (secs)</ISFE_Vancian_Logos_Info>
-	<ISFE_Vancian_Logos_InfoDesc>The amount of time it takes to regain charges for sorceries in seconds.</ISFE_Vancian_Logos_InfoDesc>
+	<!-- <ISFE_RPGTurnBased_Logos_Unit>mindpower</ISFE_RPGTurnBased_Logos_Unit> -->
+	
+	<!-- <ISFE_RPGTurnBased_Logos_TurnInfo>mindpower refocus time (secs)</ISFE_RPGTurnBased_Logos_TurnInfo> -->
+	<!-- <ISFE_RPGTurnBased_Logos_TurnInfoDesc>The amount of time it takes for the mind to regain its focus in seconds.</ISFE_RPGTurnBased_Logos_TurnInfoDesc> -->
+	
+	<!-- <ISFE_Vancian_Logos_Unit>charges</ISFE_Vancian_Logos_Unit> -->
+	<!-- <ISFE_Vancian_Logos_Info>Recharge time (secs)</ISFE_Vancian_Logos_Info> -->
+	<!-- <ISFE_Vancian_Logos_InfoDesc>The amount of time it takes to regain charges for sorceries in seconds.</ISFE_Vancian_Logos_InfoDesc> -->
 	
 	<!-- Sorcery Schema example #2: Coomsumerism -->
 	<ISFE_Consumable_Coomsumerism_Unit>stamina</ISFE_Consumable_Coomsumerism_Unit>
