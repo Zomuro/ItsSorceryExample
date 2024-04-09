@@ -6,7 +6,7 @@
 		<defName>ISFE_Brainpower</defName>
 		<label>brainpower</label>
 		<category>Sorcery_ISF</category>
-		<description>The amount of brain energy a technique requires to cast.</description>
+		<description>The mental processing power required to perform science.</description>
 		<defaultBaseValue>10</defaultBaseValue>
 		<showIfUndefined>false</showIfUndefined>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
@@ -16,84 +16,53 @@
 		<defName>ISFE_Theory</defName>
 		<label>theory</label>
 		<category>Sorcery_ISF</category>
-		<description>The amount of logical reasoning a technique requires to cast.</description>
+		<description>The abstractness brought on by science. Too much of it is a bad thing.</description>
 		<defaultBaseValue>10</defaultBaseValue>
 		<showIfUndefined>false</showIfUndefined>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
-	</StatDef>
-	
-	<!-- <StatDef> -->
-		<!-- <defName>ISFE_Mindpower</defName> -->
-		<!-- <label>mindpower</label> -->
-		<!-- <category>Sorcery_ISF</category> -->
-		<!-- <description>The amount of mind energy a technique requires to cast.</description> -->
-		<!-- <defaultBaseValue>10</defaultBaseValue> -->
-		<!-- <showIfUndefined>false</showIfUndefined> -->
-		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
-	<!-- </StatDef> -->
-	
-	<!-- <StatDef> -->
-		<!-- <defName>ISFE_Charges</defName> -->
-		<!-- <label>charges</label> -->
-		<!-- <category>Sorcery_ISF</category> -->
-		<!-- <description>The amount of charges a technique requires to cast.</description> -->
-		<!-- <defaultBaseValue>1</defaultBaseValue> -->
-		<!-- <showIfUndefined>false</showIfUndefined> -->
-		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
-	<!-- </StatDef> -->
-	
-	<!-- <StatDef> -->
-		<!-- <defName>ISFE_MaxCharges</defName> -->
-		<!-- <label>max charges</label> -->
-		<!-- <category>Sorcery_ISF</category> -->
-		<!-- <description>The max number of charges a technique requires has.</description> -->
-		<!-- <defaultBaseValue>5</defaultBaseValue> -->
-		<!-- <showIfUndefined>false</showIfUndefined> -->
-		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
-	<!-- </StatDef> -->
-	
+	</StatDef>	
 	
 	<!-- Example 2: Coomsumerism -->
 	<StatDef>
-		<defName>ISFE_Coomsumerism_Stamina</defName>
+		<defName>ISFE_Stamina</defName>
 		<label>stamina</label>
 		<category>Sorcery_ISF</category>
-		<description>The amount of vigor it takes to perform one of the forbidden techniques of Coomsumerism.</description>
+		<description>The amount of vigor it takes to perform on the field.</description>
 		<defaultBaseValue>10</defaultBaseValue>
 		<showIfUndefined>false</showIfUndefined>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
 	
 	<StatDef>
-		<defName>ISFE_Coomsumerism_Ecstasy</defName>
+		<defName>ISFE_Ecstasy</defName>
 		<label>ecstasy</label>
 		<category>Sorcery_ISF</category>
-		<description>The amount of pleasure gained from using one of the forbidden techniques of Coomsumerism.</description>
+		<description>The amount of pleasure gained from the exertion of a sorcery.</description>
 		<defaultBaseValue>25</defaultBaseValue>
 		<showIfUndefined>false</showIfUndefined>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
 	</StatDef>
 	
 	<!-- Example 3: Sin Excorcism -->
-	<StatDef>
-		<defName>ISFE_SorceryStat_SinExcorcism_Sin</defName>
-		<label>sin</label>
-		<category>Sorcery_ISF</category>
-		<description>The amount of sin a pawn incurrs when using a technique.</description>
-		<defaultBaseValue>10</defaultBaseValue>
-		<showIfUndefined>false</showIfUndefined>
-		<displayPriorityInCategory>1</displayPriorityInCategory>
-	</StatDef>
+	<!-- <StatDef> -->
+		<!-- <defName>ISFE_SorceryStat_SinExcorcism_Sin</defName> -->
+		<!-- <label>sin</label> -->
+		<!-- <category>Sorcery_ISF</category> -->
+		<!-- <description>The amount of sin a pawn incurrs when using a technique.</description> -->
+		<!-- <defaultBaseValue>10</defaultBaseValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
 	
-	<StatDef>
-		<defName>ISFE_SorceryStat_SinExcorcism_Charms</defName>
-		<label>charms</label>
-		<category>Sorcery_ISF</category>
-		<description>The number of charms a pawn needs to use a technique.</description>
-		<defaultBaseValue>1</defaultBaseValue>
-		<showIfUndefined>false</showIfUndefined>
-		<displayPriorityInCategory>1</displayPriorityInCategory>
-	</StatDef>
+	<!-- <StatDef> -->
+		<!-- <defName>ISFE_SorceryStat_SinExcorcism_Charms</defName> -->
+		<!-- <label>charms</label> -->
+		<!-- <category>Sorcery_ISF</category> -->
+		<!-- <description>The number of charms a pawn needs to use a technique.</description> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
 	
 	
 

@@ -12,8 +12,9 @@
 		<energyMinStatDef>ISF_MinEnergy</energyMinStatDef>
 		<energyAbsMaxStatDef>ISF_AbsMaxEnergy</energyAbsMaxStatDef>
 		<energyAbsMinStatDef>ISF_AbsMinEnergy</energyAbsMinStatDef>
+		<disableReasonKey>ISFE_DisableReason_Logos_Brainpower</disableReasonKey>
+		
 		<sideEffect>ISFE_Logos_MentalStrain</sideEffect>
-		<disableReasonKey>ISFE_DisableReason_LogosNormal</disableReasonKey>
 		<hitLimitKey>ISFE_Logos_Brainpower_Message_HitLimit</hitLimitKey>
 		
 		<comps>
@@ -39,7 +40,7 @@
 		<energyUnitStatDef>ISFE_Theory</energyUnitStatDef>
 		<energyMaxStatDef>ISF_MaxEnergy</energyMaxStatDef>
 		<energyMinStatDef>ISF_MinEnergy</energyMinStatDef>
-		<disableReasonKey>ISFE_DisableReason_LogosInverted</disableReasonKey>
+		<disableReasonKey>ISFE_DisableReason_Logos_Theory</disableReasonKey>
 		<inverse>True</inverse>
 		
 		<comps>
@@ -71,88 +72,53 @@
 		</comps>
 	</ItsSorceryFramework.EnergyTrackerDef>
 	
-	
-	
 	<!-- Example EnergyTrackers - Coomsumerism -->
-	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "ISF_EnergyTrackerBase"> -->
-		<!-- <defName>ISFE_Coomsumerism_Stamina</defName> -->
-		<!-- <label>stamina</label> -->
-		<!-- <energyLabelKey>ISFE_Consumable_Coomsumerism_Unit</energyLabelKey> -->
-		<!-- <energyDescKey>ISFE_Consumable_Coomsumerism_UnitDesc</energyDescKey> -->
-		<!-- <disableReasonKey>ISFE_DisableReason_CoomsumerismConsumable</disableReasonKey> -->
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "ISF_EnergyTrackerBase">
+		<defName>ISFE_Coomsumerism_Stamina</defName>
+		<label>stamina</label>
 		
-		<!-- <energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Stamina</energyUnitStatDef> -->
-		<!-- <energyRecoveryStatDef>ISFE_Coomsumerism_StaminaRecovery</energyRecoveryStatDef> -->
-		<!-- <energyMaxStatDef>ISFE_Coomsumerism_MaxEndurance</energyMaxStatDef> -->
+		<energyUnitStatDef>ISFE_Stamina</energyUnitStatDef>
+		<energyMaxStatDef>ISFE_Coomsumerism_MaxEndurance</energyMaxStatDef>
+		<energyMinStatDef>ISFE_Coomsumerism_MinEndurance</energyMinStatDef>
+		<disableReasonKey>ISFE_DisableReason_Coomsumerism_Stamina</disableReasonKey>
 
-		<!-- <comps> -->
-			<!-- <li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick"> -->
-				<!-- <energyRecoveryStatDef>ISFE_Coomsumerism_StaminaRecovery</energyRecoveryStatDef> -->
-				<!-- <overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor> -->
-				<!-- <deficitRecoveryFactor>0.5</deficitRecoveryFactor> -->
-			<!-- </li> -->
-			<!-- <li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume"> -->
-				<!-- <consumables> -->
-					<!-- <li><thingDef>Milk</thingDef><energy>5</energy></li> -->
-					<!-- <li><thingDef>Chocolate</thingDef><energy>10</energy></li> -->
-				<!-- </consumables> -->
-			<!-- </li> -->
-		<!-- </comps> -->
-	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
+		<comps>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
+				<energyRecoveryStatDef>ISFE_Coomsumerism_StaminaRecovery</energyRecoveryStatDef>
+				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
+				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume">
+				<consumables>
+					<li><thingDef>Milk</thingDef><energy>5</energy></li>
+					<li><thingDef>Chocolate</thingDef><energy>10</energy></li>
+				</consumables>
+			</li>
+		</comps>
+	</ItsSorceryFramework.EnergyTrackerDef>
 	
-	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseInverted"> -->
-		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_Inverted</energyTrackerClass> -->
-		<!-- <defName>ISFE_Inverted_Coomsumerism</defName> -->
-		<!-- <label>coomsumption ecstasy</label> -->
-		<!-- <energyLabelKey>ISFE_Inverted_Coomsumerism_Unit</energyLabelKey> -->
-		<!-- <energyDescKey>ISFE_Inverted_Coomsumerism_UnitDesc</energyDescKey> -->
-		<!-- <disableReasonKey>ISFE_DisableReason_CoomsumerismInverted</disableReasonKey> -->
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "ISF_EnergyTrackerBase">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
+		<defName>ISFE_Coomsumerism_Ecstasy</defName>
+		<label>ecstasy</label>
 		
-		<!-- <energyUnitStatDef>ISFE_SorceryStat_Coomsumerism_Ecstasy</energyUnitStatDef> -->
-		<!-- <energyOverMaxStatDef>ISFE_Coomsumerism_OverMaxEcstasy</energyOverMaxStatDef> -->
-		<!-- <energyMaxStatDef>ISFE_Coomsumerism_MaxEcstasy</energyMaxStatDef> -->
-		<!-- <energyMinStatDef>ISFE_Coomsumerism_MinEcstasy</energyMinStatDef> -->
-		<!-- <energyRecoveryStatDef>ISFE_Coomsumerism_EcstasyRecovery</energyRecoveryStatDef> -->
-		<!-- <sideEffect>ISFE_Coomsumerism_CoomerPleasure</sideEffect> -->
-	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
-	
-	<!-- Example EnergyTrackers - Sin Exorcism -->
-	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTracker_InvertedTurnBased"> -->
-		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_InvertedTurnBased</energyTrackerClass> -->
-		<!-- <defName>ISFE_InvertedTurnBased_SinExorcism</defName> -->
-		<!-- <label>sin accumulation</label> -->
-		<!-- <energyLabelKey>ISFE_InvertedTurnBased_SinExorcism_Unit</energyLabelKey> -->
-		<!-- <energyDescKey>ISFE_InvertedTurnBased_SinExorcism_UnitDesc</energyDescKey> -->
-		<!-- <disableReasonKey>ISFE_DisableReason_SinExorcismInvertedTurnBased</disableReasonKey> -->
+		<energyUnitStatDef>ISFE_Ecstasy</energyUnitStatDef>
+		<energyAbsMaxStatDef>ISFE_Coomsumerism_AbsMaxEcstasy</energyAbsMaxStatDef>
+		<energyMaxStatDef>ISFE_Coomsumerism_MaxEcstasy</energyMaxStatDef>
+		<energyMinStatDef>ISFE_Coomsumerism_MinEcstasy</energyMinStatDef>
+		<disableReasonKey>ISFE_DisableReason_Coomsumerism_Ecstasy</disableReasonKey>
+		<inverse>True</inverse>
 		
-		<!-- <turnInfoKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfo</turnInfoKey> -->
-		<!-- <turnInfoDescKey>ISFE_InvertedTurnBased_SinExorcism_TurnInfoDesc</turnInfoDescKey> -->
+		<sideEffect>ISFE_Coomsumerism_CoomerPleasure</sideEffect>
+		<hitLimitKey>ISFE_Coomsumerism_Ecstasy_Message_HitLimit</hitLimitKey>
 		
-		<!-- <energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Sin</energyUnitStatDef> -->
-		<!-- <energyOverMaxStatDef>ISFE_SinExorcism_OverMaxSin</energyOverMaxStatDef> -->
-		<!-- <energyMaxStatDef>ISFE_SinExorcism_MaxSin</energyMaxStatDef> -->
-		<!-- <energyMinStatDef>ISFE_SinExorcism_MinSin</energyMinStatDef> -->
-		<!-- <energyRecoveryStatDef>ISFE_SinExorcism_SinRecovery</energyRecoveryStatDef> -->
-		<!-- <overBarRecoveryFactor>0.5</overBarRecoveryFactor> -->
-		<!-- <turnTicks>600</turnTicks> -->
-	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
-	
-	<!-- <ItsSorceryFramework.EnergyTrackerDef ParentName = "EnergyTrackerBaseVancianLifetime"> -->
-		<!-- <energyTrackerClass>ItsSorceryFramework.EnergyTracker_VancianLifetime</energyTrackerClass> -->
-		<!-- <defName>ISFE_VancianLifetime_SinExorcism</defName> -->
-		<!-- <label>charms</label> -->
-		<!-- <energyLabelKey>ISFE_VancianLifetime_SinExorcism_Unit</energyLabelKey> -->
-		<!-- <energyDescKey>ISFE_VancianLifetime_SinExorcism_UnitDesc</energyDescKey> -->
-		<!-- <disableReasonKey>ISFE_DisableReason_SinExorcismVancianLifetime</disableReasonKey> -->
-		
-		<!-- <refreshNotifKey>ISFE_VancianLifetime_Sin_RefreshNotif</refreshNotifKey> -->
-		<!-- <refreshInfoKey>ISFE_VancianLifetime_SinExorcism_RefreshInfo</refreshInfoKey> -->
-		<!-- <refreshInfoDescKey>ISFE_VancianLifetime_SinExorcism_RefreshInfoDesc</refreshInfoDescKey> -->
-		
-		<!-- <energyUnitStatDef>ISFE_SorceryStat_SinExcorcism_Charms</energyUnitStatDef> -->
-		<!-- <energyMaxStatDef>ISFE_SinExorcism_MaxCharms</energyMaxStatDef> -->
-		<!-- <energyRecoveryStatDef>ISFE_SinExorcism_CharmRecovery</energyRecoveryStatDef> -->
-		<!-- <refreshTicks>60000</refreshTicks> -->
-	<!-- </ItsSorceryFramework.EnergyTrackerDef> -->
+		<comps>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
+				<energyRecoveryStatDef>ISFE_Coomsumerism_EcstasyRecovery</energyRecoveryStatDef>
+				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
+				<deficitRecoveryFactor>1.5</deficitRecoveryFactor>
+			</li>
+		</comps>
+	</ItsSorceryFramework.EnergyTrackerDef>
 
 </Defs>

@@ -9,7 +9,7 @@
 	<ISFE_Coomsumerism_LevelUpMessage>By the grace of the many purchases made and their excitement, this pawn has risen from {0} to {1}.</ISFE_Coomsumerism_LevelUpMessage>
 	
 	<!-- Sin Exorcism -->
-	<ISFE_Sin_LevelUp>Piety up: {0}</ISFE_Sin_LevelUp>
-	<ISFE_Sin_LevelUpMessage>As a result of their purification efforts, this pawn has risen in status as per the will of the gods ({0} to {1}).</ISFE_Sin_LevelUpMessage>
+	<!-- <ISFE_Sin_LevelUp>Piety up: {0}</ISFE_Sin_LevelUp> -->
+	<!-- <ISFE_Sin_LevelUpMessage>As a result of their purification efforts, this pawn has risen in status as per the will of the gods ({0} to {1}).</ISFE_Sin_LevelUpMessage> -->
 	
 </LanguageData>

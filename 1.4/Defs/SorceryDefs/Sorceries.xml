@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+	<!-- Example EnergyTrackers - Logos Experimentia -->
 	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
 		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
 		<defName>ISFE_Sorcery_Logos_Experiment</defName>
@@ -73,88 +73,47 @@
 		</comps>
 	</ItsSorceryFramework.SorceryDef>
 	
-	<!-- <ItsSorceryFramework.SorceryDef ParentName="SorceryBase"> -->
-		<!-- <sorcerySchema>ISFE_Coomsumerism</sorcerySchema> -->
-		<!-- <defName>ISFE_Sorcery_Coomsumerism_Pleasure</defName> -->
-		<!-- <label>Pleasure</label> -->
-		<!-- <description>The first technique of a coomsumer, the ability to pleasure others and (mostly) oneself.</description> -->
-		<!-- <level>1</level> -->
-		<!-- <warmupSound>ISFE_TomeFlip</warmupSound> -->
-		<!-- <aiCanUse>true</aiCanUse> -->
-		<!-- <cooldownTicksRange>300</cooldownTicksRange> -->
+	<!-- Example EnergyTrackers - Coomsumerism -->
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_Coomsumerism</sorcerySchema>
+		<defName>ISFE_Sorcery_Coomsumerism_Pleasure</defName>
+		<label>Pleasure</label>
+		<description>The first technique of a coomsumer, the ability to pleasure others... but mostly oneself.</description>
+		<level>1</level>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>60</cooldownTicksRange>
 		
-		<!-- <statBases> -->
-			<!-- <ISFE_SorceryStat_Coomsumerism_Stamina>10</ISFE_SorceryStat_Coomsumerism_Stamina> -->
-			<!-- <ISFE_SorceryStat_Coomsumerism_Ecstasy>25</ISFE_SorceryStat_Coomsumerism_Ecstasy> -->
-			<!-- <Ability_Duration>120</Ability_Duration> -->
-		<!-- </statBases> -->
-		<!-- <verbProperties>		 -->
-			<!-- <verbClass>Verb_CastAbility</verbClass> -->
-			<!-- <range>24.9</range> -->
-			<!-- <requireLineOfSight>True</requireLineOfSight> -->
-			<!-- <warmupTime>0.5</warmupTime> -->
-			<!-- <targetParams> -->
-				<!-- <canTargetBuildings>False</canTargetBuildings> -->
-				<!-- <canTargetAnimals>False</canTargetAnimals> -->
-				<!-- <thingCategory>Item</thingCategory> -->
-				<!-- <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable> -->
-			<!-- </targetParams> -->
-		<!-- </verbProperties> -->
+		<statBases>
+			<ISFE_Stamina>15</ISFE_Stamina>
+			<ISFE_Ecstasy>25</ISFE_Ecstasy>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetBuildings>False</canTargetBuildings>
+				<canTargetAnimals>False</canTargetAnimals>
+				<thingCategory>Item</thingCategory>
+				<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
 		
-		<!-- <comps> -->
-			<!-- <li Class = "CompProperties_AbilityGiveHediff"> -->
-				<!-- <compClass>CompAbilityEffect_GiveHediff</compClass> -->
-				<!-- <hediffDef>AmbrosiaHigh</hediffDef> -->
-				<!-- <durationMultiplier>ISFE_Coomsumerism_CoomVirility</durationMultiplier> -->
-				<!-- <psychic>false</psychic> -->
-				<!-- <applicableToMechs>False</applicableToMechs> -->
-			<!-- </li> -->
-			<!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
-				<!-- <fleckDef>PsycastPsychicEffect</fleckDef> -->
-			<!-- </li> -->
-		<!-- </comps> -->
-	<!-- </ItsSorceryFramework.SorceryDef> -->
-	
-	<!-- <ItsSorceryFramework.SorceryDef ParentName="SorceryBase"> -->
-		<!-- <sorcerySchema>ISFE_SinExorcism</sorcerySchema> -->
-		<!-- <defName>ISFE_SinExorcism_SinTransfer</defName> -->
-		<!-- <label>Sin transfer</label> -->
-		<!-- <description>A method to take sin away from a target.</description> -->
-		<!-- <level>1</level> -->
-		<!-- <warmupSound>ISFE_TomeFlip</warmupSound> -->
-		<!-- <aiCanUse>true</aiCanUse> -->
-		<!-- <cooldownTicksRange>300</cooldownTicksRange> -->
-		
-		<!-- <statBases> -->
-			<!-- <ISFE_SorceryStat_SinExcorcism_Sin>10</ISFE_SorceryStat_SinExcorcism_Sin> -->
-			<!-- <ISFE_SorceryStat_SinExcorcism_Charms>2</ISFE_SorceryStat_SinExcorcism_Charms> -->
-			<!-- <Ability_Duration>120</Ability_Duration> -->
-		<!-- </statBases> -->
-		<!-- <verbProperties>		 -->
-			<!-- <verbClass>Verb_CastAbility</verbClass> -->
-			<!-- <range>24.9</range> -->
-			<!-- <requireLineOfSight>True</requireLineOfSight> -->
-			<!-- <warmupTime>0.5</warmupTime> -->
-			<!-- <targetParams> -->
-				<!-- <canTargetBuildings>False</canTargetBuildings> -->
-				<!-- <canTargetAnimals>False</canTargetAnimals> -->
-				<!-- <thingCategory>Item</thingCategory> -->
-				<!-- <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable> -->
-			<!-- </targetParams> -->
-		<!-- </verbProperties> -->
-		
-		<!-- <comps> -->
-			<!-- <li Class = "CompProperties_AbilityGiveHediff"> -->
-				<!-- <compClass>CompAbilityEffect_GiveHediff</compClass> -->
-				<!-- <hediffDef>PsychiteTeaHigh</hediffDef> -->
-				<!-- <durationMultiplier>ISFE_SinExorcism_SinTolerance</durationMultiplier> -->
-				<!-- <psychic>false</psychic> -->
-				<!-- <applicableToMechs>False</applicableToMechs> -->
-			<!-- </li> -->
-			<!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
-				<!-- <fleckDef>PsycastPsychicEffect</fleckDef> -->
-			<!-- </li> -->
-		<!-- </comps> -->
-	<!-- </ItsSorceryFramework.SorceryDef> -->
+		<comps>
+			<li Class = "CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>AmbrosiaHigh</hediffDef>
+				<durationMultiplier>ISFE_Coomsumerism_CoomVirility</durationMultiplier>
+				<psychic>false</psychic>
+				<applicableToMechs>False</applicableToMechs>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
   
 </Defs>
