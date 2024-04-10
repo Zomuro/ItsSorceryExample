@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	
+	<!-- LearningTracker_Tree -->
 	<!-- Example 1: Logos Experimentia -->
-	<ISFE_Vancian_Logos_RefreshNotif>Recharge in: {0}</ISFE_Vancian_Logos_RefreshNotif>
+	<ISFE_Logos_SkillPointLabel>knowledge</ISFE_Logos_SkillPointLabel>
 	
-	<!-- Example 3: Sin Exorcism -->
-	<ISFE_VancianLifetime_Sin_RefreshNotif>Regain charms in: {0}</ISFE_VancianLifetime_Sin_RefreshNotif>
+	<!-- Example 2: Coomsumerism -->
+	<ISFE_Coomsumerism_SkillPointLabel>essence</ISFE_Coomsumerism_SkillPointLabel>
 	
 </LanguageData>

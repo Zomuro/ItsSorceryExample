@@ -8,7 +8,7 @@
 		<description>Carriers of this gene, while not necessarily pleasure-seeking, are predisposed to becoming terminal milk drinkers.</description>
 		
 		<iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
-		<displayCategory>ISFE_SchemaGene</displayCategory>
+		<displayCategory>ISF_SchemaGene</displayCategory>
 		<displayOrderInCategory>60</displayOrderInCategory>
 		
 		<modExtensions>
