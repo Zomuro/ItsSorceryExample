@@ -5,6 +5,10 @@
 		<defName>ISFE_SchemaItem_Logos</defName>
 		<label>Logic Structurer</label>
 		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 		<comps>
 			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
 				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
@@ -26,6 +30,10 @@
 		<defName>ISFE_SchemaItem_Coomsumerism</defName>
 		<label>The Initiate's Guide to Coomsumerism</label>
 		<description>A catalog detailing the ravishing techniques of the Coomsumers.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Coomsumerism</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>		
 		<comps>
 			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
 				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>

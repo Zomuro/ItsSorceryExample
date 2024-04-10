@@ -78,8 +78,9 @@
 		<sorcerySchema>ISFE_Coomsumerism</sorcerySchema>
 		<defName>ISFE_Sorcery_Coomsumerism_Pleasure</defName>
 		<label>Pleasure</label>
-		<description>The first technique of a coomsumer, the ability to pleasure others... but mostly oneself.</description>
+		<description>The first technique of a coomsumer is the ability to pleasure others... but mostly oneself.</description>
 		<level>1</level>
+		<iconPath>UI/Sorceries/ISFE_Coomsumerism_Pleasure</iconPath>
 		<warmupSound>ISFE_TomeFlip</warmupSound>
 		<aiCanUse>true</aiCanUse>
 		<cooldownTicksRange>60</cooldownTicksRange>
