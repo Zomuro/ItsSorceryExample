@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Example 1: Logos Experimentia -->
+	<StatDef>
+		<defName>ISFE_Brainpower</defName>
+		<label>brainpower</label>
+		<category>ISF_Sorcery</category>
+		<description>The mental processing power required to perform science.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Theory</defName>
+		<label>theory</label>
+		<category>ISF_Sorcery</category>
+		<description>The abstractness brought on by science. Too much of it is a bad thing.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>	
+	
+	<!-- Example 2: Coomsumerism -->
+	<StatDef>
+		<defName>ISFE_Stamina</defName>
+		<label>stamina</label>
+		<category>ISF_Sorcery</category>
+		<description>The amount of vigor it takes to perform on the field.</description>
+		<defaultBaseValue>10</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Ecstasy</defName>
+		<label>ecstasy</label>
+		<category>ISF_Sorcery</category>
+		<description>The amount of pleasure gained from the exertion of a sorcery.</description>
+		<defaultBaseValue>25</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+
+</Defs>
