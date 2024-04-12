@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Example 1: Logos Experimentia -->
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
+		<defName>ISFE_Logos_LearningTrackerProgress</defName>
+		<label>Summary</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>ISFE_Logos_LearningTrackerTree</defName>
+		<label>First Studies</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>ISFE_Logos_LearningTrackerTree_Two</defName>
+		<label>Experimentation</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree</learningTrackerDef>
+		<defName>ISFE_Node_Logos_BirdBees</defName>
+		<label>Birds and bees</label>
+		<description>The literal basics on being smart.</description>
+		
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>3</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Mediocrity</defName>
+		<label>Mediocrity</label>
+		<description>Becoming average is incredibly difficult, you know? You need to be better than 50% of all the people in the world, straddling the 100 IQ line.</description>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_BirdBees</li>
+		</prereqs>
+		<prereqsStats>
+			<li>
+				<mode>LesserEqual</mode>
+				<statReqs>
+					<PsychicSensitivity>1.1</PsychicSensitivity>
+				</statReqs>
+			</li>
+		</prereqsStats>
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>4</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
+		
+		<coordX>1</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Tools</defName>
+		<label>Experimental tools</label>
+		<description>You need the capability to test things, and that requires you to figure out what tools you need.</description>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_BirdBees</li>
+		</prereqs>
+		
+		<abilityGain>
+			<li>ISFE_Sorcery_Logos_Experiment</li>
+		</abilityGain>
+		
+		<hediffAdd>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>1</severity></li>
+		</hediffAdd>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Design</defName>
+		<label>Experimental design</label>
+		<description>Having a good experimental design allows you to determine the true effect of different factors.</description>
+		
+		<coordX>1</coordX>
+		<coordY>0</coordY>
+		<pointReq>3</pointReq>
+				
+		<prereqs>
+			<li>ISFE_Node_Logos_Tools</li>
+		</prereqs>
+		
+		<abilityGain>
+			<li>ISFE_Sorcery_Logos_Reasoning</li>
+		</abilityGain>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Surrender</defName>
+		<label>Give up</label>
+		<description>It's too hard. I give up.</description>
+		
+		<coordX>2</coordX>
+		<coordY>1</coordY>
+		<pointReq>0</pointReq>
+				
+		<prereqs>
+			<li>ISFE_Node_Logos_Design</li>
+			<li>ISFE_Node_Logos_Tools</li>
+		</prereqs>
+		<prereqMode>Min</prereqMode>
+		<prereqModeMin>1</prereqModeMin>
+		
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>1</offset>
+			</li>
+			<li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.5</offset>
+			</li>
+		</capMods>
+		
+		<hediffRemove>
+			<li>ISFE_EnhancedIntel</li>
+		</hediffRemove>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Refinement</defName>
+		<label>Experimental refinement</label>
+		<description>Make sure to develop proper controls.</description>
+		
+		<coordX>2</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+				
+		<prereqs>
+			<li>ISFE_Node_Logos_Design</li>
+		</prereqs>
+		<exclusiveNodes>
+			<li>ISFE_Node_Logos_Surrender</li>
+		</exclusiveNodes>
+		
+		<hediffAdjust>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
+		</hediffAdjust>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Collection</defName>
+		<label>Data collection</label>
+		<description>Good data collection now saves a lot of heartache later.</description>
+		
+		<coordX>3</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+				
+		<prereqs>
+			<li>ISFE_Node_Logos_Refinement</li>
+		</prereqs>
+		
+		<hediffAdjust>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
+		</hediffAdjust>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Conclusion</defName>
+		<label>Research conclusion</label>
+		<description>A through analysis allows the next bit of research to reach new heights.</description>
+		
+		<coordX>4</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+				
+		<prereqs>
+			<li>ISFE_Node_Logos_Collection</li>
+		</prereqs>
+		
+		<hediffAdjust>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
+		</hediffAdjust>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<!-- Example 2: Coomsumerism -->
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
+		<defName>ISFE_Coomsumerism_LearningTrackerProgress</defName>
+		<label>Coomer Stats</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>ISFE_Coomsumerism_CoomerBasics</defName>
+		<label>Coomer Basics</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedFound</defName>
+		<label>Seed foundation</label>
+		<description>A crash course on the miracle of life, and how you can bring it about.</description>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedPlanting</defName>
+		<label>Seeding techniques</label>
+		<description>A study on how to plant seeds deep into fertile soil, providing the best methods for fertilization for only $19.99 per month (additional conditions may apply).</description>
+		
+		<coordX>1</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedFound</li>
+		</prereqs>
+		
+		<abilityGain>
+			<li>ISFE_Sorcery_Coomsumerism_Pleasure</li>
+		</abilityGain>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedGerm</defName>
+		<label>Seed germination</label>
+		<description>A course on the tools of the trade needed to nurture the best possible seedling possible, including a catalog where you can learn to find a good bargain for sowing seeds.</description>
+		
+		<coordX>2</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedPlanting</li>
+		</prereqs>
+		<prereqLevel>4</prereqLevel>
+		
+		<statOffsets>
+			<NegotiationAbility>0.05</NegotiationAbility>
+		</statOffsets>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_SeedPurchase</defName>
+		<label>Seed-o-coomics</label>
+		<description>The advanced course on learning how the seeding market works, allowing you to retire early to a life of pleasure.</description>
+		
+		<coordX>3</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		
+		<statOffsets>
+			<NegotiationAbility>0.1</NegotiationAbility>
+		</statOffsets>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_PartyCondition</defName>
+		<label>Party conditioning</label>
+		<description>Training meant to provide the endurance required to work long and hard, through exccessive consumption. This includes learning how to waste conditioner on yourself, for a soft touch from even the hardest body parts.</description>
+		
+		<coordX>3</coordX>
+		<coordY>1</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		<prereqsResearch>
+			<li>Brewing</li>
+		</prereqsResearch>
+		<prereqsStats>
+			<li>
+				<mode>Greater</mode>
+				<statReqs>
+					<MoveSpeed>3</MoveSpeed>
+				</statReqs>
+			</li>
+		</prereqsStats>
+		
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.25</offset>
+			</li>
+			<li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.25</offset>
+			</li>
+		</capMods>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_OiledMuscles</defName>
+		<label>Oiled muscles</label>
+		<description>Training meant to provide increase strength and resilience. Nothing says beauty like a glistening body in the sun on a nice beach.</description>
+		
+		<coordX>3</coordX>
+		<coordY>2</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		<exclusiveNodes>
+			<li>ISFE_Node_Coomsumerism_PartyCondition</li>
+		</exclusiveNodes>
+		
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.30</offset>
+			</li>
+		</capMods>
+		<statFactors>
+			<IncomingDamageFactor>0.85</IncomingDamageFactor>
+		</statFactors>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Coomsumerism_CoomerBasics</learningTrackerDef>
+		<defName>ISFE_Node_Coomsumerism_ExpandedDesires</defName>
+		<label>Desire expanded</label>
+		<description>Training meant to aid a practitioner with reflecting and refining their desires, while making him or her more desirable in turn. The greatest beauty only comes when a goal is aligned with a will.</description>
+		
+		<coordX>3</coordX>
+		<coordY>3</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
+		</prereqs>
+		<prereqsResearch>
+			<li>PsychiteRefining</li>
+		</prereqsResearch>
+		<exclusiveNodes>
+			<li>ISFE_Node_Coomsumerism_PartyCondition</li>
+			<li>ISFE_Node_Coomsumerism_OiledMuscles</li>
+		</exclusiveNodes>
+		
+		<capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<offset>0.1</offset>
+			</li>
+		</capMods>
+		<statOffsets>
+			<PawnBeauty>1</PawnBeauty>
+		</statOffsets>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef MayRequire = "Ludeon.RimWorld.Biotech">
+		<defName>ISFE_CoomerInstinct</defName>
+		<label>coomer instinct</label>
+		<labelShortAdj>coomer</labelShortAdj>
+		<description>Carriers of this gene, while not necessarily pleasure-seeking, are predisposed to becoming terminal milk drinkers.</description>
+		
+		<iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+		<displayCategory>ISF_SchemaGene</displayCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		
+		<modExtensions>
+			<li Class="ItsSorceryFramework.ModExtension_SchemaAddition">
+				<schema>ISFE_Coomsumerism</schema>
+			</li>
+		</modExtensions>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>coom</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>
