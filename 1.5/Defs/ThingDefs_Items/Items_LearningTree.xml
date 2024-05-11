@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ISF_LearningTreeItemBase">
+		<defName>ISFE_LearningTreeItem_Logos</defName>
+		<label>The Scientific Method - a Intro to Experiments</label>
+		<description>An item that can open up the user's perspective, unlocking the scientific method.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_LearningTreeItem">
+				<compClass>ItsSorceryFramework.CompLearningTreeItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Unlock {0}</useLabel>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseLearningTree">
+				<compClass>ItsSorceryFramework.CompUseEffect_LearningTree</compClass>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+  
+</Defs>

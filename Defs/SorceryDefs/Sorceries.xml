@@ -73,6 +73,45 @@
 		</comps>
 	</ItsSorceryFramework.SorceryDef>
 	
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>ISFE_Sorcery_Logos_Testing</defName>
+		<label>Testing</label>
+		<description>test to add exp.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/ISFE_Logos_Reasoning</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		
+		<statBases>
+			<ISFE_Brainpower>-30</ISFE_Brainpower>
+			<ISFE_Theory>-25</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>0.1</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>ItsSorceryFramework.CompAbilityEffect_AddEXP</compClass>
+				<severity>2000</severity>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
 	<!-- Example EnergyTrackers - Coomsumerism -->
 	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
 		<sorcerySchema>ISFE_Coomsumerism</sorcerySchema>

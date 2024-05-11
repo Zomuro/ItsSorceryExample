@@ -73,10 +73,7 @@
 		<label>Logos Experimentia 5</label>
 		<description>For perf testing.</description>
 	
-		<energyTrackerDefs>
-			<li>ISFE_Logos_Brainpower</li>
-			<li>ISFE_Logos_Theory</li>
-		</energyTrackerDefs>
+		<energyTrackerDefs/>
 		<learningTrackerDefs>
 			<li>ISFE_Logos_LearningTrackerProgress</li>
 			<li>ISFE_Logos_LearningTrackerTree</li>

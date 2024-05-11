@@ -166,6 +166,18 @@
 		</levelFactors>
 		<levelSpecifics>
 			<li>
+				<level>2</level>
+				<specialUnlocks>
+					<li>ISFE_Coomsumerism_CoomerBasics</li>
+				</specialUnlocks>
+				<hediffAdd>
+					<li>
+						<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+						<severity>0.3</severity>
+					</li>
+				</hediffAdd>
+			</li>
+			<li>
 				<level>5</level>
 				<capMods>
 					<li>
@@ -173,6 +185,12 @@
 						<offset>1</offset>
 					</li>
 				</capMods>
+				<hediffAdjust>
+					<li>
+						<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+						<severity>0.3</severity>
+					</li>
+				</hediffAdjust>
 			</li>
 		</levelSpecifics>
 		<levelLabels>

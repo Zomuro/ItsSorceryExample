@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SchemaItemBase">
+	<ThingDef ParentName="ISF_SchemaItemBase">
 		<defName>ISFE_SchemaItem_Logos</defName>
 		<label>Logic Structurer</label>
 		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
@@ -26,7 +26,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="SchemaItemBase">
+	<ThingDef ParentName="ISF_SchemaItemBase">
 		<defName>ISFE_SchemaItem_Coomsumerism</defName>
 		<label>The Initiate's Guide to Coomsumerism</label>
 		<description>A catalog detailing the ravishing techniques of the Coomsumers.</description>
@@ -51,7 +51,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="SchemaItemBase">
+	<ThingDef ParentName="ISF_SchemaItemBase">
 		<defName>ISFE_SchemaItem_LogosThree</defName>
 		<label>Logic Structurer 3</label>
 		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
@@ -76,7 +76,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="SchemaItemBase">
+	<ThingDef ParentName="ISF_SchemaItemBase">
 		<defName>ISFE_SchemaItem_LogosFour</defName>
 		<label>Logic Structurer 4</label>
 		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
@@ -101,7 +101,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="SchemaItemBase">
+	<ThingDef ParentName="ISF_SchemaItemBase">
 		<defName>ISFE_SchemaItem_LogosFive</defName>
 		<label>Logic Structurer 5</label>
 		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
