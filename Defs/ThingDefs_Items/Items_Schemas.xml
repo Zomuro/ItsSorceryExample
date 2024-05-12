@@ -51,79 +51,80 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="ISF_SchemaItemBase">
-		<defName>ISFE_SchemaItem_LogosThree</defName>
-		<label>Logic Structurer 3</label>
-		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
-		<graphicData>
-			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<comps>
-			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
-				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
-				<useJob>UseItem</useJob>
-				<useLabel>Learn {0}</useLabel>
-				<schemaDef>ISFE_LogosExperimentiaThree</schemaDef>
-			</li>
-			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
-				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
-				<schemaDef>ISFE_LogosExperimentiaThree</schemaDef>
-			</li>
-			<li Class="CompProperties_UseEffectArtifact">
-				<sound>PsychicAnimalPulserCast</sound>
-			</li>
-		</comps>
-	</ThingDef>
+	<!-- For perf testing -->
+	<!-- <ThingDef ParentName="ISF_SchemaItemBase"> -->
+		<!-- <defName>ISFE_SchemaItem_LogosThree</defName> -->
+		<!-- <label>Logic Structurer 3</label> -->
+		<!-- <description>A item meant to create a system in your mind to organize arcane knowledge.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Items/ISFE_SchemaItem_Logos</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+		<!-- <comps> -->
+			<!-- <li Class="ItsSorceryFramework.CompProperties_SchemaItem"> -->
+				<!-- <compClass>ItsSorceryFramework.CompSchemaItem</compClass> -->
+				<!-- <useJob>UseItem</useJob> -->
+				<!-- <useLabel>Learn {0}</useLabel> -->
+				<!-- <schemaDef>ISFE_LogosExperimentiaThree</schemaDef> -->
+			<!-- </li> -->
+			<!-- <li Class="ItsSorceryFramework.CompProperties_UseEffectSchema"> -->
+				<!-- <compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass> -->
+				<!-- <schemaDef>ISFE_LogosExperimentiaThree</schemaDef> -->
+			<!-- </li> -->
+			<!-- <li Class="CompProperties_UseEffectArtifact"> -->
+				<!-- <sound>PsychicAnimalPulserCast</sound> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	<!-- </ThingDef> -->
 	
-	<ThingDef ParentName="ISF_SchemaItemBase">
-		<defName>ISFE_SchemaItem_LogosFour</defName>
-		<label>Logic Structurer 4</label>
-		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
-		<graphicData>
-			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<comps>
-			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
-				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
-				<useJob>UseItem</useJob>
-				<useLabel>Learn {0}</useLabel>
-				<schemaDef>ISFE_LogosExperimentiaFour</schemaDef>
-			</li>
-			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
-				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
-				<schemaDef>ISFE_LogosExperimentiaFour</schemaDef>
-			</li>
-			<li Class="CompProperties_UseEffectArtifact">
-				<sound>PsychicAnimalPulserCast</sound>
-			</li>
-		</comps>
-	</ThingDef>
+	<!-- <ThingDef ParentName="ISF_SchemaItemBase"> -->
+		<!-- <defName>ISFE_SchemaItem_LogosFour</defName> -->
+		<!-- <label>Logic Structurer 4</label> -->
+		<!-- <description>A item meant to create a system in your mind to organize arcane knowledge.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Items/ISFE_SchemaItem_Logos</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+		<!-- <comps> -->
+			<!-- <li Class="ItsSorceryFramework.CompProperties_SchemaItem"> -->
+				<!-- <compClass>ItsSorceryFramework.CompSchemaItem</compClass> -->
+				<!-- <useJob>UseItem</useJob> -->
+				<!-- <useLabel>Learn {0}</useLabel> -->
+				<!-- <schemaDef>ISFE_LogosExperimentiaFour</schemaDef> -->
+			<!-- </li> -->
+			<!-- <li Class="ItsSorceryFramework.CompProperties_UseEffectSchema"> -->
+				<!-- <compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass> -->
+				<!-- <schemaDef>ISFE_LogosExperimentiaFour</schemaDef> -->
+			<!-- </li> -->
+			<!-- <li Class="CompProperties_UseEffectArtifact"> -->
+				<!-- <sound>PsychicAnimalPulserCast</sound> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	<!-- </ThingDef> -->
 	
-	<ThingDef ParentName="ISF_SchemaItemBase">
-		<defName>ISFE_SchemaItem_LogosFive</defName>
-		<label>Logic Structurer 5</label>
-		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
-		<graphicData>
-			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<comps>
-			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
-				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
-				<useJob>UseItem</useJob>
-				<useLabel>Learn {0}</useLabel>
-				<schemaDef>ISFE_LogosExperimentiaFive</schemaDef>
-			</li>
-			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
-				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
-				<schemaDef>ISFE_LogosExperimentiaFive</schemaDef>
-			</li>
-			<li Class="CompProperties_UseEffectArtifact">
-				<sound>PsychicAnimalPulserCast</sound>
-			</li>
-		</comps>
-	</ThingDef>
+	<!-- <ThingDef ParentName="ISF_SchemaItemBase"> -->
+		<!-- <defName>ISFE_SchemaItem_LogosFive</defName> -->
+		<!-- <label>Logic Structurer 5</label> -->
+		<!-- <description>A item meant to create a system in your mind to organize arcane knowledge.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Items/ISFE_SchemaItem_Logos</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+		<!-- <comps> -->
+			<!-- <li Class="ItsSorceryFramework.CompProperties_SchemaItem"> -->
+				<!-- <compClass>ItsSorceryFramework.CompSchemaItem</compClass> -->
+				<!-- <useJob>UseItem</useJob> -->
+				<!-- <useLabel>Learn {0}</useLabel> -->
+				<!-- <schemaDef>ISFE_LogosExperimentiaFive</schemaDef> -->
+			<!-- </li> -->
+			<!-- <li Class="ItsSorceryFramework.CompProperties_UseEffectSchema"> -->
+				<!-- <compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass> -->
+				<!-- <schemaDef>ISFE_LogosExperimentiaFive</schemaDef> -->
+			<!-- </li> -->
+			<!-- <li Class="CompProperties_UseEffectArtifact"> -->
+				<!-- <sound>PsychicAnimalPulserCast</sound> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	<!-- </ThingDef> -->
   
 </Defs>

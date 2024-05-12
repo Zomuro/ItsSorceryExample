@@ -34,52 +34,53 @@
 		<progressTrackerDef>ISFE_ProgressTracker_Coomsumerism</progressTrackerDef>
 	</ItsSorceryFramework.SorcerySchemaDef>
 	
-	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
-		<defName>ISFE_LogosExperimentiaThree</defName>
-		<label>Logos Experimentia 3</label>
-		<description>For perf testing.</description>
+	<!-- For performance testing -->
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_LogosExperimentiaThree</defName> -->
+		<!-- <label>Logos Experimentia 3</label> -->
+		<!-- <description>For perf testing.</description> -->
 	
-		<energyTrackerDefs>
-			<li>ISFE_Logos_Brainpower</li>
-			<li>ISFE_Logos_Theory</li>
-		</energyTrackerDefs>
-		<learningTrackerDefs>
-			<li>ISFE_Logos_LearningTrackerProgress</li>
-			<li>ISFE_Logos_LearningTrackerTree</li>
-			<li>ISFE_Logos_LearningTrackerTree_Two</li>
-		</learningTrackerDefs>
-		<progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef>
-	</ItsSorceryFramework.SorcerySchemaDef>
+		<!-- <energyTrackerDefs> -->
+			<!-- <li>ISFE_Logos_Brainpower</li> -->
+			<!-- <li>ISFE_Logos_Theory</li> -->
+		<!-- </energyTrackerDefs> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_Logos_LearningTrackerProgress</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree_Two</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
 	
-	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
-		<defName>ISFE_LogosExperimentiaFour</defName>
-		<label>Logos Experimentia 4</label>
-		<description>For perf testing.</description>
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_LogosExperimentiaFour</defName> -->
+		<!-- <label>Logos Experimentia 4</label> -->
+		<!-- <description>For perf testing.</description> -->
 	
-		<energyTrackerDefs>
-			<li>ISFE_Logos_Brainpower</li>
-			<li>ISFE_Logos_Theory</li>
-		</energyTrackerDefs>
-		<learningTrackerDefs>
-			<li>ISFE_Logos_LearningTrackerProgress</li>
-			<li>ISFE_Logos_LearningTrackerTree</li>
-			<li>ISFE_Logos_LearningTrackerTree_Two</li>
-		</learningTrackerDefs>
-		<progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef>
-	</ItsSorceryFramework.SorcerySchemaDef>
+		<!-- <energyTrackerDefs> -->
+			<!-- <li>ISFE_Logos_Brainpower</li> -->
+			<!-- <li>ISFE_Logos_Theory</li> -->
+		<!-- </energyTrackerDefs> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_Logos_LearningTrackerProgress</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree_Two</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
 	
-	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
-		<defName>ISFE_LogosExperimentiaFive</defName>
-		<label>Logos Experimentia 5</label>
-		<description>For perf testing.</description>
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_LogosExperimentiaFive</defName> -->
+		<!-- <label>Logos Experimentia 5</label> -->
+		<!-- <description>For perf testing.</description> -->
 	
-		<energyTrackerDefs/>
-		<learningTrackerDefs>
-			<li>ISFE_Logos_LearningTrackerProgress</li>
-			<li>ISFE_Logos_LearningTrackerTree</li>
-			<li>ISFE_Logos_LearningTrackerTree_Two</li>
-		</learningTrackerDefs>
-		<progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef>
-	</ItsSorceryFramework.SorcerySchemaDef>
+		<!-- <energyTrackerDefs/> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_Logos_LearningTrackerProgress</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree_Two</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
 	
 </Defs>
