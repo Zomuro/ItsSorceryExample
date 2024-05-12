@@ -166,6 +166,57 @@
 		</levelFactors>
 		<levelSpecifics>
 			<li>
+				<level>2</level>
+				<specialUnlocks>
+					<li>ISFE_Coomsumerism_CoomerBasics</li>
+				</specialUnlocks>
+				<hediffAdd>
+					<li>
+						<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+						<severity>0.3</severity>
+					</li>
+				</hediffAdd>
+			</li>
+			<li>
+				<level>3</level>
+				<optionChoices>3</optionChoices>
+				<options>
+					<li>
+						<label>Be like cream</label>
+						<description>Clotting and thick, be as light as whipped cream.</description>
+						<statOffsets>
+							<MoveSpeed>0.25</MoveSpeed>
+						</statOffsets>
+						<hediffAdjust>
+							<li>
+								<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+								<severity>0.15</severity>
+							</li>
+						</hediffAdjust>
+					</li>
+					<li>
+						<label>Be like milk</label>
+						<description>Be fluid, be adaptive and flexible in thought.</description>
+						<statOffsets>
+							<GlobalLearningFactor>0.1</GlobalLearningFactor>
+						</statOffsets>
+						<hediffAdjust>
+							<li>
+								<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+								<severity>0.3</severity>
+							</li>
+						</hediffAdjust>
+					</li>
+					<li>
+						<label>Be like butter</label>
+						<description>Slick and solid, let pain slide off of you.</description>
+						<statOffsets>
+							<PainShockThreshold>-0.05</PainShockThreshold>
+						</statOffsets>
+					</li>
+				</options>
+			</li>
+			<li>
 				<level>5</level>
 				<capMods>
 					<li>
@@ -173,6 +224,12 @@
 						<offset>1</offset>
 					</li>
 				</capMods>
+				<hediffAdjust>
+					<li>
+						<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+						<severity>0.3</severity>
+					</li>
+				</hediffAdjust>
 			</li>
 		</levelSpecifics>
 		<levelLabels>
