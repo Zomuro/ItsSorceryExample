@@ -240,6 +240,10 @@
 		<coordX>0</coordX>
 		<coordY>0</coordY>
 		<pointReq>1</pointReq>
+		<statOffsets>
+			<ISFE_Coomsumerism_CoomVirility>0.2</ISFE_Coomsumerism_CoomVirility>
+			<ISFE_MagicFactor>0.5</ISFE_MagicFactor>
+		</statOffsets>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">

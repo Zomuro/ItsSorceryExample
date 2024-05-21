@@ -7,13 +7,77 @@
 		<label>coom potency</label>
 		<description>A general multiplier. Its quality affects the power of a coomsumer's magicks.</description>
 		<category>BasicsPawn</category>
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <toStringStyle>FloatTwo</toStringStyle> -->
+		<!-- <showOnAnimals>false</showOnAnimals> -->
+		<!-- <alwaysHide>false</alwaysHide> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <cacheable>true</cacheable> -->
+		<!-- <scenarioRandomizable>true</scenarioRandomizable> -->
+		<!-- <displayPriorityInCategory>3495</displayPriorityInCategory> -->
+		
 		<defaultBaseValue>1</defaultBaseValue>
-		<hideAtValue>1</hideAtValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<minValue>0</minValue>
+		<displayPriorityInCategory>3500</displayPriorityInCategory>
+		<scenarioRandomizable>true</scenarioRandomizable>
+		<cacheable>true</cacheable>
+	</StatDef>
+
+	<StatDef>
+		<defName>ISFE_MagicFactor</defName>
+		<label>magic potency</label>
+		<description>A general multiplier on magic.</description>
+		<category>BasicsPawn</category>
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <toStringStyle>FloatTwo</toStringStyle> -->
+		<!-- <showOnAnimals>false</showOnAnimals> -->
+		<!-- <alwaysHide>false</alwaysHide> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <cacheable>true</cacheable> -->
+		<!-- <scenarioRandomizable>true</scenarioRandomizable> -->
+		<!-- <displayPriorityInCategory>3495</displayPriorityInCategory> -->
+		
+		<defaultBaseValue>1</defaultBaseValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<minValue>0</minValue>
+		<displayPriorityInCategory>3500</displayPriorityInCategory>
+		<scenarioRandomizable>true</scenarioRandomizable>
+		<cacheable>true</cacheable>
+	</StatDef>
+
+	<StatDef>
+		<defName>ISFE_MinMagic</defName>
+		<label>minimum magic</label>
+		<description>The minimum energy a pawn has.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>20</defaultBaseValue>
+		<minValue>0</minValue>
 		<toStringStyle>FloatTwo</toStringStyle>
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>false</alwaysHide>
+		<displayPriorityInCategory>3499</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_MagicFactor</li>
+		</statFactors>
+	</StatDef>
+
+	<StatDef>
+		<defName>ISFE_MaxMagic</defName>
+		<label>maximum magic</label>
+		<description>The maximum energy a pawn has.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>100</defaultBaseValue>
 		<minValue>0</minValue>
-		<displayPriorityInCategory>3495</displayPriorityInCategory>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>false</alwaysHide>
+		<displayPriorityInCategory>3499</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_MagicFactor</li>
+		</statFactors>
 	</StatDef>
 	
 	<StatDef>
@@ -26,6 +90,9 @@
 		<showOnAnimals>false</showOnAnimals>
 		<alwaysHide>true</alwaysHide>
 		<displayPriorityInCategory>3496</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_Coomsumerism_CoomVirility</li>
+		</statFactors>
 	</StatDef>
 	
 	<StatDef>
@@ -37,7 +104,7 @@
 		<minValue>0</minValue>
 		<toStringStyle>FloatTwo</toStringStyle>
 		<showOnAnimals>false</showOnAnimals>
-		<alwaysHide>true</alwaysHide>
+		<alwaysHide>false</alwaysHide>
 		<displayPriorityInCategory>3499</displayPriorityInCategory>
 		<statFactors>
 			<li>ISFE_Coomsumerism_CoomVirility</li>
@@ -53,7 +120,7 @@
 		<minValue>0</minValue>
 		<toStringStyle>FloatTwo</toStringStyle>
 		<showOnAnimals>false</showOnAnimals>
-		<alwaysHide>true</alwaysHide>
+		<alwaysHide>false</alwaysHide>
 		<displayPriorityInCategory>3499</displayPriorityInCategory>
 		<statFactors>
 			<li>ISFE_Coomsumerism_CoomVirility</li>
