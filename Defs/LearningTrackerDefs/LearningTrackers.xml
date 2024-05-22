@@ -242,7 +242,6 @@
 		<pointReq>1</pointReq>
 		<statOffsets>
 			<ISFE_Coomsumerism_CoomVirility>0.2</ISFE_Coomsumerism_CoomVirility>
-			<ISFE_MagicFactor>0.5</ISFE_MagicFactor>
 		</statOffsets>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
