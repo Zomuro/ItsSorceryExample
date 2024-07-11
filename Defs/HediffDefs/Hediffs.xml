@@ -51,6 +51,23 @@
 		</stages>
 	</HediffDef>
 	
+	<!-- <HediffDef ParentName="DiseaseBase"> -->
+		<!-- <defName>ISFE_CoomPotencyTest</defName> -->
+		<!-- <label>coom enhancement</label> -->
+		<!-- <description>Additional coom capability.</description> -->
+		<!-- <isBad>false</isBad> -->
+		<!-- <initialSeverity>1</initialSeverity> -->
+		<!-- <maxSeverity>1</maxSeverity> -->
+		<!-- <stages> -->
+		    <!-- <li> -->
+				<!-- <label>minor</label>			 -->
+				<!-- <statOffsets> -->
+					<!-- <ISFE_Coomsumerism_CoomVirility>0.2</ISFE_Coomsumerism_CoomVirility> -->
+				<!-- </statOffsets> -->
+		    <!-- </li> -->
+		<!-- </stages> -->
+	<!-- </HediffDef> -->
+	
 	<HediffDef ParentName="DiseaseBase">
 		<defName>ISFE_Logos_MentalStrain</defName>
 		<label>mental strain</label>
