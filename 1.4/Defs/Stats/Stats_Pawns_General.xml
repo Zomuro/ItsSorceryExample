@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Coomsumerism -->
+	<StatDef>
+		<defName>ISFE_Coomsumerism_CoomVirility</defName>
+		<label>coom potency</label>
+		<description>A general multiplier. Its quality affects the power of a coomsumer's magicks.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>false</alwaysHide>
+		<minValue>0</minValue>
+		<displayPriorityInCategory>3495</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Coomsumerism_StaminaRecovery</defName>
+		<label>stamina rate</label>
+		<description>The rate at which a pawn gains/loses the energy needed to do the deed.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>5</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3496</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Coomsumerism_MinEndurance</defName>
+		<label>minimum endurance</label>
+		<description>The minimum energy a pawn has to do the dirty.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3499</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_Coomsumerism_CoomVirility</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Coomsumerism_MaxEndurance</defName>
+		<label>maximum endurance</label>
+		<description>The maximum energy a pawn has to do the dirty.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>100</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3499</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_Coomsumerism_CoomVirility</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Coomsumerism_MinEcstasy</defName>
+		<label>minimum ecstasy</label>
+		<description>The minimum horniness a pawn can possibly reach.</description>
+		<category>BasicsPawn</category>
+		<minValue>0</minValue>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3498</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_Coomsumerism_CoomVirility</li>
+		</statFactors>
+	</StatDef>
+
+	<StatDef>
+		<defName>ISFE_Coomsumerism_MaxEcstasy</defName>
+		<label>maximum ecstasy</label>
+		<description>The maximum ecstasy a pawn can handle before they start feeling like they might coom.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>100</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3499</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_Coomsumerism_CoomVirility</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Coomsumerism_AbsMaxEcstasy</defName>
+		<label>absolute max ecstasy</label>
+		<description>The absolute maximum ecstasy a pawn can handle before they coom loud and proud.</description>
+		<category>BasicsPawn</category>
+		<minValue>0</minValue>
+		<defaultBaseValue>150</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3497</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_Coomsumerism_CoomVirility</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef>
+		<defName>ISFE_Coomsumerism_EcstasyRecovery</defName>
+		<label>ecstasy recovery rate</label>
+		<description>The rate at which a pawn recovers from their ecstasy, getting ready for more.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>3</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<showOnAnimals>false</showOnAnimals>
+		<alwaysHide>true</alwaysHide>
+		<displayPriorityInCategory>3496</displayPriorityInCategory>
+		<statFactors>
+			<li>ISFE_Coomsumerism_CoomVirility</li>
+		</statFactors>
+	</StatDef>
+
+</Defs>
