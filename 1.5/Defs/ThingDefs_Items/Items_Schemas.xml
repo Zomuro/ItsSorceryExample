@@ -27,6 +27,87 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ISF_SchemaItemBase">
+		<defName>ISFE_SchemaItem_Logos_Scientist</defName>
+		<label>Logic Structurer (Scientist)</label>
+		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
+				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Learn {0}</useLabel>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<progressTrackerClassDef>ISFE_Logos_Class_Scientist</progressTrackerClassDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
+				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<progressTrackerClassDef>ISFE_Logos_Class_Scientist</progressTrackerClassDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ISF_SchemaItemBase">
+		<defName>ISFE_SchemaItem_Logos_Technician</defName>
+		<label>Logic Structurer (Technician)</label>
+		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
+				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Learn {0}</useLabel>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<progressTrackerClassDef>ISFE_Logos_Class_Technician</progressTrackerClassDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
+				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<progressTrackerClassDef>ISFE_Logos_Class_Technician</progressTrackerClassDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ISF_SchemaItemBase">
+		<defName>ISFE_SchemaItem_Logos_Manager</defName>
+		<label>Logic Structurer (Manager)</label>
+		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
+				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Learn {0}</useLabel>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<progressTrackerClassDef>ISFE_Logos_Class_Manager</progressTrackerClassDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
+				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
+				<schemaDef>ISFE_LogosExperimentia</schemaDef>
+				<progressTrackerClassDef>ISFE_Logos_Class_Manager</progressTrackerClassDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ISF_SchemaItemBase">
 		<defName>ISFE_SchemaItem_Coomsumerism</defName>
 		<label>The Initiate's Guide to Coomsumerism</label>
 		<description>A catalog detailing the ravishing techniques of the Coomsumers.</description>

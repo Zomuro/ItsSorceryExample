@@ -12,98 +12,15 @@
 		<progressLevelUpKey>ISFE_Logos_LevelUp</progressLevelUpKey>
 		<progressLevelUpDescKey>ISFE_Logos_LevelUpMessage</progressLevelUpDescKey>
 		<skillPointLabelKey>ISFE_Logos_SkillPointLabel</skillPointLabelKey>
+		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Logos</progressHediff>
-		<levelRange>1~20</levelRange>
-		<levelFactors>
-			<li>
-				<level>1</level>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.1</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<level>3</level>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.2</offset>
-					</li>
-				</capMods>
-				<optionChoices>2</optionChoices>
-				<options>
-					<li>
-						<label>Speed</label>
-						<description>The quicker your legs, the quicker the mind.</description>
-						<statOffsets>
-							<MoveSpeed>0.25</MoveSpeed>
-						</statOffsets>
-					</li>
-					<li>
-						<label>Wit</label>
-						<description>Clever men and women do much more with the same amount of knowledge.</description>
-						<statOffsets>
-							<GlobalLearningFactor>0.1</GlobalLearningFactor>
-						</statOffsets>
-					</li>
-					<li>
-						<label>Focus</label>
-						<description>Steady towards the goal- that's how progress is really made.</description>
-						<statOffsets>
-							<PainShockThreshold>-0.05</PainShockThreshold>
-						</statOffsets>
-					</li>
-				</options>
-			</li>
-			<li>
-				<level>5</level>
-				<statOffsets>
-					<MoveSpeed>0.5</MoveSpeed>
-				</statOffsets>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.3</offset>
-					</li>
-				</capMods>
-			</li>
-		</levelFactors>
-		<levelSpecifics>
-			<li>
-				<level>10</level>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.5</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<level>20</level>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>1</offset>
-					</li>
-				</capMods>
-			</li>
-		</levelSpecifics>
-		<levelLabels>
-			<li><level>1</level><label>initiate</label></li>
-			<li><level>5</level><label>seeker</label></li>		
-			<li><level>10</level><label>adjunct</label></li>
-			<li><level>15</level><label>professor</label></li>
-			<li><level>20</level><label>emeritus</label></li>
-		</levelLabels>
-		<expTags>
-			<li>ISFE_Logos_EXPTag_CastEnergyCost</li>
-			<li>ISFE_Logos_EXPTag_OnDamage</li>
-			<li>ISFE_Logos_EXPTag_OnDamaged</li>
-			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
-			<li>ISFE_Logos_EXPTag_UseItem</li>
-		</expTags>
+		
+		<classes>
+			<li>ISFE_Logos_Class_Scientist</li>
+			<li>ISFE_Logos_Class_Technician</li>
+			<li>ISFE_Logos_Class_Manager</li>
+		</classes>
+		<baseClass>ISFE_Logos_Class_Scientist</baseClass>
 	</ItsSorceryFramework.ProgressTrackerDef>
 	
 	<HediffDef ParentName="ProgressTrackerHediffBase"> 
@@ -130,108 +47,110 @@
 		<bgPath>UI/ProgressTracker/ISFE_Coomsumerism_Banner</bgPath>
 		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</progressHediff>
-		<levelRange>1~10</levelRange>
-		<levelFactors>
-			<li>
-				<level>1</level>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.1</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<level>3</level>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.2</offset>
-					</li>
-				</capMods>
-			</li>
-		</levelFactors>
-		<levelSpecifics>
-			<li>
-				<level>2</level>
-				<specialUnlocks>
-					<li>ISFE_Coomsumerism_CoomerBasics</li>
-				</specialUnlocks>
-				<hediffAdd>
-					<li>
-						<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
-						<severity>0.3</severity>
-					</li>
-				</hediffAdd>
-			</li>
-			<li>
-				<level>3</level>
-				<optionChoices>3</optionChoices>
-				<options>
-					<li>
-						<label>Be like cream</label>
-						<description>Clotting and thick, be as light as whipped cream.</description>
-						<statOffsets>
-							<MoveSpeed>0.25</MoveSpeed>
-						</statOffsets>
-						<hediffAdjust>
-							<li>
-								<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
-								<severity>0.15</severity>
-							</li>
-						</hediffAdjust>
-					</li>
-					<li>
-						<label>Be like milk</label>
-						<description>Be fluid, be adaptive and flexible in thought.</description>
-						<statOffsets>
-							<GlobalLearningFactor>0.1</GlobalLearningFactor>
-						</statOffsets>
-						<hediffAdjust>
-							<li>
-								<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
-								<severity>0.3</severity>
-							</li>
-						</hediffAdjust>
-					</li>
-					<li>
-						<label>Be like butter</label>
-						<description>Slick and solid, let pain slide off of you.</description>
-						<statOffsets>
-							<PainShockThreshold>-0.05</PainShockThreshold>
-						</statOffsets>
-					</li>
-				</options>
-			</li>
-			<li>
-				<level>5</level>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>1</offset>
-					</li>
-				</capMods>
-				<hediffAdjust>
-					<li>
-						<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
-						<severity>0.3</severity>
-					</li>
-				</hediffAdjust>
-			</li>
-		</levelSpecifics>
-		<levelLabels>
-			<li><level>1</level><label>Coomer novice</label></li>
-			<li><level>3</level><label>Coomer apprentice</label></li>		
-			<li><level>5</level><label>Coomer adept</label></li>
-			<li><level>10</level><label>Coomer master</label></li>
-		</levelLabels>
-		<expTags>
-			<li>ISFE_Coomsumerism_EXPTag_OnDamage</li>
-			<li>ISFE_Coomsumerism_EXPTag_OnDamaged</li>
-			<li>ISFE_Coomsumerism_EXPTag_Passive</li>
-			<li>ISFE_Coomsumerism_EXPTag_UseItem</li>
-			<li>ISFE_Coomsumerism_EXPTag_DuringJob</li>
-		</expTags>
+		<baseClass>ISFE_Coomsumerism_Class_Acolyte</baseClass>
+		
+		<!-- <levelRange>1~10</levelRange> -->
+		<!-- <levelFactors> -->
+			<!-- <li> -->
+				<!-- <level>1</level> -->
+				<!-- <capMods> -->
+					<!-- <li> -->
+						<!-- <capacity>Manipulation</capacity> -->
+						<!-- <offset>0.1</offset> -->
+					<!-- </li> -->
+				<!-- </capMods> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <level>3</level> -->
+				<!-- <capMods> -->
+					<!-- <li> -->
+						<!-- <capacity>Manipulation</capacity> -->
+						<!-- <offset>0.2</offset> -->
+					<!-- </li> -->
+				<!-- </capMods> -->
+			<!-- </li> -->
+		<!-- </levelFactors> -->
+		<!-- <levelSpecifics> -->
+			<!-- <li> -->
+				<!-- <level>2</level> -->
+				<!-- <specialUnlocks> -->
+					<!-- <li>ISFE_Coomsumerism_CoomerBasics</li> -->
+				<!-- </specialUnlocks> -->
+				<!-- <hediffAdd> -->
+					<!-- <li> -->
+						<!-- <hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef> -->
+						<!-- <severity>0.3</severity> -->
+					<!-- </li> -->
+				<!-- </hediffAdd> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <level>3</level> -->
+				<!-- <optionChoices>3</optionChoices> -->
+				<!-- <options> -->
+					<!-- <li> -->
+						<!-- <label>Be like cream</label> -->
+						<!-- <description>Clotting and thick, be as light as whipped cream.</description> -->
+						<!-- <statOffsets> -->
+							<!-- <MoveSpeed>0.25</MoveSpeed> -->
+						<!-- </statOffsets> -->
+						<!-- <hediffAdjust> -->
+							<!-- <li> -->
+								<!-- <hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef> -->
+								<!-- <severity>0.15</severity> -->
+							<!-- </li> -->
+						<!-- </hediffAdjust> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <label>Be like milk</label> -->
+						<!-- <description>Be fluid, be adaptive and flexible in thought.</description> -->
+						<!-- <statOffsets> -->
+							<!-- <GlobalLearningFactor>0.1</GlobalLearningFactor> -->
+						<!-- </statOffsets> -->
+						<!-- <hediffAdjust> -->
+							<!-- <li> -->
+								<!-- <hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef> -->
+								<!-- <severity>0.3</severity> -->
+							<!-- </li> -->
+						<!-- </hediffAdjust> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <label>Be like butter</label> -->
+						<!-- <description>Slick and solid, let pain slide off of you.</description> -->
+						<!-- <statOffsets> -->
+							<!-- <PainShockThreshold>-0.05</PainShockThreshold> -->
+						<!-- </statOffsets> -->
+					<!-- </li> -->
+				<!-- </options> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <level>5</level> -->
+				<!-- <capMods> -->
+					<!-- <li> -->
+						<!-- <capacity>Manipulation</capacity> -->
+						<!-- <offset>1</offset> -->
+					<!-- </li> -->
+				<!-- </capMods> -->
+				<!-- <hediffAdjust> -->
+					<!-- <li> -->
+						<!-- <hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef> -->
+						<!-- <severity>0.3</severity> -->
+					<!-- </li> -->
+				<!-- </hediffAdjust> -->
+			<!-- </li> -->
+		<!-- </levelSpecifics> -->
+		<!-- <levelLabels> -->
+			<!-- <li><level>1</level><label>Coomer novice</label></li> -->
+			<!-- <li><level>3</level><label>Coomer apprentice</label></li>		 -->
+			<!-- <li><level>5</level><label>Coomer adept</label></li> -->
+			<!-- <li><level>10</level><label>Coomer master</label></li> -->
+		<!-- </levelLabels> -->
+		<!-- <expTags> -->
+			<!-- <li>ISFE_Coomsumerism_EXPTag_OnDamage</li> -->
+			<!-- <li>ISFE_Coomsumerism_EXPTag_OnDamaged</li> -->
+			<!-- <li>ISFE_Coomsumerism_EXPTag_Passive</li> -->
+			<!-- <li>ISFE_Coomsumerism_EXPTag_UseItem</li> -->
+			<!-- <li>ISFE_Coomsumerism_EXPTag_DuringJob</li> -->
+		<!-- </expTags> -->
 	</ItsSorceryFramework.ProgressTrackerDef>
 	
 	<HediffDef ParentName="ProgressTrackerHediffBase"> 
