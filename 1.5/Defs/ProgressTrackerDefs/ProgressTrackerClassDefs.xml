@@ -265,6 +265,21 @@
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
 		<defName>ISFE_Coomsumerism_Class_Acolyte</defName>
 		<label>Acolyte</label>
+		<description>A student of the devourers, learned in both taking and giving.</description>
+		<linkedClasses>
+			<li>
+				<classDef>ISFE_Coomsumerism_Class_Adherent</classDef>
+				<levelReset>False</levelReset>
+				<benefitReset>False</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+			<li>
+				<classDef>ISFE_Coomsumerism_Class_Apostate</classDef>
+				<levelReset>False</levelReset>
+				<benefitReset>False</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+		</linkedClasses>
 		<levelRange>1~10</levelRange>
 		<levelFactors>
 			<li>
@@ -275,6 +290,18 @@
 						<offset>0.1</offset>
 					</li>
 				</capMods>
+			</li>
+			<li>
+				<level>2</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statFactorOffsets>
+					<MoveSpeed>0.1</MoveSpeed>
+				</statFactorOffsets>
 			</li>
 			<li>
 				<level>3</level>
@@ -353,6 +380,23 @@
 					</li>
 				</hediffAdjust>
 			</li>
+			<li>
+				<level>10</level>
+				<specialClasses>
+					<li>
+						<classDef>ISFE_Coomsumerism_Class_Adherent</classDef>
+						<levelReset>False</levelReset>
+						<benefitReset>False</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+					<li>
+						<classDef>ISFE_Coomsumerism_Class_Apostate</classDef>
+						<levelReset>False</levelReset>
+						<benefitReset>False</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+				</specialClasses>
+			</li>
 		</levelSpecifics>
 		<levelLabels>
 			<li><level>1</level><label>Coomer novice</label></li>
@@ -367,6 +411,183 @@
 			<li>ISFE_Coomsumerism_EXPTag_UseItem</li>
 			<li>ISFE_Coomsumerism_EXPTag_DuringJob</li>
 		</expTags>
+	</ItsSorceryFramework.ProgressTrackerClassDef>	
+	
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+		<defName>ISFE_Coomsumerism_Class_Adherent</defName>
+		<label>Adherent</label>
+		<description>Anointed by the pearly waves.</description>
+		<levelRange>10~20</levelRange>
+		<levelFactors>
+			<li>
+				<level>1</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<level>2</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statFactorOffsets>
+					<MoveSpeed>0.1</MoveSpeed>
+				</statFactorOffsets>
+			</li>
+		</levelFactors>
+		<levelSpecifics>
+			<li>
+				<level>13</level>
+				<optionChoices>3</optionChoices>
+				<options>
+					<li>
+						<label>Be like cream</label>
+						<description>Clotting and thick, be as light as whipped cream.</description>
+						<statOffsets>
+							<MoveSpeed>0.25</MoveSpeed>
+						</statOffsets>
+						<hediffAdjust>
+							<li>
+								<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+								<severity>0.15</severity>
+							</li>
+						</hediffAdjust>
+					</li>
+					<li>
+						<label>Be like milk</label>
+						<description>Be fluid, be adaptive and flexible in thought.</description>
+						<statOffsets>
+							<GlobalLearningFactor>0.1</GlobalLearningFactor>
+						</statOffsets>
+						<hediffAdjust>
+							<li>
+								<hediffDef>ISFE_Coomsumerism_CoomerPleasure</hediffDef>
+								<severity>0.3</severity>
+							</li>
+						</hediffAdjust>
+					</li>
+					<li>
+						<label>Be like butter</label>
+						<description>Slick and solid, let pain slide off of you.</description>
+						<statOffsets>
+							<PainShockThreshold>-0.05</PainShockThreshold>
+						</statOffsets>
+					</li>
+				</options>
+			</li>
+			<li>
+				<level>17</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
+			</li>
+		</levelSpecifics>
+		<levelLabels>
+			<li><level>10</level><label>Adherent</label></li>
+			<li><level>13</level><label>Lesser adherent</label></li>		
+			<li><level>17</level><label>Greater adherent</label></li>
+			<li><level>20</level><label>True adherent</label></li>
+		</levelLabels>
+		<expTags>
+			<li>ISFE_Coomsumerism_EXPTag_OnDamage</li>
+			<li>ISFE_Coomsumerism_EXPTag_OnDamaged</li>
+			<li>ISFE_Coomsumerism_EXPTag_Passive</li>
+			<li>ISFE_Coomsumerism_EXPTag_UseItem</li>
+			<li>ISFE_Coomsumerism_EXPTag_DuringJob</li>
+		</expTags>
+		
+		<prereqLevel>10</prereqLevel>
+		<prereqsClassDefs>
+			<li>ISFE_Coomsumerism_Class_Acolyte</li>
+		</prereqsClassDefs>
+	</ItsSorceryFramework.ProgressTrackerClassDef>	
+	
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+		<defName>ISFE_Coomsumerism_Class_Apostate</defName>
+		<label>Apostate</label>
+		<description>You will cast away modernity and find grass.</description>
+		<levelRange>10~20</levelRange>
+		<levelFactors>
+			<li>
+				<level>1</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<level>2</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statFactorOffsets>
+					<MoveSpeed>0.1</MoveSpeed>
+				</statFactorOffsets>
+			</li>
+		</levelFactors>
+		<levelSpecifics>
+			<li>
+				<level>13</level>
+				<optionChoices>2</optionChoices>
+				<options>
+					<li>
+						<label>Meditations</label>
+						<description>Reflect on the past and learn for the future.</description>
+						<statOffsets>
+							<GlobalLearningFactor>0.1</GlobalLearningFactor>
+						</statOffsets>
+					</li>
+					<li>
+						<label>Health</label>
+						<description>Good health is required to seize good fortune.</description>
+						<statOffsets>
+							<PainShockThreshold>-0.05</PainShockThreshold>
+						</statOffsets>
+					</li>
+				</options>
+			</li>
+			<li>
+				<level>17</level>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
+			</li>
+		</levelSpecifics>
+		<levelLabels>
+			<li><level>10</level><label>Apostate</label></li>
+			<li><level>13</level><label>Lesser apostate</label></li>		
+			<li><level>17</level><label>Greater apostate</label></li>
+			<li><level>20</level><label>True apostate</label></li>
+		</levelLabels>
+		<expTags>
+			<li>ISFE_Coomsumerism_EXPTag_OnDamage</li>
+			<li>ISFE_Coomsumerism_EXPTag_OnDamaged</li>
+			<li>ISFE_Coomsumerism_EXPTag_Passive</li>
+			<li>ISFE_Coomsumerism_EXPTag_UseItem</li>
+			<li>ISFE_Coomsumerism_EXPTag_DuringJob</li>
+		</expTags>
+		
+		<prereqLevel>10</prereqLevel>
+		<prereqsClassDefs>
+			<li>ISFE_Coomsumerism_Class_Acolyte</li>
+		</prereqsClassDefs>
 	</ItsSorceryFramework.ProgressTrackerClassDef>	
 	
 </Defs>
