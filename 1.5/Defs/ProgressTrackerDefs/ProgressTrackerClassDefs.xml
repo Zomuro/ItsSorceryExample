@@ -4,6 +4,23 @@
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
 		<defName>ISFE_Logos_Class_Scientist</defName>
 		<label>Scientist</label>
+		<description>Experimentation + Recordkeeping = knowledge.</description>
+		
+		<linkedClasses>
+			<li>
+				<classDef>ISFE_Logos_Class_Technician</classDef>
+				<levelReset>True</levelReset>
+				<benefitReset>True</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+			<li>
+				<classDef>ISFE_Logos_Class_Manager</classDef>
+				<levelReset>True</levelReset>
+				<benefitReset>True</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+		</linkedClasses>
+		
 		<levelRange>1~20</levelRange>
 		<levelFactors>
 			<li>
@@ -63,6 +80,20 @@
 						<offset>0.5</offset>
 					</li>
 				</capMods>
+				<specialClasses>
+					<li>
+						<classDef>ISFE_Logos_Class_Technician</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+					<li>
+						<classDef>ISFE_Logos_Class_Manager</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+				</specialClasses>
 			</li>
 			<li>
 				<level>20</level>
@@ -91,6 +122,23 @@
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
 		<defName>ISFE_Logos_Class_Technician</defName>
 		<label>Technician</label>
+		<description>The devil's in the details.</description>
+		
+		<linkedClasses>
+			<li>
+				<classDef>ISFE_Logos_Class_Scientist</classDef>
+				<levelReset>True</levelReset>
+				<benefitReset>True</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+			<li>
+				<classDef>ISFE_Logos_Class_Manager</classDef>
+				<levelReset>True</levelReset>
+				<benefitReset>True</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+		</linkedClasses>
+		
 		<levelRange>1~20</levelRange>
 		<levelFactors>
 			<li>
@@ -150,6 +198,20 @@
 						<offset>0.5</offset>
 					</li>
 				</capMods>
+				<specialClasses>
+					<li>
+						<classDef>ISFE_Logos_Class_Scientist</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+					<li>
+						<classDef>ISFE_Logos_Class_Manager</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+				</specialClasses>
 			</li>
 			<li>
 				<level>20</level>
@@ -178,6 +240,23 @@
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
 		<defName>ISFE_Logos_Class_Manager</defName>
 		<label>Manager</label>
+		<description>Moving people is a science of its own.</description>
+		
+		<linkedClasses>
+			<li>
+				<classDef>ISFE_Logos_Class_Scientist</classDef>
+				<levelReset>True</levelReset>
+				<benefitReset>True</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+			<li>
+				<classDef>ISFE_Logos_Class_Technician</classDef>
+				<levelReset>True</levelReset>
+				<benefitReset>True</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+		</linkedClasses>
+		
 		<levelRange>1~20</levelRange>
 		<levelFactors>
 			<li>
@@ -237,6 +316,20 @@
 						<offset>0.5</offset>
 					</li>
 				</capMods>
+				<specialClasses>
+					<li>
+						<classDef>ISFE_Logos_Class_Scientist</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+					<li>
+						<classDef>ISFE_Logos_Class_Technician</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+				</specialClasses>
 			</li>
 			<li>
 				<level>20</level>

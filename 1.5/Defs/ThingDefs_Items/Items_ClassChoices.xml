@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ISF_ClassChoiceItemBase">
+		<defName>ISFE_ClassChoiceItem_Coomsumerism_Apostate</defName>
+		<label>Getting Out of Cults</label>
+		<description>A brochure on leaving cults through making good life choices.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_ClassChoiceItem">
+				<compClass>ItsSorceryFramework.CompClassChoiceItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Gain class choice for {0}</useLabel>
+				<schemaDef>ISFE_Coomsumerism</schemaDef>
+				<classMapping>
+					<classDef>ISFE_Coomsumerism_Class_Apostate</classDef>
+					<levelReset>False</levelReset>
+					<benefitReset>False</benefitReset>
+					<removePostClassChange>True</removePostClassChange>
+				</classMapping>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectClassChoice">
+				<compClass>ItsSorceryFramework.CompUseEffect_ClassChoice</compClass>
+				<schemaDef>ISFE_Coomsumerism</schemaDef>
+				<classMapping>
+					<classDef>ISFE_Coomsumerism_Class_Apostate</classDef>
+					<levelReset>False</levelReset>
+					<benefitReset>False</benefitReset>
+					<removePostClassChange>True</removePostClassChange>
+				</classMapping>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ISF_ClassChoiceItemBase">
+		<defName>ISFE_ClassChoiceItem_Coomsumerism_Adherent</defName>
+		<label>On Modern-Day Consumption</label>
+		<description>A manifesto advocating for vice-seeking behavior.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_ClassChoiceItem">
+				<compClass>ItsSorceryFramework.CompClassChoiceItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Gain class choice for {0}</useLabel>
+				<schemaDef>ISFE_Coomsumerism</schemaDef>
+				<classMapping>
+					<classDef>ISFE_Coomsumerism_Class_Adherent</classDef>
+					<levelReset>False</levelReset>
+					<benefitReset>False</benefitReset>
+					<removePostClassChange>True</removePostClassChange>
+				</classMapping>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectClassChoice">
+				<compClass>ItsSorceryFramework.CompUseEffect_ClassChoice</compClass>
+				<schemaDef>ISFE_Coomsumerism</schemaDef>
+				<classMapping>
+					<classDef>ISFE_Coomsumerism_Class_Adherent</classDef>
+					<levelReset>False</levelReset>
+					<benefitReset>False</benefitReset>
+					<removePostClassChange>True</removePostClassChange>
+				</classMapping>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+
+  
+</Defs>
