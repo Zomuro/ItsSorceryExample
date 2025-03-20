@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Logos Experimentia -->
-	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+	<ItsSorceryFramework.ProgressTrackerClassDef Abstract = "True" Name = "ISFE_Logos_ClassBase" ParentName = "ProgressTrackerClassBase">
+		<progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef>
+	</ItsSorceryFramework.ProgressTrackerClassDef>	
+	
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Logos_ClassBase">
 		<defName>ISFE_Logos_Class_Scientist</defName>
 		<label>Scientist</label>
 		<description>Experimentation + Recordkeeping = knowledge.</description>
@@ -119,7 +123,7 @@
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
-	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Logos_ClassBase">
 		<defName>ISFE_Logos_Class_Technician</defName>
 		<label>Technician</label>
 		<description>The devil's in the details.</description>
@@ -237,7 +241,7 @@
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
-	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Logos_ClassBase">
 		<defName>ISFE_Logos_Class_Manager</defName>
 		<label>Manager</label>
 		<description>Moving people is a science of its own.</description>
@@ -355,7 +359,12 @@
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
-	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+	<!-- Coomsumerism -->
+	<ItsSorceryFramework.ProgressTrackerClassDef Abstract = "True" Name = "ISFE_Coomsumerism_ClassBase" ParentName = "ProgressTrackerClassBase">
+		<progressTrackerDef>ISFE_ProgressTracker_Coomsumerism</progressTrackerDef>
+	</ItsSorceryFramework.ProgressTrackerClassDef>	
+	
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Coomsumerism_ClassBase">
 		<defName>ISFE_Coomsumerism_Class_Acolyte</defName>
 		<label>Acolyte</label>
 		<description>A student of the devourers, learned in both taking and giving.</description>
@@ -506,7 +515,7 @@
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerClassDef>	
 	
-	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Coomsumerism_ClassBase">
 		<defName>ISFE_Coomsumerism_Class_Adherent</defName>
 		<label>Adherent</label>
 		<description>Anointed by the pearly waves.</description>
@@ -604,7 +613,7 @@
 		</prereqsClassDefs>
 	</ItsSorceryFramework.ProgressTrackerClassDef>	
 	
-	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ProgressTrackerClassBase">
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Coomsumerism_ClassBase">
 		<defName>ISFE_Coomsumerism_Class_Apostate</defName>
 		<label>Apostate</label>
 		<description>You will cast away modernity and find grass.</description>

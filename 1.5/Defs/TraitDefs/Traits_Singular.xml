@@ -6,6 +6,7 @@
 		<modExtensions>
 			<li Class="ItsSorceryFramework.ModExtension_SchemaAddition">
 				<schema>ISFE_LogosExperimentia</schema>
+				<baseClassDef>ISFE_Logos_Class_Scientist</baseClassDef>
 			</li>
 		</modExtensions>
 		<commonality>0.1</commonality>

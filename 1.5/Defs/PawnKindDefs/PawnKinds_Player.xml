@@ -18,6 +18,7 @@
 									<li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
 									<li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
 								</requiredNodes>
+								<baseClassDef>ISFE_Logos_Class_Technician</baseClassDef>
 							</li>
 						</schemaMappings>
 					</li>
@@ -27,26 +28,44 @@
 								<schema>ISFE_Coomsumerism</schema>
 								<weight>1</weight>
 								<forceLevel>True</forceLevel>
-								<level>5</level>
+								<level>15</level>
 								<requiredNodes>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef></li>
 								</requiredNodes>
+								<baseClassDef>ISFE_Coomsumerism_Class_Acolyte</baseClassDef>
+								<classChanges>
+									<li>
+										<classDef>ISFE_Coomsumerism_Class_Adherent</classDef>
+										<levelReset>False</levelReset>
+										<benefitReset>False</benefitReset>
+										<removePostClassChange>True</removePostClassChange>
+									</li>
+								</classChanges>
 							</li>
 							<li>
 								<schema>ISFE_Coomsumerism</schema>
 								<weight>1</weight>
 								<forceLevel>True</forceLevel>
-								<level>3</level>
+								<level>17</level>
 								<forcePoints>True</forcePoints>
-								<points>5</points>
+								<points>10</points>
 								<requiredNodes>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
 									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
 								</requiredNodes>
+								<baseClassDef>ISFE_Coomsumerism_Class_Acolyte</baseClassDef>
+								<classChanges>
+									<li>
+										<classDef>ISFE_Coomsumerism_Class_Apostate</classDef>
+										<levelReset>False</levelReset>
+										<benefitReset>False</benefitReset>
+										<removePostClassChange>True</removePostClassChange>
+									</li>
+								</classChanges>
 							</li>
 						</schemaMappings>
 					</li>
