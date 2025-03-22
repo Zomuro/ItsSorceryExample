@@ -121,6 +121,31 @@
 			<li>ISFE_Logos_EXPTag_OnDamaged</li>
 			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
 		</expTags>
+		
+		<prereqLevel>10</prereqLevel>
+		<prereqsNodes>
+			<li>ISFE_Node_Logos_BirdBees</li>
+			<li>ISFE_Node_Logos_Mediocrity</li>
+		</prereqsNodes>
+		<prereqsResearchs>
+			<li>Electricity</li>
+		</prereqsResearchs>
+		<prereqsStats>
+			<li>
+				<mode>GreaterEqual</mode>
+				<statReqs>
+					<ResearchSpeed>1.0</ResearchSpeed>
+				</statReqs>
+			</li>
+		</prereqsStats>
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>4</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Logos_ClassBase">
@@ -239,6 +264,31 @@
 			<li>ISFE_Logos_EXPTag_OnDamaged</li>
 			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
 		</expTags>
+		
+		<prereqLevel>10</prereqLevel>
+		<prereqsNodes>
+			<li>ISFE_Node_Logos_BirdBees</li>
+			<li>ISFE_Node_Logos_Mediocrity</li>
+		</prereqsNodes>
+		<prereqsResearchs>
+			<li>Electricity</li>
+		</prereqsResearchs>
+		<prereqsStats>
+			<li>
+				<mode>GreaterEqual</mode>
+				<statReqs>
+					<ResearchSpeed>1.0</ResearchSpeed>
+				</statReqs>
+			</li>
+		</prereqsStats>
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>4</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Logos_ClassBase">
@@ -357,6 +407,31 @@
 			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
 			<li>ISFE_Logos_EXPTag_UseItem</li>
 		</expTags>
+		
+		<prereqLevel>10</prereqLevel>
+		<prereqsNodes>
+			<li>ISFE_Node_Logos_BirdBees</li>
+			<li>ISFE_Node_Logos_Mediocrity</li>
+		</prereqsNodes>
+		<prereqsResearchs>
+			<li>Electricity</li>
+		</prereqsResearchs>
+		<prereqsStats>
+			<li>
+				<mode>GreaterEqual</mode>
+				<statReqs>
+					<ResearchSpeed>1.0</ResearchSpeed>
+				</statReqs>
+			</li>
+		</prereqsStats>
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Social</skillDef><level>4</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
 	<!-- Coomsumerism -->
@@ -690,6 +765,9 @@
 		<prereqsClassDefs>
 			<li>ISFE_Coomsumerism_Class_Acolyte</li>
 		</prereqsClassDefs>
+		<prereqsHediff>
+			<li><key>FoodPoisoning</key><value>0.01</value></li>
+		</prereqsHediff>
 	</ItsSorceryFramework.ProgressTrackerClassDef>	
 	
 </Defs>
