@@ -18,6 +18,7 @@
 									<li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
 									<li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
 								</requiredNodes>
+								<baseClassDef>ISFE_Logos_Class_Manager</baseClassDef>
 							</li>
 						</schemaMappings>
 					</li>

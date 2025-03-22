@@ -14,6 +14,7 @@
 		<modExtensions>
 			<li Class="ItsSorceryFramework.ModExtension_SchemaAddition">
 				<schema>ISFE_Coomsumerism</schema>
+				<baseClassDef>ISFE_Coomsumerism_Class_Acolyte</baseClassDef>
 			</li>
 		</modExtensions>
 		<biostatMet>-1</biostatMet>
