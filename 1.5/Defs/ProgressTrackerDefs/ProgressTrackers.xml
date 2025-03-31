@@ -2,7 +2,6 @@
 <Defs>
 
 	<!-- Example 1: Logos Experimentia -->
-	
 	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
 		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
 		<defName>ISFE_ProgressTracker_Logos</defName>
@@ -14,12 +13,6 @@
 		<skillPointLabelKey>ISFE_Logos_SkillPointLabel</skillPointLabelKey>
 		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Logos</progressHediff>
-		
-		<!-- <classes> -->
-			<!-- <li>ISFE_Logos_Class_Scientist</li> -->
-			<!-- <li>ISFE_Logos_Class_Technician</li> -->
-			<!-- <li>ISFE_Logos_Class_Manager</li> -->
-		<!-- </classes> -->
 		<baseClass>ISFE_Logos_Class_Scientist</baseClass>
 	</ItsSorceryFramework.ProgressTrackerDef>
 	
@@ -47,12 +40,6 @@
 		<bgPath>UI/ProgressTracker/ISFE_Coomsumerism_Banner</bgPath>
 		
 		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</progressHediff>
-		
-		<!-- <classes> -->
-			<!-- <li>ISFE_Coomsumerism_Class_Acolyte</li> -->
-			<!-- <li>ISFE_Coomsumerism_Class_Adherent</li> -->
-			<!-- <li>ISFE_Coomsumerism_Class_Apostate</li> -->
-		<!-- </classes> -->
 		<baseClass>ISFE_Coomsumerism_Class_Acolyte</baseClass>
 	</ItsSorceryFramework.ProgressTrackerDef>
 	
