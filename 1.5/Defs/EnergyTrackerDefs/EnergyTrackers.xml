@@ -23,6 +23,16 @@
 				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
 				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
 			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_JobBase">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_DuringJob</compClass>
+				<scalingStatDef>ISF_ScalingStat</scalingStatDef>
+				<baseEnergy>3</baseEnergy>
+				<jobSetLabel>Hauling</jobSetLabel>
+				<jobDefs>
+					<li>HaulToCell</li>
+					<li>HaulToContainer</li>
+				</jobDefs>
+			</li>
 			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume">
 				<consumables>
 					<li><thingDef>Milk</thingDef><energy>5</energy></li>
@@ -93,6 +103,15 @@
 					<li><thingDef>Milk</thingDef><energy>5</energy></li>
 					<li><thingDef>Chocolate</thingDef><energy>10</energy></li>
 				</consumables>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_OnInteraction">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnInteraction</compClass>
+				<scalingStatDef>ISF_ScalingStat</scalingStatDef>
+				<baseEnergy>-50</baseEnergy>
+				<interactionDefs>
+					<li>Chitchat</li>
+					<li>DeepTalk</li>
+				</interactionDefs>
 			</li>
 		</comps>
 	</ItsSorceryFramework.EnergyTrackerDef>

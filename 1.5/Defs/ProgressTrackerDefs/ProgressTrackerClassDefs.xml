@@ -120,32 +120,33 @@
 			<li>ISFE_Logos_EXPTag_CastEnergyCost</li>
 			<li>ISFE_Logos_EXPTag_OnDamaged</li>
 			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
+			<li>ISFE_Logos_EXPTag_OnQuestFinish</li>
 		</expTags>
 		
 		<prereqLevel>10</prereqLevel>
-		<prereqsNodes>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_BirdBees</li>
 			<li>ISFE_Node_Logos_Mediocrity</li>
-		</prereqsNodes>
-		<prereqsResearchs>
+		</prereqNodes>
+		<prereqResearch>
 			<li>Electricity</li>
-		</prereqsResearchs>
-		<prereqsStats>
+		</prereqResearch>
+		<prereqStats>
 			<li>
 				<mode>GreaterEqual</mode>
 				<statReqs>
 					<ResearchSpeed>1.0</ResearchSpeed>
 				</statReqs>
 			</li>
-		</prereqsStats>
-		<prereqsSkills>
+		</prereqStats>
+		<prereqSkills>
 			<li>
 				<mode>GreaterEqual</mode>
 				<skillReqs>
 					<li><skillDef>Intellectual</skillDef><level>4</level></li>
 				</skillReqs>
 			</li>
-		</prereqsSkills>
+		</prereqSkills>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Logos_ClassBase">
@@ -263,32 +264,33 @@
 			<li>ISFE_Logos_EXPTag_OnDamage</li>
 			<li>ISFE_Logos_EXPTag_OnDamaged</li>
 			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
+			<li>ISFE_Logos_EXPTag_OnKill</li>
 		</expTags>
 		
 		<prereqLevel>10</prereqLevel>
-		<prereqsNodes>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_BirdBees</li>
 			<li>ISFE_Node_Logos_Mediocrity</li>
-		</prereqsNodes>
-		<prereqsResearchs>
+		</prereqNodes>
+		<prereqResearch>
 			<li>Electricity</li>
-		</prereqsResearchs>
-		<prereqsStats>
+		</prereqResearch>
+		<prereqStats>
 			<li>
 				<mode>GreaterEqual</mode>
 				<statReqs>
 					<ResearchSpeed>1.0</ResearchSpeed>
 				</statReqs>
 			</li>
-		</prereqsStats>
-		<prereqsSkills>
+		</prereqStats>
+		<prereqSkills>
 			<li>
 				<mode>GreaterEqual</mode>
 				<skillReqs>
 					<li><skillDef>Intellectual</skillDef><level>4</level></li>
 				</skillReqs>
 			</li>
-		</prereqsSkills>
+		</prereqSkills>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Logos_ClassBase">
@@ -406,32 +408,33 @@
 			<li>ISFE_Logos_EXPTag_CastEnergyCost</li>
 			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
 			<li>ISFE_Logos_EXPTag_UseItem</li>
+			<li>ISFE_Logos_EXPTag_OnInteraction</li>
 		</expTags>
 		
 		<prereqLevel>10</prereqLevel>
-		<prereqsNodes>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_BirdBees</li>
 			<li>ISFE_Node_Logos_Mediocrity</li>
-		</prereqsNodes>
-		<prereqsResearchs>
+		</prereqNodes>
+		<prereqResearch>
 			<li>Electricity</li>
-		</prereqsResearchs>
-		<prereqsStats>
+		</prereqResearch>
+		<prereqStats>
 			<li>
 				<mode>GreaterEqual</mode>
 				<statReqs>
 					<ResearchSpeed>1.0</ResearchSpeed>
 				</statReqs>
 			</li>
-		</prereqsStats>
-		<prereqsSkills>
+		</prereqStats>
+		<prereqSkills>
 			<li>
 				<mode>GreaterEqual</mode>
 				<skillReqs>
 					<li><skillDef>Social</skillDef><level>4</level></li>
 				</skillReqs>
 			</li>
-		</prereqsSkills>
+		</prereqSkills>
 	</ItsSorceryFramework.ProgressTrackerClassDef>
 	
 	<!-- Coomsumerism -->
@@ -683,9 +686,9 @@
 		</expTags>
 		
 		<prereqLevel>10</prereqLevel>
-		<prereqsClassDefs>
+		<prereqClasses>
 			<li>ISFE_Coomsumerism_Class_Acolyte</li>
-		</prereqsClassDefs>
+		</prereqClasses>
 	</ItsSorceryFramework.ProgressTrackerClassDef>	
 	
 	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "ISFE_Coomsumerism_ClassBase">
@@ -762,12 +765,12 @@
 		</expTags>
 		
 		<prereqLevel>10</prereqLevel>
-		<prereqsClassDefs>
+		<prereqClasses>
 			<li>ISFE_Coomsumerism_Class_Acolyte</li>
-		</prereqsClassDefs>
-		<prereqsHediff>
+		</prereqClasses>
+		<prereqHediffs>
 			<li><key>FoodPoisoning</key><value>0.01</value></li>
-		</prereqsHediff>
+		</prereqHediffs>
 	</ItsSorceryFramework.ProgressTrackerClassDef>	
 	
 </Defs>

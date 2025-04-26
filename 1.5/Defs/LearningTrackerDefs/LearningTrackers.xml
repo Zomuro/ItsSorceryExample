@@ -30,14 +30,14 @@
 		<label>Birds and bees</label>
 		<description>The literal basics on being smart.</description>
 		
-		<prereqsSkills>
+		<prereqSkills>
 			<li>
 				<mode>GreaterEqual</mode>
 				<skillReqs>
 					<li><skillDef>Intellectual</skillDef><level>3</level></li>
 				</skillReqs>
 			</li>
-		</prereqsSkills>
+		</prereqSkills>
 		
 		<coordX>0</coordX>
 		<coordY>0</coordY>
@@ -50,25 +50,25 @@
 		<label>Mediocrity</label>
 		<description>Becoming average is incredibly difficult, you know? You need to be better than 50% of all the people in the world, straddling the 100 IQ line.</description>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_BirdBees</li>
-		</prereqs>
-		<prereqsStats>
+		</prereqNodes>
+		<prereqStats>
 			<li>
 				<mode>LesserEqual</mode>
 				<statReqs>
 					<PsychicSensitivity>1.1</PsychicSensitivity>
 				</statReqs>
 			</li>
-		</prereqsStats>
-		<prereqsSkills>
+		</prereqStats>
+		<prereqSkills>
 			<li>
 				<mode>GreaterEqual</mode>
 				<skillReqs>
 					<li><skillDef>Intellectual</skillDef><level>4</level></li>
 				</skillReqs>
 			</li>
-		</prereqsSkills>
+		</prereqSkills>
 		
 		<unlocks>
 			<li>ISFE_Logos_LearningTrackerTree_Two</li>
@@ -89,9 +89,9 @@
 		<coordY>0</coordY>
 		<pointReq>1</pointReq>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_BirdBees</li>
-		</prereqs>
+		</prereqNodes>
 		
 		<abilityGain>
 			<li>ISFE_Sorcery_Logos_Experiment</li>
@@ -112,9 +112,9 @@
 		<coordY>0</coordY>
 		<pointReq>3</pointReq>
 				
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_Tools</li>
-		</prereqs>
+		</prereqNodes>
 		
 		<abilityGain>
 			<li>ISFE_Sorcery_Logos_Reasoning</li>
@@ -131,12 +131,19 @@
 		<coordY>1</coordY>
 		<pointReq>0</pointReq>
 				
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_Design</li>
 			<li>ISFE_Node_Logos_Tools</li>
-		</prereqs>
-		<prereqMode>Min</prereqMode>
-		<prereqModeMin>1</prereqModeMin>
+		</prereqNodes>
+		<prereqNodeMode>Min</prereqNodeMode>
+		<prereqNodeModeMin>1</prereqNodeModeMin>
+		<prereqTraits>
+			<Bloodlust/>
+			<Nerves>-2</Nerves>
+			<Neurotic>2</Neurotic>
+		</prereqTraits>
+		<prereqTraitMode>Min</prereqTraitMode>
+		<prereqTraitModeMin>2</prereqTraitModeMin>
 		
 		<capMods>
 			<li>
@@ -164,9 +171,9 @@
 		<coordY>0</coordY>
 		<pointReq>2</pointReq>
 				
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_Design</li>
-		</prereqs>
+		</prereqNodes>
 		<exclusiveNodes>
 			<li>ISFE_Node_Logos_Surrender</li>
 		</exclusiveNodes>
@@ -186,9 +193,9 @@
 		<coordY>0</coordY>
 		<pointReq>2</pointReq>
 				
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_Refinement</li>
-		</prereqs>
+		</prereqNodes>
 		
 		<hediffAdjust>
 			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
@@ -205,9 +212,9 @@
 		<coordY>0</coordY>
 		<pointReq>2</pointReq>
 				
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Logos_Collection</li>
-		</prereqs>
+		</prereqNodes>
 		
 		<hediffAdjust>
 			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
@@ -255,9 +262,9 @@
 		<coordY>0</coordY>
 		<pointReq>1</pointReq>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Coomsumerism_SeedFound</li>
-		</prereqs>
+		</prereqNodes>
 		
 		<abilityGain>
 			<li>ISFE_Sorcery_Coomsumerism_Pleasure</li>
@@ -274,9 +281,9 @@
 		<coordY>0</coordY>
 		<pointReq>1</pointReq>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Coomsumerism_SeedPlanting</li>
-		</prereqs>
+		</prereqNodes>
 		<prereqLevel>4</prereqLevel>
 		
 		<statOffsets>
@@ -294,9 +301,9 @@
 		<coordY>0</coordY>
 		<pointReq>2</pointReq>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
-		</prereqs>
+		</prereqNodes>
 		
 		<statOffsets>
 			<NegotiationAbility>0.1</NegotiationAbility>
@@ -313,20 +320,23 @@
 		<coordY>1</coordY>
 		<pointReq>2</pointReq>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
-		</prereqs>
-		<prereqsResearch>
+		</prereqNodes>
+		<prereqResearch>
 			<li>Brewing</li>
-		</prereqsResearch>
-		<prereqsStats>
+		</prereqResearch>
+		<prereqStats>
 			<li>
 				<mode>Greater</mode>
 				<statReqs>
 					<MoveSpeed>3</MoveSpeed>
 				</statReqs>
 			</li>
-		</prereqsStats>
+		</prereqStats>
+		<prereqGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">NakedSpeed</li>
+		</prereqGenes>
 		
 		<capMods>
 			<li>
@@ -350,12 +360,16 @@
 		<coordY>2</coordY>
 		<pointReq>2</pointReq>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
-		</prereqs>
+		</prereqNodes>
 		<exclusiveNodes>
 			<li>ISFE_Node_Coomsumerism_PartyCondition</li>
 		</exclusiveNodes>
+		<prereqXenotype MayRequire="Ludeon.RimWorld.Biotech">Baseliner</prereqXenotype>
+		<prereqAge>50</prereqAge>
+		<prereqCheckBioAge>True</prereqCheckBioAge>
+		<prereqAgeMode>LesserEqual</prereqAgeMode>
 		
 		<capMods>
 			<li>
@@ -378,12 +392,15 @@
 		<coordY>3</coordY>
 		<pointReq>2</pointReq>
 		
-		<prereqs>
+		<prereqNodes>
 			<li>ISFE_Node_Coomsumerism_SeedGerm</li>
-		</prereqs>
-		<prereqsResearch>
+		</prereqNodes>
+		<prereqResearch>
 			<li>PsychiteRefining</li>
-		</prereqsResearch>
+		</prereqResearch>
+		<prereqGenes>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Libido_High</li>
+		</prereqGenes>
 		<exclusiveNodes>
 			<li>ISFE_Node_Coomsumerism_PartyCondition</li>
 			<li>ISFE_Node_Coomsumerism_OiledMuscles</li>

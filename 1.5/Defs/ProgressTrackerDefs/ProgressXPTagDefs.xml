@@ -5,13 +5,11 @@
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_CastEnergyCost">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
 		<defName>ISFE_Logos_EXPTag_CastEnergyCost</defName>
-		<expFactor>1</expFactor>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamage">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
 		<defName>ISFE_Logos_EXPTag_OnDamage</defName>
-		<expFactor>1</expFactor>
 		<damageDefs>
 			<li>Cut</li>
 			<li>Blunt</li>
@@ -22,13 +20,22 @@
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamaged">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
 		<defName>ISFE_Logos_EXPTag_OnDamaged</defName>
-		<expFactor>1</expFactor>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnKill">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnKill</workerClass>
+		<defName>ISFE_Logos_EXPTag_OnKill</defName>
+		<fixedEXP>100</fixedEXP>
+		<damageDefs>
+			<li>Cut</li>
+			<li>Blunt</li>
+			<li>ArrowHighVelocity</li>
+		</damageDefs>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnSkillEXP">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnSkillEXP</workerClass>
 		<defName>ISFE_Logos_EXPTag_OnSkillEXP</defName>
-		<expFactor>0.3</expFactor>
 		<skillDefs>
 			<li>Melee</li>
 			<li>Shooting</li>
@@ -38,7 +45,6 @@
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
 		<defName>ISFE_Logos_EXPTag_UseItem</defName>
-		<expFactor>1</expFactor>
 		<expItems>
 			<li>
 				<thingDef>Milk</thingDef>
@@ -48,11 +54,28 @@
 		</expItems>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnInteraction">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnInteraction</workerClass>
+		<defName>ISFE_Logos_EXPTag_OnInteraction</defName>
+		<fixedEXP>100</fixedEXP>
+		<interactionDefs>
+			<li>Chitchat</li>
+			<li>DeepTalk</li>
+		</interactionDefs>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnQuestFinish">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnQuestFinish</workerClass>
+		<defName>ISFE_Logos_EXPTag_OnQuestFinish</defName>
+		<fixedEXP>100</fixedEXP>
+		<questOutcome>Fail</questOutcome>
+		<questDefs/>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
 	<!-- Example 2 - Coomsumerism -->
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamage">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
 		<defName>ISFE_Coomsumerism_EXPTag_OnDamage</defName>
-		<expFactor>1</expFactor>
 		<damageDefs>
 			<li>Blunt</li>
 		</damageDefs>
@@ -61,19 +84,16 @@
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamaged">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
 		<defName>ISFE_Coomsumerism_EXPTag_OnDamaged</defName>
-		<expFactor>1</expFactor>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_Passive">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_Passive</workerClass>
 		<defName>ISFE_Coomsumerism_EXPTag_Passive</defName>
-		<fixedEXP>1</fixedEXP>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
 		<defName>ISFE_Coomsumerism_EXPTag_UseItem</defName>
-		<expFactor>1</expFactor>
 		<expItems>
 			<li>
 				<thingDef>Milk</thingDef>
