@@ -286,9 +286,9 @@
 		</prereqNodes>
 		<prereqLevel>4</prereqLevel>
 		
-		<statOffsets>
+		<statFactorOffsets>
 			<NegotiationAbility>0.05</NegotiationAbility>
-		</statOffsets>
+		</statFactorOffsets>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
@@ -377,9 +377,9 @@
 				<offset>0.30</offset>
 			</li>
 		</capMods>
-		<statFactors>
-			<IncomingDamageFactor>0.85</IncomingDamageFactor>
-		</statFactors>
+		<statFactorOffsets>
+			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+		</statFactorOffsets>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 	
 	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
