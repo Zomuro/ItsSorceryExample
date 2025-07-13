@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Example 1: Logos Experimentia -->
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
+		<defName>ISFE_ProgressTracker_Logos</defName>
+		<label>Logic System</label>
+		<bgPath>UI/ProgressTracker/ISFE_Logos_Banner</bgPath>
+		
+		<progressLevelUpKey>ISFE_Logos_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>ISFE_Logos_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>ISFE_Logos_SkillPointLabel</skillPointLabelKey>
+		
+		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Logos</progressHediff>
+		<baseClass>ISFE_Logos_Class_Scientist</baseClass>
+	</ItsSorceryFramework.ProgressTrackerDef>
+	
+	<HediffDef ParentName="ProgressTrackerHediffBase"> 
+		<defName>ISFE_ProgressTrackerRPG_Hediff_Logos</defName>
+		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
+		<label>Logic Gate</label>
+		<defaultLabelColor>(0.8,0.8,0.8)</defaultLabelColor> <!-- gray color -->
+		<description>The gate to a user's knowledge, where all that can and must be known passes through. Abandon your irrationality here, for only pure truth may pass... and only truth may be transmuted into power.</description>
+		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+		<minSeverity>0</minSeverity>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<stages>	
+		</stages>
+	</HediffDef>
+	
+	<!-- Example 2: Coomsumerism -->
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
+		<defName>ISFE_ProgressTracker_Coomsumerism</defName>
+		<label>Coomer's Heart</label>
+		<progressLevelUpKey>ISFE_Coomsumerism_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>ISFE_Coomsumerism_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>ISFE_Coomsumerism_SkillPointLabel</skillPointLabelKey>
+		<bgPath>UI/ProgressTracker/ISFE_Coomsumerism_Banner</bgPath>
+		
+		<progressHediff>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</progressHediff>
+		<baseClass>ISFE_Coomsumerism_Class_Acolyte</baseClass>
+	</ItsSorceryFramework.ProgressTrackerDef>
+	
+	<HediffDef ParentName="ProgressTrackerHediffBase"> 
+		<defName>ISFE_ProgressTrackerRPG_Hediff_Coomsumerism</defName>
+		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
+		<label>Coomer's Heart</label>
+		<defaultLabelColor>(1,1,1)</defaultLabelColor>
+		<description>The source of a coomsumer's powers of pleasure and consumption- a sloshing heart of milk that demands tribute.</description>
+		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+		<minSeverity>0</minSeverity>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<stages/>
+	</HediffDef>
+	
+</Defs>

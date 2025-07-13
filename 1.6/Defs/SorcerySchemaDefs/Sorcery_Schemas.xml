@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
+		<defName>ISFE_LogosExperimentia</defName>
+		<label>Logos Experimentia</label>
+		<description>A magic system meant to do magic things magically or something- no wait, logically.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Quisque id diam vel quam elementum pulvinar etiam non quam. Ultrices neque ornare aenean euismod. Massa enim nec dui nunc mattis enim ut tellus elementum. Eu lobortis elementum nibh tellus molestie nunc non. Porta nibh venenatis cras sed. Consequat interdum varius sit amet mattis. Cursus mattis molestie a iaculis. Integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sodales ut eu sem integer vitae justo. Est velit egestas dui id ornare. Velit scelerisque in dictum non consectetur a erat. Quam nulla porttitor massa id neque aliquam vestibulum.</description>
+	
+		<energyTrackerDefs>
+			<li>ISFE_Logos_Brainpower</li>
+			<li>ISFE_Logos_Theory</li>
+		</energyTrackerDefs>
+		<learningTrackerDefs>
+			<li>ISFE_Logos_LearningTrackerProgress</li>
+			<li>ISFE_Logos_LearningTrackerTree</li>
+			<li>ISFE_Logos_LearningTrackerTree_Two</li>
+		</learningTrackerDefs>
+		<progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef>
+	</ItsSorceryFramework.SorcerySchemaDef>
+	
+	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
+		<defName>ISFE_Coomsumerism</defName>
+		<label>Coomsumerism</label>
+		<description>We were born by the coom, molded by the coom. And now, you shall consume the coom, and flood the world with milk.</description>
+	
+		<energyTrackerDefs>
+			<li>ISFE_Coomsumerism_Stamina</li>
+			<li>ISFE_Coomsumerism_Ecstasy</li>
+		</energyTrackerDefs>
+		<learningTrackerDefs>
+			<li>ISFE_Coomsumerism_LearningTrackerProgress</li>
+			<li>ISFE_Coomsumerism_CoomerBasics</li>
+		</learningTrackerDefs>
+		<progressTrackerDef>ISFE_ProgressTracker_Coomsumerism</progressTrackerDef>
+	</ItsSorceryFramework.SorcerySchemaDef>
+	
+	<!-- For performance testing -->
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_LogosExperimentiaThree</defName> -->
+		<!-- <label>Logos Experimentia 3</label> -->
+		<!-- <description>For perf testing.</description> -->
+	
+		<!-- <energyTrackerDefs> -->
+			<!-- <li>ISFE_Logos_Brainpower</li> -->
+			<!-- <li>ISFE_Logos_Theory</li> -->
+		<!-- </energyTrackerDefs> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_Logos_LearningTrackerProgress</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree_Two</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
+	
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_LogosExperimentiaFour</defName> -->
+		<!-- <label>Logos Experimentia 4</label> -->
+		<!-- <description>For perf testing.</description> -->
+	
+		<!-- <energyTrackerDefs> -->
+			<!-- <li>ISFE_Logos_Brainpower</li> -->
+			<!-- <li>ISFE_Logos_Theory</li> -->
+		<!-- </energyTrackerDefs> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_Logos_LearningTrackerProgress</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree_Two</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
+	
+	<!-- <ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase"> -->
+		<!-- <defName>ISFE_LogosExperimentiaFive</defName> -->
+		<!-- <label>Logos Experimentia 5</label> -->
+		<!-- <description>For perf testing.</description> -->
+	
+		<!-- <energyTrackerDefs/> -->
+		<!-- <learningTrackerDefs> -->
+			<!-- <li>ISFE_Logos_LearningTrackerProgress</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree</li> -->
+			<!-- <li>ISFE_Logos_LearningTrackerTree_Two</li> -->
+		<!-- </learningTrackerDefs> -->
+		<!-- <progressTrackerDef>ISFE_ProgressTracker_Logos</progressTrackerDef> -->
+	<!-- </ItsSorceryFramework.SorcerySchemaDef> -->
+	
+</Defs>
