@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<ItsSorceryFramework.SchemaSetDef>
+		<defName>ISFE_PawnGen_LogosExperimentia_Manager_SchemaSet</defName>
+		<schemaMappings>
+			<li>ISFE_PawnGen_LogosExperimentia_Manager_SchemaNodeMap</li>
+		</schemaMappings>
+	</ItsSorceryFramework.SchemaSetDef>
+	
+	<ItsSorceryFramework.SchemaNodeMapDef>
+		<defName>ISFE_PawnGen_LogosExperimentia_Manager_SchemaNodeMap</defName>
+		<schema>ISFE_LogosExperimentia</schema>
+		<requiredNodes>
+			<li><nodeDef>ISFE_Node_Logos_BirdBees</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
+			<li><nodeDef>ISFE_Node_Logos_Mediocrity</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
+			<li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+			<li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+		</requiredNodes>
+		<baseClassDef>ISFE_Logos_Class_Manager</baseClassDef>
+	</ItsSorceryFramework.SchemaNodeMapDef>
+	
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>ISFE_Enemy_PawnGen</defName>
 		<label>enemy (schema pawngen example)</label>
@@ -8,20 +27,7 @@
 		<modExtensions>
 			<li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
 				<schemaSets>
-					<li>
-						<schemaMappings>
-							<li>
-								<schema>ISFE_LogosExperimentia</schema>
-								<requiredNodes>
-									<li><nodeDef>ISFE_Node_Logos_BirdBees</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Logos_Mediocrity</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-								</requiredNodes>
-								<baseClassDef>ISFE_Logos_Class_Manager</baseClassDef>
-							</li>
-						</schemaMappings>
-					</li>
+					<li>ISFE_PawnGen_LogosExperimentia_Manager_SchemaSet</li>
 				</schemaSets>
 			</li>
 		</modExtensions>

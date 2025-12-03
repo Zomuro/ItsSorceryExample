@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<ItsSorceryFramework.SchemaSetDef>
+		<defName>ISFE_PawnGen_LogosExperimentia_Technician_SchemaSet</defName>
+		<schemaMappings>
+			<li>ISFE_PawnGen_LogosExperimentia_Technician_SchemaNodeMap</li>
+		</schemaMappings>
+	</ItsSorceryFramework.SchemaSetDef>
+	
+	<ItsSorceryFramework.SchemaNodeMapDef>
+		<defName>ISFE_PawnGen_LogosExperimentia_Technician_SchemaNodeMap</defName>
+		<schema>ISFE_LogosExperimentia</schema>
+		<requiredNodes>
+			<li><nodeDef>ISFE_Node_Logos_BirdBees</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
+			<li><nodeDef>ISFE_Node_Logos_Mediocrity</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
+			<li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+			<li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
+		</requiredNodes>
+		<baseClassDef>ISFE_Logos_Class_Technician</baseClassDef>
+	</ItsSorceryFramework.SchemaNodeMapDef>
+	
+	<ItsSorceryFramework.SchemaSetDef>
+		<defName>ISFE_PawnGen_Coomsumerism_SchemaSet</defName>
+		<schemaMappings>
+			<li>ISFE_PawnGen_Coomsumerism_Adherent_SchemaNodeMap</li>
+			<li>ISFE_PawnGen_Coomsumerism_Apostate_SchemaNodeMap</li>
+		</schemaMappings>
+	</ItsSorceryFramework.SchemaSetDef>
+	
+	<ItsSorceryFramework.SchemaNodeMapDef>
+		<defName>ISFE_PawnGen_Coomsumerism_Adherent_SchemaNodeMap</defName>
+		<schema>ISFE_Coomsumerism</schema>
+		<weight>1</weight>
+		<forceLevel>True</forceLevel>
+		<levelRange>15</levelRange>
+		<requiredNodes>
+			<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
+			<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
+			<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
+			<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef></li>
+		</requiredNodes>
+		<baseClassDef>ISFE_Coomsumerism_Class_Acolyte</baseClassDef>
+		<classChanges>
+			<li>
+				<classDef>ISFE_Coomsumerism_Class_Adherent</classDef>
+				<levelReset>False</levelReset>
+				<benefitReset>False</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+		</classChanges>
+	</ItsSorceryFramework.SchemaNodeMapDef>
+	
+	<ItsSorceryFramework.SchemaNodeMapDef>
+		<defName>ISFE_PawnGen_Coomsumerism_Apostate_SchemaNodeMap</defName>
+		<schema>ISFE_Coomsumerism</schema>
+		<weight>1</weight>
+		<forceLevel>True</forceLevel>
+		<levelRange>17~19</levelRange>
+		<forcePoints>True</forcePoints>
+		<pointRange>10~11</pointRange>
+		<requiredNodes>
+			<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
+			<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
+			<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
+		</requiredNodes>
+		<baseClassDef>ISFE_Coomsumerism_Class_Acolyte</baseClassDef>
+		<classChanges>
+			<li>
+				<classDef>ISFE_Coomsumerism_Class_Apostate</classDef>
+				<levelReset>False</levelReset>
+				<benefitReset>False</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+		</classChanges>
+	</ItsSorceryFramework.SchemaNodeMapDef>
+	
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>ISFE_Colonist_PawnGen</defName>
 		<label>colonist (schema pawngen example)</label>
@@ -8,67 +82,8 @@
 		<modExtensions>
 			<li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
 				<schemaSets>
-					<li>
-						<schemaMappings>
-							<li>
-								<schema>ISFE_LogosExperimentia</schema>
-								<requiredNodes>
-									<li><nodeDef>ISFE_Node_Logos_BirdBees</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Logos_Mediocrity</nodeDef><forceHediff>False</forceHediff><forceSkill>True</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Logos_Tools</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-									<li><nodeDef>ISFE_Node_Logos_Design</nodeDef><forceHediff>False</forceHediff><forceSkill>False</forceSkill></li>
-								</requiredNodes>
-								<baseClassDef>ISFE_Logos_Class_Technician</baseClassDef>
-							</li>
-						</schemaMappings>
-					</li>
-					<li>
-						<schemaMappings>
-							<li>
-								<schema>ISFE_Coomsumerism</schema>
-								<weight>1</weight>
-								<forceLevel>True</forceLevel>
-								<level>15</level>
-								<requiredNodes>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPurchase</nodeDef></li>
-								</requiredNodes>
-								<baseClassDef>ISFE_Coomsumerism_Class_Acolyte</baseClassDef>
-								<classChanges>
-									<li>
-										<classDef>ISFE_Coomsumerism_Class_Adherent</classDef>
-										<levelReset>False</levelReset>
-										<benefitReset>False</benefitReset>
-										<removePostClassChange>True</removePostClassChange>
-									</li>
-								</classChanges>
-							</li>
-							<li>
-								<schema>ISFE_Coomsumerism</schema>
-								<weight>1</weight>
-								<forceLevel>True</forceLevel>
-								<level>17</level>
-								<forcePoints>True</forcePoints>
-								<points>10</points>
-								<requiredNodes>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedFound</nodeDef></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedPlanting</nodeDef></li>
-									<li><nodeDef>ISFE_Node_Coomsumerism_SeedGerm</nodeDef><forceLevel>True</forceLevel></li>
-								</requiredNodes>
-								<baseClassDef>ISFE_Coomsumerism_Class_Acolyte</baseClassDef>
-								<classChanges>
-									<li>
-										<classDef>ISFE_Coomsumerism_Class_Apostate</classDef>
-										<levelReset>False</levelReset>
-										<benefitReset>False</benefitReset>
-										<removePostClassChange>True</removePostClassChange>
-									</li>
-								</classChanges>
-							</li>
-						</schemaMappings>
-					</li>
+					<li>ISFE_PawnGen_LogosExperimentia_Technician_SchemaSet</li>
+					<li>ISFE_PawnGen_Coomsumerism_SchemaSet</li>
 				</schemaSets>
 			</li>
 		</modExtensions>
