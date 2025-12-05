@@ -769,7 +769,12 @@
 			<li>ISFE_Coomsumerism_Class_Acolyte</li>
 		</prereqClasses>
 		<prereqHediffs>
-			<li><key>FoodPoisoning</key><value>0.01</value></li>
+			<li>
+				<mode>Lesser</mode>
+				<hediffReqs>
+					<li><key>FoodPoisoning</key><value>0.01</value></li>
+				</hediffReqs>
+			</li>
 		</prereqHediffs>
 		<prereqSkillsProhibit>
 			<li>
